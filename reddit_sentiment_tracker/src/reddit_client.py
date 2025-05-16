@@ -2,6 +2,7 @@
 import json
 import praw
 from dotenv import load_dotenv
+import praw.exceptions
 import os
 
 # loading environmental variables
