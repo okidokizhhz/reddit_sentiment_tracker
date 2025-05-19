@@ -7,17 +7,14 @@ import json
 import praw
 from dotenv import load_dotenv
 from config import FETCHED_DATA_PATH
+from utils import to_vienna_time
 
 # loading environmental variables
 load_dotenv()
 
 def get_reddit_client():
-    """ Initializes and returns a Reddit client using credentials from environment variables
-
-    Returns
-    -------
-    praw.Reddit
-        Authenticated Reddit client object
+    """ 
+    Initializes and returns a Reddit client using credentials from environment variables
     """
 
     return praw.Reddit(
@@ -29,21 +26,9 @@ def get_reddit_client():
     )
 
 
-def fetch_hot_posts(subreddit_name, RATE_LIMIT):
+def fetch_data(subreddit_name, RATE_LIMIT):
     """
     Fetches hot posts from a given subreddit.
-
-    Parameters
-    ----------
-    subreddit_name : str
-        Name of the subreddit to fetch posts from.
-    RATE_LIMIT : int
-        Maximum number of posts to retrieve.
-
-    Returns
-    -------
-    list of dict
-        A list containing dictionaries of post metadata (title, score, etc.).
     """
 
 
@@ -58,13 +43,17 @@ def fetch_hot_posts(subreddit_name, RATE_LIMIT):
         # Fetch posts with Rate Limits
         for post in subreddit.hot(limit=RATE_LIMIT):
             hot_posts.append({
-                "Title": post.title,
-                "Score": post.score,
-                "ID": post.id,
-                "URL": post.url,
-                "Created": post.created_utc,  # Unix timestamp
-                "Author": str(post.author) if post.author else "N/A",  # Handles deleted users
-                "Number of Comments": post.num_comments
+                "id": post.id,
+                "title": post.title,
+                "selftext": post.selftext,
+                "author": str(post.author) if post.author else "N/A",  # Handles deleted users
+                "score": post.score,
+                "upvote-ratio": post.upvote_ratio,
+                "created-utc": to_vienna_time(post.created_utc),  # Unix timestamp
+                "num-comments": post.num_comments,
+                "url": post.url,
+                "awards": len(post.all_awardings), # Indicator for community appreciation
+                "edited": post.edited # bool or timestamp if edited
             })
 
         # returning the list with the fetched data

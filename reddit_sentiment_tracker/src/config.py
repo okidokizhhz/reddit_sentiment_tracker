@@ -6,4 +6,4 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 # Paths to various folders/files
-FETCHED_DATA_PATH = BASE_DIR / "data" / "hot_posts.json"
+FETCHED_DATA_PATH = BASE_DIR / "data" / "fetched_data.json"
