@@ -1,9 +1,12 @@
 # REDDIT SENTIMENT TRACKER
+# ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/reddit_client.py
+
+import praw.exceptions
+import os
 import json
 import praw
 from dotenv import load_dotenv
-import praw.exceptions
-import os
+from config import FETCHED_DATA_PATH
 
 # loading environmental variables
 load_dotenv()
@@ -74,21 +77,14 @@ def fetch_hot_posts(subreddit_name, RATE_LIMIT):
 
 
 # write posts list to JSON
-def save_to_json(data, filepath):
+def save_to_json(data):
     """
     Saves data to a JSON file.
-
-    Parameters
-    ----------
-    data : any serializable object
-        The data to save to file.
-    filepath : str
-        Path to the output JSON file.
     """
 
     try:
-        with open(filepath, "w") as f:
+        with open(FETCHED_DATA_PATH, "w") as f:
             json.dump(data, f, indent=2)
-        print(f"Data saved to {filepath}")
+        print(f"Data saved to {FETCHED_DATA_PATH}")
     except Exception as e:
         print(f"Error writing to file: {e}")
