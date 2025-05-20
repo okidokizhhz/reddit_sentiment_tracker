@@ -2,8 +2,17 @@
 
 from pathlib import Path
 
-# Root directory of the project
+# current location of config.py acts as root
 BASE_DIR = Path(__file__).resolve().parent
 
-# Paths to various folders/files
-FETCHED_DATA_PATH = BASE_DIR / "data" / "fetched_data.json"
+# Path to save top posts data
+TOP_POSTS_DATA_PATH = BASE_DIR / "data" / "top_posts_data.json"
+# Path to save rising posts data
+RISING_POSTS_DATA_PATH = BASE_DIR / "data" / "rising_posts_data.json"
+
+# fetching data - number of posts
+RATE_LIMIT_TOP_POSTS = 15
+RATE_LIMIT_RISING_POSTS = 15
+
+# fetching data - comments
+COMMENT_LIMIT = 15
