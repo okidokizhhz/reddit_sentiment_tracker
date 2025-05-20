@@ -6,16 +6,18 @@ import os
 import json
 import praw
 from dotenv import load_dotenv
-from config import RATE_LIMIT_TOP_POSTS, RATE_LIMIT_RISING_POSTS
+from config import RATE_LIMIT_TOP_POSTS, RATE_LIMIT_RISING_POSTS, TOP_POSTS_TIME_FILTER
 from utils import to_vienna_time
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-# loading environmental variables
+# loading environmental variables load_dotenv()
 load_dotenv()
 
+# Initialize sentiment analyzer once
+sentiment_analyzer = SentimentIntensityAnalyzer()
+
 def get_reddit_client():
-    """ 
-    Initializes and returns a Reddit client using credentials from environment variables
-    """
+    """ Initialize and return authenticated Reddit client using credentials from environment variables. """
 
     return praw.Reddit(
         client_id=os.getenv("CLIENT_ID"),
@@ -26,127 +28,92 @@ def get_reddit_client():
     )
 
 
+def analyze_sentiment(text):
+    """ Analyze text sentiment using VADER """
+    return sentiment_analyzer.polarity_scores(text)
+
+
+def process_post(post):
+    """ Process raw post data with sentiment analysis """
+    return {
+        "id": post.id,
+        "title": post.title,
+        "title_sentiment": analyze_sentiment(post.title),
+        "selftext": post.selftext,
+        "body_sentiment": analyze_sentiment(post.selftext),
+        "author": str(post.author) if post.author else "N/A",
+        "score": post.score,
+        "upvote_ratio": post.upvote_ratio,
+        "controversiality": (1 - post.upvote_ratio) * post.num_comments,
+        "created_utc": to_vienna_time(post.created_utc),
+        "num_comments": post.num_comments,
+        "url": post.url,
+        "awards": len(post.all_awardings),
+        "edited": post.edited,
+        "flair": post.link_flair_text if post.link_flair_text else None
+    }
+
+
 # TOP POSTS
 def fetch_top_posts(subreddit_name):
-    """
-    Fetches top posts from a subreddit.
-    """
-
-    # initialize reddit client
-    reddit = get_reddit_client()
-    # access a subreddit
-    subreddit = reddit.subreddit(subreddit_name)
+    """ Fetches top posts from a subreddit """
+    try:
+        # initialize reddit client
+        reddit = get_reddit_client()
+        # access a subreddit
+        subreddit = reddit.subreddit(subreddit_name)
+    except Exception as e:
+        print(f"Error connecting to reddit client: {e}")
 
     top_posts_data = []
 
     try:
-        # Fetch posts with Rate Limits
-        for post in subreddit.top(limit=RATE_LIMIT_TOP_POSTS):
+        # fetching data
+        for post in subreddit.top(limit=RATE_LIMIT_TOP_POSTS,
+                                  time_filter=TOP_POSTS_TIME_FILTER):
+            top_posts_data.append(process_post(post))
 
-            top_posts_data.append({
-                "id": post.id,
-                "title": post.title,
-                "selftext": post.selftext,
-                "author": str(post.author) if post.author else "N/A",  # Handles deleted users
-                "score": post.score,
-                "upvote-ratio": post.upvote_ratio,
-                "created-utc": to_vienna_time(post.created_utc),  # Unix timestamp
-                "num-comments": post.num_comments,
-                "url": post.url,
-               "awards": len(post.all_awardings), # Indicator for community appreciation
-                "edited": post.edited # bool or timestamp if edited
-            })
-
-        # returning the list with the fetched data
         return top_posts_data 
 
     except praw.exceptions.APIException as e:
         print(f"Reddit API Exception: {e}")
+        return []
     except Exception as e:
         print(f"Error: {e}")
+        return []
 
 # RISING POSTS
 def fetch_rising_posts(subreddit_name):
-    """
-    Fetches rising posts from a subreddit.
-    """
-
-    # initialize reddit client
-    reddit = get_reddit_client()
-    # access a subreddit
-    subreddit = reddit.subreddit(subreddit_name)
+    """ Fetches rising posts from a subreddit. """
+    try:
+        reddit = get_reddit_client()
+        subreddit = reddit.subreddit(subreddit_name)
+    except Exception as e:
+        print(f"Error connecting to reddit client: {e}")
 
     rising_posts_data = []
 
     try:
-        # Fetch posts with Rate Limits
+        # fetching data
         for post in subreddit.rising(limit=RATE_LIMIT_RISING_POSTS):
+            rising_posts_data.append(process_post(post))
 
-            rising_posts_data.append({
-                "id": post.id,
-                "title": post.title,
-                "selftext": post.selftext,
-                "author": str(post.author) if post.author else "N/A",  # Handles deleted users
-                "score": post.score,
-                "upvote-ratio": post.upvote_ratio,
-                "created-utc": to_vienna_time(post.created_utc),  # Unix timestamp
-                "num-comments": post.num_comments,
-                "url": post.url,
-               "awards": len(post.all_awardings), # Indicator for community appreciation
-                "edited": post.edited # bool or timestamp if edited
-            })
-
-        # returning the list with the fetched data
         return rising_posts_data 
 
     except praw.exceptions.APIException as e:
         print(f"Reddit API Exception: {e}")
+        return []
     except Exception as e:
         print(f"Error: {e}")
-
-# COMMENTS
-# def get_comments(post):
-    # """
-    # Gets basic comment data from a Reddit post
-    # - Only fetches top-level comments
-    # - No sorting by score
-    # - Just gets first few comments
-    # """
-    
-    # comments_data = []
-    
-    # # Make sure we have all comments loaded
-    # post.comments.replace_more(limit=0)
-    
-    # # Count how many comments we've processed
-    # comment_count = 0
-    
-    # for comment in post.comments:
-        # # Only process top-level comments (direct replies to post)
-        # if comment.is_root:
-            # comments_data.append({
-                # "author": str(comment.author),
-                # "text": comment.body,
-                # "upvotes": comment.score,
-                # "created": to_vienna_time(comment.created_utc)
-            # })
-            
-            # comment_count += 1
-            # if comment_count >= COMMENT_LIMIT:
-                # break
-    
-    # return comments_data
+        return []
 
 
-# write posts list to JSON
+# WRITING / SAVING
 def save_to_json(data, file_path):
-    """
-    Saves data to a JSON file.
-    """
-
+    """ Saves data to a JSON file. """
     try:
-        with open(file_path, "w") as f:
-            json.dump(data, f, indent=2)
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
         print(f"Data saved to {file_path}")
     except Exception as e:
         print(f"Error writing to file: {e}")

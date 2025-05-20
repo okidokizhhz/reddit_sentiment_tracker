@@ -1,197 +1,407 @@
 [
   {
-    "id": "11x9hs0",
-    "title": "Essen bin vor die Wohnungst\u00fcr",
-    "selftext": "Neuerdings f\u00e4hrt der Lieferandofahrer das Essen bis vor die Wohnungst\u00fcr im 7. Stock. Innovation oder doch eher frech?",
-    "author": "keaslr",
-    "score": 6152,
-    "upvote-ratio": 0.97,
-    "created-utc": "2023-03-21 08:08:23 CET",
-    "num-comments": 98,
-    "url": "https://i.redd.it/61eh0ouc23pa1.jpg",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "16mlniq",
-    "title": "So in Wien gesehen, hat jemand eine Erkl\u00e4rung? :D",
-    "selftext": "",
-    "author": "TraditionLopsided781",
-    "score": 4439,
-    "upvote-ratio": 1.0,
-    "created-utc": "2023-09-19 10:45:49 CEST",
-    "num-comments": 159,
-    "url": "https://i.redd.it/bbss497cd6pb1.jpg",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "143fjpc",
-    "title": "You had one Job",
-    "selftext": "",
-    "author": "ThinkAd9897",
-    "score": 3398,
-    "upvote-ratio": 0.95,
-    "created-utc": "2023-06-07 17:00:09 CEST",
-    "num-comments": 115,
-    "url": "https://v.redd.it/qk372qnm1m4b1",
-    "awards": 0,
-    "edited": false
-  },
-  {
     "id": "1kn2pa3",
     "title": "Polozwei",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "Lustiges Auto aus meiner Nachbarschaft im 22. Bezirk",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "author": "gljivicad",
-    "score": 3169,
-    "upvote-ratio": 0.99,
-    "created-utc": "2025-05-15 09:58:46 CEST",
-    "num-comments": 79,
+    "score": 3166,
+    "upvote_ratio": 0.99,
+    "controversiality": 0.7900000000000007,
+    "created_utc": "2025-05-15 09:58:46 CEST",
+    "num_comments": 79,
     "url": "https://i.redd.it/vtl71qivjw0f1.jpeg",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Bilder: Bilder | Pictures"
   },
   {
-    "id": "1iyzc3y",
-    "title": "shoutout an pizza john! (mollardgasse)",
-    "selftext": "ehrenmann",
-    "author": "Artistic_Country_338",
-    "score": 2548,
-    "upvote-ratio": 1.0,
-    "created-utc": "2025-02-26 22:50:24 CET",
-    "num-comments": 51,
-    "url": "https://i.redd.it/rukxoi751kle1.png",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "17hj6fm",
-    "title": "Graffiti mal anders",
-    "selftext": "..Wie lange dieses Kunstwerk gedauert hat? Welches Werkzeug wurde benutzt? Wurden die dannach erwischt?  Fragen \u00fcber Fragen. Finds aber sehr nice \ud83d\ude3a Made my Day",
-    "author": "Lololovee3",
-    "score": 2332,
-    "upvote-ratio": 0.99,
-    "created-utc": "2023-10-27 10:51:20 CEST",
-    "num-comments": 36,
-    "url": "https://i.redd.it/t93n2v0blpwb1.jpg",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1g6drx6",
-    "title": "Wer hat die Stra\u00dfen in dieser Nachbarschaft benannt",
+    "id": "1kmil1b",
+    "title": "Aushangtafel-Streit im Gemeindebau",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
-    "author": "Nice-Pattern-2822",
-    "score": 2215,
-    "upvote-ratio": 0.98,
-    "created-utc": "2024-10-18 11:09:32 CEST",
-    "num-comments": 134,
-    "url": "https://i.redd.it/48u2mpxxdhvd1.png",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "frzbrzla",
+    "score": 981,
+    "upvote_ratio": 0.98,
+    "controversiality": 0.7800000000000007,
+    "created_utc": "2025-05-14 17:49:11 CEST",
+    "num_comments": 39,
+    "url": "https://i.redd.it/1v9zx21uqr0f1.jpeg",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Bilder: Bilder | Pictures"
   },
   {
-    "id": "1j2r8ru",
-    "title": "View of Vienna on the flight from Cologne to Istanbul March 3rd 2025",
+    "id": "1kmjqsi",
+    "title": "Wir leben im Gemeindebau",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
-    "author": "zib747",
-    "score": 2163,
-    "upvote-ratio": 0.99,
-    "created-utc": "2025-03-03 20:34:55 CET",
-    "num-comments": 55,
-    "url": "https://i.redd.it/1f8cj13j1jme1.jpeg",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "StrictCharge3256",
+    "score": 498,
+    "upvote_ratio": 0.98,
+    "controversiality": 0.9400000000000008,
+    "created_utc": "2025-05-14 18:35:00 CEST",
+    "num_comments": 47,
+    "url": "https://i.redd.it/uuuieig2zr0f1.jpeg",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Bilder: Bilder | Pictures"
   },
   {
-    "id": "17pqmht",
-    "title": "Pictures I took at night in Wien",
+    "id": "1kq6ai1",
+    "title": "Ignorieren, oder auszucken und melden? Falls melden... wen?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Sehe dieses Verhalten in letzter Zeit immer öfters, besonders bei Querparkern. Fahrzeuge, die bei weitem zu lang für die Stellfläche sind. Besonders witzig dann, wenn es zweispurig ist und du zum ausweichen in die Gegenfahrbahn muss.  \nBei dem Beispiel am Bild waren beim vorbeiquetschen links und rechts vllt. mal 10 cm zu den Rückspiegeln.\n\nMeldet ihr sowas, oder wird das einfach angefressen ignoriert? Falls man das melden will. Wohin wendet man sich?",
+    "body_sentiment": {
+      "neg": 0.149,
+      "neu": 0.851,
+      "pos": 0.0,
+      "compound": -0.9195
+    },
+    "author": "BulTV",
+    "score": 295,
+    "upvote_ratio": 0.92,
+    "controversiality": 6.959999999999996,
+    "created_utc": "2025-05-19 10:07:03 CEST",
+    "num_comments": 87,
+    "url": "https://i.redd.it/ml12w5lk4p1f1.jpeg",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
+  },
+  {
+    "id": "1kotrhv",
+    "title": "Ist Serkan jetzt allein oder mit seinen Brüdern's vereint?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "bin verwirrt",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "montziboy",
+    "score": 293,
+    "upvote_ratio": 0.99,
+    "controversiality": 0.29000000000000026,
+    "created_utc": "2025-05-17 16:03:59 CEST",
+    "num_comments": 29,
+    "url": "https://i.redd.it/it61eaujmc1f1.jpeg",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Humor: Satire | Humor"
+  },
+  {
+    "id": "1kmcpeu",
+    "title": "Wien ist anders.",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
-    "author": "jbilous",
-    "score": 2031,
-    "upvote-ratio": 0.99,
-    "created-utc": "2023-11-07 10:37:55 CET",
-    "num-comments": 102,
-    "url": "https://www.reddit.com/gallery/17pqmht",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "AspergerKid",
+    "score": 263,
+    "upvote_ratio": 0.96,
+    "controversiality": 1.9200000000000017,
+    "created_utc": "2025-05-14 13:26:01 CEST",
+    "num_comments": 48,
+    "url": "https://i.redd.it/zsb4mj3ss70f1.jpeg",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Humor: Satire | Humor"
   },
   {
-    "id": "1gqepqb",
-    "title": "Spiegelei in der U6",
-    "selftext": "U6 Core",
-    "author": "hannahclara6272",
-    "score": 1776,
-    "upvote-ratio": 0.99,
-    "created-utc": "2024-11-13 15:56:59 CET",
-    "num-comments": 83,
-    "url": "https://i.redd.it/vwpj5ybono0e1.jpeg",
+    "id": "1kp3ahg",
+    "title": "Deppade Kinder in Wien - eure Erfahrungen",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 0.652,
+      "pos": 0.348,
+      "compound": 0.4939
+    },
+    "selftext": "In letzter Zeit habe ich viel \"Pech\" auf \"Jugendbanden\" zu treffen die sich auf einer unpassende und respektlose Weise verhalten. \n\nZum Beispiel wurden an einem Abend 3x der Arsch einer Freundin kommentiert, laut und mit viel Gelächter.  \nDas waren auch unterschiedliche Banden.   \nHeute ist eine Bande die in der U-Bahn krach gemacht haben ausgestiegen und haben mir dann den Mittelfinger gezeigt etc.\n\nObwohl ich Gewalt ablehne und mich davon distanziere, hab ich mich schon dabei erwischt, wie ich mir wünsche dass sie stolpern und auf die Fresse fallen. Haben diese Kiddies keine Angst?  \nAuch wenn ich eher friedlich veranlagt habe, müssen die doch einmal auf die  \"falschen\" Personen treffen...\n\nHabt ihr das schonmal erlebt?",
+    "body_sentiment": {
+      "neg": 0.172,
+      "neu": 0.828,
+      "pos": 0.0,
+      "compound": -0.9731
+    },
+    "author": "Prim155",
+    "score": 259,
+    "upvote_ratio": 0.89,
+    "controversiality": 23.539999999999996,
+    "created_utc": "2025-05-17 23:04:17 CEST",
+    "num_comments": 214,
+    "url": "https://www.reddit.com/r/wien/comments/1kp3ahg/deppade_kinder_in_wien_eure_erfahrungen/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Grant: Grantln | Grouching"
   },
   {
-    "id": "1f9dhkn",
-    "title": "Hab heute Besuch bekommen",
-    "selftext": "Darf leider kein Video posten",
-    "author": "Spany_",
-    "score": 1627,
-    "upvote-ratio": 0.98,
-    "created-utc": "2024-09-05 06:05:05 CEST",
-    "num-comments": 229,
-    "url": "https://www.reddit.com/gallery/1f9dhkn",
+    "id": "1kqhi3y",
+    "title": "Strafe für Pfandflasche neben Müll",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Hallo Leute. Heute habe ich Glas zum Müllcontainer gebracht. Habe dabei bemerkt das ich eine Glaspfandflasche dabei hatte. Dachte mir zum Wegschmeißen zu schade also stell ich sie daneben hin falls ein Obdachloser oder wer es halt nötig hat als Pfand mitnehmen kann. Als ich sie abstellte und wegging hat mich eine waste watcher komplett zusammengeschissen und gesagt ich muß die Flasche entsorgen und was ich mir einbilden sie daneben stehen zu lassen. \nTja so läuft das in Wien. Das sind richtige heisln, wie krank ist das außerdem das die zu Zweit in Meidling eine Müllinsel bewachen. Sollten lieber mal den Zigtausend tschickstummel nachermitteln. \nFind es einfach frech in Deutschland stellst die Flaschen zum Müll hin und es nimmt sie wer. In Wien bekommt 50,- Strafe wenn du was gutes tun willst. ",
+    "body_sentiment": {
+      "neg": 0.102,
+      "neu": 0.898,
+      "pos": 0.0,
+      "compound": -0.9382
+    },
+    "author": "Ok-Commercial9489",
+    "score": 257,
+    "upvote_ratio": 0.84,
+    "controversiality": 20.640000000000004,
+    "created_utc": "2025-05-19 19:23:55 CEST",
+    "num_comments": 129,
+    "url": "https://www.reddit.com/r/wien/comments/1kqhi3y/strafe_für_pfandflasche_neben_müll/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
   },
   {
-    "id": "1f72uvq",
-    "title": "Deswegen liebe ich Wien",
+    "id": "1knzanf",
+    "title": "Sprite Full Sugar",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "gefunden bei Billa Plus, Columbus-Center 1100",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "Loose_Grab9576",
+    "score": 241,
+    "upvote_ratio": 0.95,
+    "controversiality": 1.9000000000000017,
+    "created_utc": "2025-05-16 14:13:01 CEST",
+    "num_comments": 38,
+    "url": "https://i.redd.it/9xg4w960y41f1.jpeg",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Kurios: Kurios | Interesting"
+  },
+  {
+    "id": "1kpl119",
+    "title": "Pokemon-Karten Automat am Westbahnhof",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "mehr gibts bei dem Post ned fands nur interessant weil i sowos noch nie gsehn hab…",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "_sergeant_pepper",
+    "score": 188,
+    "upvote_ratio": 0.94,
+    "controversiality": 3.300000000000003,
+    "created_utc": "2025-05-18 16:17:50 CEST",
+    "num_comments": 55,
+    "url": "https://www.reddit.com/gallery/1kpl119",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Freizeit: Freizeit | Leisure Time"
+  },
+  {
+    "id": "1kotfz8",
+    "title": "Der Blick in die Biotonne lässt mich an der Intelligenz meiner Nachbarn zweifeln",
+    "title_sentiment": {
+      "neg": 0.245,
+      "neu": 0.755,
+      "pos": 0.0,
+      "compound": -0.5994
+    },
     "selftext": "",
-    "author": "madame-juju",
-    "score": 1607,
-    "upvote-ratio": 0.93,
-    "created-utc": "2024-09-02 11:50:21 CEST",
-    "num-comments": 149,
-    "url": "https://i.redd.it/2cizg42cbdmd1.jpeg",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "FlyingRainbowPony",
+    "score": 162,
+    "upvote_ratio": 0.95,
+    "controversiality": 2.0000000000000018,
+    "created_utc": "2025-05-17 15:49:18 CEST",
+    "num_comments": 40,
+    "url": "https://i.redd.it/5kx9s811kc1f1.jpeg",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Grant: Grantln | Grouching"
   },
   {
-    "id": "1glrj5k",
-    "title": "wien mega effizient, alles wichtige zusammen. via @MatthiasCremer",
+    "id": "1knbyh1",
+    "title": "Wieso gibt es bei großen Stationen wie dem Matzleinsdorfer Platz keine Ansprechperson/Security?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Wollte grad zur Straßenbahn am Matzleinsdorfer Platz, gibt sich direkt dort auf der Stiege einer einen Schuss.Wieso gibt es bei so großen Stationen wie dem Matzleinsdorfer Platz keine Ansprechperson/Security? Wie kommen Kinder dazu sowas mitanzusehen?\n\nPS: ah ich seh schon an den Kommentaren hier im Wien Forum darf man sich über Heroinspritzen ja nicht aufregen",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.938,
+      "pos": 0.062,
+      "compound": 0.5514
+    },
+    "author": "Flaky_Answer_4561",
+    "score": 160,
+    "upvote_ratio": 0.78,
+    "controversiality": 40.26,
+    "created_utc": "2025-05-15 18:03:56 CEST",
+    "num_comments": 183,
+    "url": "https://www.reddit.com/r/wien/comments/1knbyh1/wieso_gibt_es_bei_großen_stationen_wie_dem/",
+    "awards": 0,
+    "edited": 1747326296.0,
+    "flair": ":Grant: Grantln | Grouching"
+  },
+  {
+    "id": "1knvnwt",
+    "title": "Halbes Jahr Haft für Übergriff im Schaum der Sex-Positive-Party",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "author": "KFSattmann",
-    "score": 1501,
-    "upvote-ratio": 1.0,
-    "created-utc": "2024-11-07 15:21:08 CET",
-    "num-comments": 59,
-    "url": "https://i.redd.it/3ufxirfnnhzd1.jpeg",
+    "score": 102,
+    "upvote_ratio": 0.93,
+    "controversiality": 4.269999999999997,
+    "created_utc": "2025-05-16 10:19:21 CEST",
+    "num_comments": 61,
+    "url": "https://www.derstandard.at/story/3000000269891/halbes-jahr-haft-fuer-uebergriff-im-schaum-der-sex-positive-party",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
   },
   {
-    "id": "18aj49m",
-    "title": "Blick vom Donaufeld auf die Donauplatte heute morgen \u2744\ufe0f",
+    "id": "1kqyh0j",
+    "title": "Parken in der Stadt ist zu billig, sagt der VCÖ",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
-    "author": "Zunzara_",
-    "score": 1494,
-    "upvote-ratio": 0.98,
-    "created-utc": "2023-12-04 13:25:24 CET",
-    "num-comments": 26,
-    "url": "https://i.redd.it/4u1xz035u94c1.jpg",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "KFSattmann",
+    "score": 107,
+    "upvote_ratio": 0.84,
+    "controversiality": 12.960000000000003,
+    "created_utc": "2025-05-20 08:54:38 CEST",
+    "num_comments": 81,
+    "url": "https://www.derstandard.at/story/3000000270425/parken-in-der-stadt-ist-zu-billig-sagt-der-vcoe",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
   },
   {
-    "id": "i01z9o",
-    "title": "Beste Gef\u00fchl",
+    "id": "1klue3o",
+    "title": "Neulich in der A1 Marketing Abteilung",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
-    "author": "auriumius",
-    "score": 1497,
-    "upvote-ratio": 1.0,
-    "created-utc": "2020-07-29 16:49:50 CEST",
-    "num-comments": 28,
-    "url": "https://imgur.com/t65mgTo",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "Masaca",
+    "score": 99,
+    "upvote_ratio": 0.81,
+    "controversiality": 9.119999999999997,
+    "created_utc": "2025-05-13 21:04:27 CEST",
+    "num_comments": 48,
+    "url": "https://i.imgur.com/B2dY30P.jpeg",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Kurios: Kurios | Interesting"
   }
 ]

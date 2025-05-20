@@ -14,5 +14,5 @@ RISING_POSTS_DATA_PATH = BASE_DIR / "data" / "rising_posts_data.json"
 RATE_LIMIT_TOP_POSTS = 15
 RATE_LIMIT_RISING_POSTS = 15
 
-# fetching data - comments
-COMMENT_LIMIT = 15
+# time filter for fetching posts
+TOP_POSTS_TIME_FILTER = "week"

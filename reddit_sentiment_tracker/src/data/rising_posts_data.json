@@ -1,197 +1,407 @@
 [
   {
-    "id": "1kqyh0j",
-    "title": "Parken in der Stadt ist zu billig, sagt der VC\u00d6",
+    "id": "1kr0e3k",
+    "title": "How to say Vienna in various languages",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "nebulnaskigxulo",
+    "score": 119,
+    "upvote_ratio": 0.97,
+    "controversiality": 0.6900000000000006,
+    "created_utc": "2025-05-20 11:12:53 CEST",
+    "num_comments": 23,
+    "url": "https://i.redd.it/yzelylqwot1f1.png",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Memes: Memes"
+  },
+  {
+    "id": "1kqyh0j",
+    "title": "Parken in der Stadt ist zu billig, sagt der VCÖ",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "author": "KFSattmann",
-    "score": 84,
-    "upvote-ratio": 0.84,
-    "created-utc": "2025-05-20 08:54:38 CEST",
-    "num-comments": 55,
+    "score": 106,
+    "upvote_ratio": 0.84,
+    "controversiality": 12.960000000000003,
+    "created_utc": "2025-05-20 08:54:38 CEST",
+    "num_comments": 81,
     "url": "https://www.derstandard.at/story/3000000270425/parken-in-der-stadt-ist-zu-billig-sagt-der-vcoe",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
+  },
+  {
+    "id": "1kr0h6g",
+    "title": "Ankündigung der Eröffnung der U2 von Karlsplatz bis Schottenring (1980)",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "Turtle456",
+    "score": 49,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
+    "created_utc": "2025-05-20 11:19:05 CEST",
+    "num_comments": 13,
+    "url": "https://i.redd.it/hdh65xoamw1f1.jpeg",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Kurios: Kurios | Interesting"
+  },
+  {
+    "id": "1kr0ua4",
+    "title": "Unbekannte gegen \"Immowappla\": Wer hat die Gumpendorfer Straße 63E besetzt?",
+    "title_sentiment": {
+      "neg": 0.302,
+      "neu": 0.698,
+      "pos": 0.0,
+      "compound": -0.5994
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "KFSattmann",
+    "score": 29,
+    "upvote_ratio": 0.86,
+    "controversiality": 0.14,
+    "created_utc": "2025-05-20 11:44:58 CEST",
+    "num_comments": 1,
+    "url": "https://www.derstandard.at/story/3000000270431/unbekannte-gegen-immowappla-wer-hat-die-gumpendorfer-strasse-63e-besetzt",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
   },
   {
     "id": "1kqhi3y",
-    "title": "Strafe f\u00fcr Pfandflasche neben M\u00fcll",
-    "selftext": "Hallo Leute. Heute habe ich Glas zum M\u00fcllcontainer gebracht. Habe dabei bemerkt das ich eine Glaspfandflasche dabei hatte. Dachte mir zum Wegschmei\u00dfen zu schade also stell ich sie daneben hin falls ein Obdachloser oder wer es halt n\u00f6tig hat als Pfand mitnehmen kann. Als ich sie abstellte und wegging hat mich eine waste watcher komplett zusammengeschissen und gesagt ich mu\u00df die Flasche entsorgen und was ich mir einbilden sie daneben stehen zu lassen. \nTja so l\u00e4uft das in Wien. Das sind richtige heisln, wie krank ist das au\u00dferdem das die zu Zweit in Meidling eine M\u00fcllinsel bewachen. Sollten lieber mal den Zigtausend tschickstummel nachermitteln. \nFind es einfach frech in Deutschland stellst die Flaschen zum M\u00fcll hin und es nimmt sie wer. In Wien bekommt 50,- Strafe wenn du was gutes tun willst. ",
+    "title": "Strafe für Pfandflasche neben Müll",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Hallo Leute. Heute habe ich Glas zum Müllcontainer gebracht. Habe dabei bemerkt das ich eine Glaspfandflasche dabei hatte. Dachte mir zum Wegschmeißen zu schade also stell ich sie daneben hin falls ein Obdachloser oder wer es halt nötig hat als Pfand mitnehmen kann. Als ich sie abstellte und wegging hat mich eine waste watcher komplett zusammengeschissen und gesagt ich muß die Flasche entsorgen und was ich mir einbilden sie daneben stehen zu lassen. \nTja so läuft das in Wien. Das sind richtige heisln, wie krank ist das außerdem das die zu Zweit in Meidling eine Müllinsel bewachen. Sollten lieber mal den Zigtausend tschickstummel nachermitteln. \nFind es einfach frech in Deutschland stellst die Flaschen zum Müll hin und es nimmt sie wer. In Wien bekommt 50,- Strafe wenn du was gutes tun willst. ",
+    "body_sentiment": {
+      "neg": 0.102,
+      "neu": 0.898,
+      "pos": 0.0,
+      "compound": -0.9382
+    },
     "author": "Ok-Commercial9489",
-    "score": 237,
-    "upvote-ratio": 0.83,
-    "created-utc": "2025-05-19 19:23:55 CEST",
-    "num-comments": 121,
-    "url": "https://www.reddit.com/r/wien/comments/1kqhi3y/strafe_f\u00fcr_pfandflasche_neben_m\u00fcll/",
+    "score": 263,
+    "upvote_ratio": 0.84,
+    "controversiality": 20.640000000000004,
+    "created_utc": "2025-05-19 19:23:55 CEST",
+    "num_comments": 129,
+    "url": "https://www.reddit.com/r/wien/comments/1kqhi3y/strafe_für_pfandflasche_neben_müll/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
+  },
+  {
+    "id": "1kqz2tk",
+    "title": "Das Burgenland und Niederösterreich in Wien",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "wegwerferie",
+    "score": 3,
+    "upvote_ratio": 0.72,
+    "controversiality": 0.0,
+    "created_utc": "2025-05-20 09:36:54 CEST",
+    "num_comments": 0,
+    "url": "https://wien.orf.at/stories/3305911/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Kultur: Kultur | Culture"
   },
   {
     "id": "1kq6ai1",
     "title": "Ignorieren, oder auszucken und melden? Falls melden... wen?",
-    "selftext": "Sehe dieses Verhalten in letzter Zeit immer \u00f6fters, besonders bei Querparkern. Fahrzeuge, die bei weitem zu lang f\u00fcr die Stellfl\u00e4che sind. Besonders witzig dann, wenn es zweispurig ist und du zum ausweichen in die Gegenfahrbahn muss.  \nBei dem Beispiel am Bild waren beim vorbeiquetschen links und rechts vllt. mal 10 cm zu den R\u00fcckspiegeln.\n\nMeldet ihr sowas, oder wird das einfach angefressen ignoriert? Falls man das melden will. Wohin wendet man sich?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Sehe dieses Verhalten in letzter Zeit immer öfters, besonders bei Querparkern. Fahrzeuge, die bei weitem zu lang für die Stellfläche sind. Besonders witzig dann, wenn es zweispurig ist und du zum ausweichen in die Gegenfahrbahn muss.  \nBei dem Beispiel am Bild waren beim vorbeiquetschen links und rechts vllt. mal 10 cm zu den Rückspiegeln.\n\nMeldet ihr sowas, oder wird das einfach angefressen ignoriert? Falls man das melden will. Wohin wendet man sich?",
+    "body_sentiment": {
+      "neg": 0.149,
+      "neu": 0.851,
+      "pos": 0.0,
+      "compound": -0.9195
+    },
     "author": "BulTV",
-    "score": 287,
-    "upvote-ratio": 0.92,
-    "created-utc": "2025-05-19 10:07:03 CEST",
-    "num-comments": 84,
+    "score": 298,
+    "upvote_ratio": 0.92,
+    "controversiality": 6.959999999999996,
+    "created_utc": "2025-05-19 10:07:03 CEST",
+    "num_comments": 87,
     "url": "https://i.redd.it/ml12w5lk4p1f1.jpeg",
     "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1kqz2tk",
-    "title": "Das Burgenland und Nieder\u00f6sterreich in Wien",
-    "selftext": "",
-    "author": "wegwerferie",
-    "score": 3,
-    "upvote-ratio": 0.8,
-    "created-utc": "2025-05-20 09:36:54 CEST",
-    "num-comments": 0,
-    "url": "https://wien.orf.at/stories/3305911/",
-    "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
   },
   {
     "id": "1kr08xe",
     "title": "Bakterien, Viren und die Stadt Wien, arbeitet jemand in dem Bereich? Forschung zu Mikroben und der Stadt",
-    "selftext": "Hallo liebe Leute,\n\nich f\u00fchre gerade ein Forschungsprojekt zu Mikroben und Stadt durch, genauer gesagt wie eine Stadt wie Wien mit der potentiellen Bedrohung, aber auch Notwendigkeit von mikrobieller Pr\u00e4senz (Bakterien, Viren, etc.) umgeht, und wie die Tatsache der mikrobiellen Beweglichkeit politisch und Stadtverwalterisch gefasst werden kann. Das klingt sehr hochtrabend, aber im Grunde m\u00f6chte ich gerne von Menschen erfahren, die damit in ihrer allt\u00e4glichen Arbeit konkret befasst sind, etwa im Umgang und der Entsorgung von biologischen Material (aus Krankenh\u00e4usern und Laboren etwa, aber auch Bestattung), im Abwassermonitoring oder Kl\u00e4ranlagen, in der Arbeit mit Tieren etc.\n\nFalls jemand in der Richtung etwas zu tun hat damit und das mit mir teilen m\u00f6chte, w\u00fcrde ich mich sehr dar\u00fcber freuen! \n\nN\u00e4here Infos gerne per DM\n\n\n\nLiebe Gr\u00fc\u00dfe! ",
+    "title_sentiment": {
+      "neg": 0.196,
+      "neu": 0.804,
+      "pos": 0.0,
+      "compound": -0.5994
+    },
+    "selftext": "Hallo liebe Leute,\n\nich führe gerade ein Forschungsprojekt zu Mikroben und Stadt durch, genauer gesagt wie eine Stadt wie Wien mit der potentiellen Bedrohung, aber auch Notwendigkeit von mikrobieller Präsenz (Bakterien, Viren, etc.) umgeht, und wie die Tatsache der mikrobiellen Beweglichkeit politisch und Stadtverwalterisch gefasst werden kann. Das klingt sehr hochtrabend, aber im Grunde möchte ich gerne von Menschen erfahren, die damit in ihrer alltäglichen Arbeit konkret befasst sind, etwa im Umgang und der Entsorgung von biologischen Material (aus Krankenhäusern und Laboren etwa, aber auch Bestattung), im Abwassermonitoring oder Kläranlagen, in der Arbeit mit Tieren etc.\n\nFalls jemand in der Richtung etwas zu tun hat damit und das mit mir teilen möchte, würde ich mich sehr darüber freuen! \n\nNähere Infos gerne per DM\n\n\n\nLiebe Grüße! ",
+    "body_sentiment": {
+      "neg": 0.064,
+      "neu": 0.936,
+      "pos": 0.0,
+      "compound": -0.855
+    },
     "author": "modertonne",
     "score": 2,
-    "upvote-ratio": 1.0,
-    "created-utc": "2025-05-20 11:02:38 CEST",
-    "num-comments": 0,
+    "upvote_ratio": 0.75,
+    "controversiality": 1.25,
+    "created_utc": "2025-05-20 11:02:38 CEST",
+    "num_comments": 5,
     "url": "https://www.reddit.com/r/wien/comments/1kr08xe/bakterien_viren_und_die_stadt_wien_arbeitet/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Arbeit: Arbeit | Work"
   },
   {
     "id": "1kqwqfu",
     "title": "Rotes Wien und die Welt des Mr. Pim | Cinema Austriaco",
+    "title_sentiment": {
+      "neg": 0.281,
+      "neu": 0.719,
+      "pos": 0.0,
+      "compound": -0.5994
+    },
     "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "author": "wegwerferie",
     "score": 4,
-    "upvote-ratio": 0.83,
-    "created-utc": "2025-05-20 06:57:14 CEST",
-    "num-comments": 2,
+    "upvote_ratio": 0.83,
+    "controversiality": 0.3400000000000001,
+    "created_utc": "2025-05-20 06:57:14 CEST",
+    "num_comments": 2,
     "url": "https://cinema-austriaco.org/de/2023/07/16/rotes-wien-und-die-welt-des-mr-pim/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Kultur: Kultur | Culture"
+  },
+  {
+    "id": "1kr17nx",
+    "title": "Bewerbung für den Master an der WU Wien – Was zählt am meisten im Auswahlprozess?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Hallo zusammen!\nIch weiß, dass das hier nicht das offizielle Subreddit für die WU Wien ist, aber da dort nicht viel los ist, versuche ich hier mein Glück:\n\nIch plane, mich für ein Masterstudium an der WU Wien zu bewerben – idealerweise im Bereich Quantitative Finance oder ein anderes wirtschafts-/finanzbezogenes Programm – und würde mich sehr über Einblicke von Leuten freuen, die den Bewerbungsprozess schon hinter sich haben oder sich mit dem Thema gut auskennen.\n\nIch schließe bald meinen Bachelor in Finance mit guten Noten ab. Außerdem war ich als Analyst im Investment Fund meiner Uni aktiv und habe rund ein Jahr zusätzliche Erfahrung in finance-bezogenen Tätigkeiten gesammelt. Ich lerne aktuell für den GRE, auch wenn der für viele Programme nicht verpflichtend ist.\n\nMeine Fragen wären:\n\t•\tWorauf wird bei der Bewerbung am meisten geachtet? Noten? Relevante Erfahrung? Motivationsschreiben?\n\t•\tMacht es einen großen Unterschied, wenn man den (optionalen) GRE mitschickt?\n\t•\tGibt’s Dinge, die man über das Leben oder das Studium in Wien unbedingt wissen sollte?\n\nWürde mich riesig über Tipps, Erfahrungen oder einfach ehrliche Einschätzungen freuen – danke euch im Voraus!",
+    "body_sentiment": {
+      "neg": 0.087,
+      "neu": 0.913,
+      "pos": 0.0,
+      "compound": -0.9592
+    },
+    "author": "Warm-Wear1868",
+    "score": 0,
+    "upvote_ratio": 0.5,
+    "controversiality": 0.5,
+    "created_utc": "2025-05-20 12:09:50 CEST",
+    "num_comments": 1,
+    "url": "https://www.reddit.com/r/wien/comments/1kr17nx/bewerbung_für_den_master_an_der_wu_wien_was_zählt/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
+  },
+  {
+    "id": "1kqxy6h",
+    "title": "Wie voll ist es in der Albertina?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Ich würde gerne unter der Woche an einem für alle normalen Arbeitstag in die Albertina gehen. Hat jemand Erfahrungen damit, wie sehr es unter der Woche dort zugeht mit Touristen? Macht die Tageszeit einen Unterschied? ",
+    "body_sentiment": {
+      "neg": 0.198,
+      "neu": 0.802,
+      "pos": 0.0,
+      "compound": -0.8466
+    },
+    "author": "NetNo973",
+    "score": 2,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
+    "created_utc": "2025-05-20 08:17:47 CEST",
+    "num_comments": 2,
+    "url": "https://www.reddit.com/r/wien/comments/1kqxy6h/wie_voll_ist_es_in_der_albertina/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
   },
   {
     "id": "1kqabbb",
-    "title": "How do i report junkies entering private property (Entschuldigung f\u00fcr Englisch post)?",
-    "selftext": "I live in the 10th (close to U1 Trostra\u00dfe) in an apartment complex with a sort of 'garden'/green area right in front. It is technically private property, but there is just a gate that anyone can open, and other open entrances, so naturally a lot of just people come in and sit on the grass, leave trash etc. But what really bothers me more, is that almost everyday I  come out of my house and I am welcomed by someone, or sometimes multiple people, sitting on a bench injecting drugs. It's not even the same people everytime too.\n\nI find this so disrespectful, especially since there are obviously children around who have to see this right outside their home. Does anyone know what I can do about this? Who am I supposed to contact? I am still learning German so I get a bit discouraged to know how to speak to the authorities (and the correct ones).\n\nSo can anyone guide me as to who to report this case to? Maybe I have to call a certain department?\n\nVielen dank f\u00fcr ihren Hilfe!",
+    "title": "How do i report junkies entering private property (Entschuldigung für Englisch post)?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "I live in the 10th (close to U1 Trostraße) in an apartment complex with a sort of 'garden'/green area right in front. It is technically private property, but there is just a gate that anyone can open, and other open entrances, so naturally a lot of just people come in and sit on the grass, leave trash etc. But what really bothers me more, is that almost everyday I  come out of my house and I am welcomed by someone, or sometimes multiple people, sitting on a bench injecting drugs. It's not even the same people everytime too.\n\nI find this so disrespectful, especially since there are obviously children around who have to see this right outside their home. Does anyone know what I can do about this? Who am I supposed to contact? I am still learning German so I get a bit discouraged to know how to speak to the authorities (and the correct ones).\n\nSo can anyone guide me as to who to report this case to? Maybe I have to call a certain department?\n\nVielen dank für ihren Hilfe!",
+    "body_sentiment": {
+      "neg": 0.045,
+      "neu": 0.925,
+      "pos": 0.03,
+      "compound": -0.4573
+    },
     "author": "nbeecee",
     "score": 31,
-    "upvote-ratio": 0.84,
-    "created-utc": "2025-05-19 14:22:44 CEST",
-    "num-comments": 8,
+    "upvote_ratio": 0.84,
+    "controversiality": 1.2800000000000002,
+    "created_utc": "2025-05-19 14:22:44 CEST",
+    "num_comments": 8,
     "url": "https://www.reddit.com/r/wien/comments/1kqabbb/how_do_i_report_junkies_entering_private_property/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
   },
   {
     "id": "1kqbig8",
     "title": "Mehr Anzeigen wegen K.-o.-Tropfen",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
     "author": "KFSattmann",
-    "score": 20,
-    "upvote-ratio": 0.92,
-    "created-utc": "2025-05-19 15:20:07 CEST",
-    "num-comments": 3,
+    "score": 22,
+    "upvote_ratio": 0.96,
+    "controversiality": 0.1200000000000001,
+    "created_utc": "2025-05-19 15:20:07 CEST",
+    "num_comments": 3,
     "url": "https://wien.orf.at/stories/3305950/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Posthorn-L: Nachrichten | News"
   },
   {
     "id": "1kqbgp1",
     "title": "Unfall und Versicherung? Erstes Mal...",
-    "selftext": "Ich hatte vor ca 1 Monat ein Fahrradunfall. Ich selbst hatte gsd nichts, aber der Autofahrer der ohne zu blinken und ohne zu schauen vor mir abgebogen ist war eindeutig Schuld. Er wollte mich mit eine Visitenkarte abspeisen weil er es so eilig hat, aber ich habe die Polizei geholt der zuf\u00e4llig gerade vorbeigefahren ist.\n\nEs wurde ein Unfallbericht ausgef\u00fcllt, und ich habe jetzt der Reparaturrechnung von mein Fahrrad.\n\nIch habe ein Mail an seine Versicherung geschickt mit der Frage wie ich weitermachen kann, und es wurde geantwortet dass noch keine Unfallmeldung vom ihm eingetroffen ist.\n\nEs w\u00e4re das erste Mal f\u00fcr mich, ich hatte nie selbst ein Auto, habe also nie ein Unfall beim meine Autoversicherung machen m\u00fcssen. Ich wei\u00df also nicht was zu tun ist...\n\nKann mir jemand weiterhelfen? Muss ich der Fahrer kontaktieren damit er ein Unfallbericht abgibt? Sein Auto hatte ja null Schaden, also warum sollte er das machen? Oder soll ich der Polizei kontaktieren ob die ein offizielles Unfallprotokoll aufgestellt haben? Es gab keine Verletzten, kein Schaden am Auto, nur ein kaputtes Fahrrad-Vorderrad...",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Ich hatte vor ca 1 Monat ein Fahrradunfall. Ich selbst hatte gsd nichts, aber der Autofahrer der ohne zu blinken und ohne zu schauen vor mir abgebogen ist war eindeutig Schuld. Er wollte mich mit eine Visitenkarte abspeisen weil er es so eilig hat, aber ich habe die Polizei geholt der zufällig gerade vorbeigefahren ist.\n\nEs wurde ein Unfallbericht ausgefüllt, und ich habe jetzt der Reparaturrechnung von mein Fahrrad.\n\nIch habe ein Mail an seine Versicherung geschickt mit der Frage wie ich weitermachen kann, und es wurde geantwortet dass noch keine Unfallmeldung vom ihm eingetroffen ist.\n\nEs wäre das erste Mal für mich, ich hatte nie selbst ein Auto, habe also nie ein Unfall beim meine Autoversicherung machen müssen. Ich weiß also nicht was zu tun ist...\n\nKann mir jemand weiterhelfen? Muss ich der Fahrer kontaktieren damit er ein Unfallbericht abgibt? Sein Auto hatte ja null Schaden, also warum sollte er das machen? Oder soll ich der Polizei kontaktieren ob die ein offizielles Unfallprotokoll aufgestellt haben? Es gab keine Verletzten, kein Schaden am Auto, nur ein kaputtes Fahrrad-Vorderrad...",
+    "body_sentiment": {
+      "neg": 0.067,
+      "neu": 0.933,
+      "pos": 0.0,
+      "compound": -0.9282
+    },
     "author": "GreyDutchman",
-    "score": 8,
-    "upvote-ratio": 0.84,
-    "created-utc": "2025-05-19 15:17:54 CEST",
-    "num-comments": 4,
+    "score": 9,
+    "upvote_ratio": 0.91,
+    "controversiality": 0.3599999999999999,
+    "created_utc": "2025-05-19 15:17:54 CEST",
+    "num_comments": 4,
     "url": "https://www.reddit.com/r/wien/comments/1kqbgp1/unfall_und_versicherung_erstes_mal/",
     "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
   },
   {
-    "id": "1kqxzxe",
-    "title": "Gute Ideen f\u00fcr einen Geburtstag in Wien",
-    "selftext": "Eine Freundin von mir hat n\u00e4chstes Wochenende Geburtstag und wir w\u00fcrden gern mit insg. 4-6 Personen was Nettes unternehmen. Da wir aber alle nicht urspr\u00fcnglich aus Wien kommen (andere Bundesl\u00e4nder) w\u00fcrden wir gern die Wiener Community um Ideen bitten\nbitten.\n\nWas wir schon selbst gefunden haben ist ein (ziemlich teurer) Bootsverleih, kennt ihr den? https://www.meine-insel.at/ \n\nSonst gibt's noch diese 90's Super Show, da hab ich aber hier auf Reddit eher schlechtes gelesen und billig ist es leider auch nicht grad. Hat jemand noch Erfahrungswerte?\n\nWir w\u00e4ren f\u00fcr alles offen: Natur, Musik, Kultur, Essen... Was habt ihr schon mal an einem Wochenende in Wien gemacht und euch danach gedacht, dass das a super Idee war?",
-    "author": "trappa_keepa",
+    "id": "1kr1882",
+    "title": "DSGVO ein Schimpfwort bei Wiener Wohnen?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Ich kenne mich leider nicht ganz so gut mit der DSGVO aus, aber ist es rechtens, wenn an 6 Bildschirmen im Wartebereich mein Name und die Namen der Personen, welche nach mir einen Termin haben (inkl Uhrzeit des Termins) angezeigt wird? \n\nFind ich ehrlich gesagt schon etwas komisch. Oder habe ich beim unterzeichnen meines Mietvertrages (schon paar Jährchen her) etwas im Kleingedruckten überlesen?  \n",
+    "body_sentiment": {
+      "neg": 0.064,
+      "neu": 0.936,
+      "pos": 0.0,
+      "compound": -0.644
+    },
+    "author": "master_ofpaprikachip",
     "score": 0,
-    "upvote-ratio": 0.29,
-    "created-utc": "2025-05-20 08:21:08 CEST",
-    "num-comments": 13,
-    "url": "https://www.reddit.com/r/wien/comments/1kqxzxe/gute_ideen_f\u00fcr_einen_geburtstag_in_wien/",
+    "upvote_ratio": 0.28,
+    "controversiality": 15.84,
+    "created_utc": "2025-05-20 12:10:50 CEST",
+    "num_comments": 22,
+    "url": "https://www.reddit.com/r/wien/comments/1kr1882/dsgvo_ein_schimpfwort_bei_wiener_wohnen/",
     "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1kqc4lv",
-    "title": "Schlichtungsstelle",
-    "selftext": "Hallo Wien,\n\nbin Student, wohn in einer WG, und unser Warmwasser funktioniert seit M\u00e4rz in immer gr\u00f6\u00dfer werdenden Intervallen nicht mehr. Wir sind unserer Wartungspflicht der Therme wie gesetzlich verlangt nachgekommen. Es waren auch schon \u00f6fter Handwerker da, die alle meinten, dass die Therme ausgewechselt geh\u00f6rt. \nDie Hausverwaltung macht wie zu erwarten gar nichts und meldet sich auch nicht mehr bei uns. Mietzinsminderung wurde von ihnen aus abgelehnt und reparieren wollen sie es anscheinend auch nicht. \nJetzt zur Frage, ist es schlau ohne Rechtsbeistand vor die Schlichtungsstelle zu gehen? \nMietervereinigung wurde mir schonmal als Tipp genannt, der scha\u00df kostet dann halt gleich mal 400-500\u20ac, nur das die des machen und wie gesagt, bin Student.\nIrgendwelche Erfahrung und/oder Tipps?\n\nSch\u00f6nen Start in die Woche w\u00fcnsch ich!",
-    "author": "LordEllings",
-    "score": 5,
-    "upvote-ratio": 0.86,
-    "created-utc": "2025-05-19 15:47:27 CEST",
-    "num-comments": 14,
-    "url": "https://www.reddit.com/r/wien/comments/1kqc4lv/schlichtungsstelle/",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1kpl119",
-    "title": "Pokemon-Karten Automat am Westbahnhof",
-    "selftext": "mehr gibts bei dem Post ned fands nur interessant weil i sowos noch nie gsehn hab\u2026",
-    "author": "_sergeant_pepper",
-    "score": 183,
-    "upvote-ratio": 0.94,
-    "created-utc": "2025-05-18 16:17:50 CEST",
-    "num-comments": 54,
-    "url": "https://www.reddit.com/gallery/1kpl119",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1kqisjk",
-    "title": "Geschichte meiner Wohnung und Gasse in der Leopoldstadt. Wo finde ich mehr Infos und Hintergrund und Bilder dazu?",
-    "selftext": "Servus zusammen,\n\nich bin vor einem Jahr in meine aktuelle Wohnung gezogen und bin dann auf ein bisschen Geschichte dieser Wohnung und dieses Hauses gesto\u00dfen. Ich w\u00fcrde der Geschichte meiner Gasse und dem Haus gerne weiter auf den Grund gehen, ich find es total spannend wer hier vor mir mal gelebt hat. Wie komm ich dazu an mehr Informationen? Komme ich irgendwie an Bilder?",
-    "author": "christianv142",
-    "score": 1,
-    "upvote-ratio": 0.6,
-    "created-utc": "2025-05-19 20:13:17 CEST",
-    "num-comments": 5,
-    "url": "https://www.reddit.com/r/wien/comments/1kqisjk/geschichte_meiner_wohnung_und_gasse_in_der/",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1kq51bz",
-    "title": "Bester Ruderverein in Wien",
-    "selftext": "Ich habe mit drei Freunden einen Ruderkurs besucht und \u00fcberlege jetzt eine Mitgliedschaft abzuschlie\u00dfen. Da es an der alten Donau einige Rudervereine gibt und die Mitgliedschaft doch recht teuer ist, bin ich gerade am recherchieren. Wir brauchen keine sozialen Events bzw. Community. Wir wollen einfach immer wieder mal rudern gehen, ev ein sch\u00f6ner Badestrand/steg und paar nette Zusatzfeatures (Standup-Paddle, etc), die man auch mit Familie nutzen kann. Wer hat gute Erfahrungen gemacht? ",
-    "author": "Hot_Class_2703",
-    "score": 8,
-    "upvote-ratio": 0.9,
-    "created-utc": "2025-05-19 08:38:15 CEST",
-    "num-comments": 1,
-    "url": "https://www.reddit.com/r/wien/comments/1kq51bz/bester_ruderverein_in_wien/",
-    "awards": 0,
-    "edited": false
-  },
-  {
-    "id": "1kq6zcq",
-    "title": "wo kriegt man in wien dosa??",
-    "selftext": "ich liebe indisch aber keines der restaurants die ich kenne hat dosa :(",
-    "author": "meatnutella",
-    "score": 6,
-    "upvote-ratio": 0.69,
-    "created-utc": "2025-05-19 10:57:59 CEST",
-    "num-comments": 17,
-    "url": "https://www.reddit.com/r/wien/comments/1kq6zcq/wo_kriegt_man_in_wien_dosa/",
-    "awards": 0,
-    "edited": false
+    "edited": false,
+    "flair": ":Frage: Frage | Question"
   }
 ]
