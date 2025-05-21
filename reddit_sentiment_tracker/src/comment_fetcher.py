@@ -2,11 +2,11 @@
 from reddit_client import analyze_sentiment
 from utils import to_vienna_time
 
-
-def fetch_comments(reddit, post_id: str, REPLY_DEPTH, COMMENT_LIMIT) -> list[dict]:
-    """ Basic comment fetcher - gets top-level comments only
-    Returns: List of comment dicts with basic info + sentiment """
-    limit = COMMENT_LIMIT
+def fetch_comments(reddit, post_id, REPLY_DEPTH, COMMENT_LIMIT) -> list[dict]:
+    """ 
+    Comment fetcher - gets top-level comments only
+    Returns: List of comment dicts with basic info + sentiment
+    """
     try:
         # returns submission object that contains all the posts data (title, content, author etc)
         submission = reddit.submission(id=post_id)
@@ -15,6 +15,7 @@ def fetch_comments(reddit, post_id: str, REPLY_DEPTH, COMMENT_LIMIT) -> list[dic
         submission.comments.replace_more(limit=REPLY_DEPTH)
         
         comments_data = []
+        limit = COMMENT_LIMIT
 
         # using a python slicer ":limit" to limit the amount of comments fetched
         for comment in submission.comments[:limit]:

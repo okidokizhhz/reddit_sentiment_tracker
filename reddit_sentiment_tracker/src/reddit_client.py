@@ -1,6 +1,4 @@
-# REDDIT SENTIMENT TRACKER
 # ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/reddit_client.py
-
 import praw.exceptions
 import os
 import json

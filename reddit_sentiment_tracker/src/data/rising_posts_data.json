@@ -1,5 +1,47 @@
 [
   {
+    "id": "1krsvyx",
+    "title": "Gratis Reparaturen",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 0.455,
+      "pos": 0.545,
+      "compound": 0.0516
+    },
+    "selftext": "Weil das iwie nicht viele mitbekommen haben, aber diesen Freitag und Samstag findet von 10-18 Uhr die repair:fair Wien statt im Museumsquartier. Eine Reparaturmesse der Stadt Wien Umweltschutz (MA22). Dort kann man sich informieren über Reparaturen und aber auch kleinere Reparaturen direkt vor Ort erledigen lassen für Elektro und Textilien brauchts eine Anmeldung aber mit Fahrrädern kann man einfach so hin und sich die herrichten lassen. Außerdem gibt es Kleidertauschparty, Second-Hand Shops von der Volkshilfe, Caritas und der 48er (MA48). Außerdem gibt es musikalisches Rahmenprogramm, viele Reparatur-Aussteller zu unterschiedlichsten Dingen wie Puppen, Gitarren, PCs uvm. Alles bei freiem Eintritt. Mehr Infos bekommt ihr ausm Link! ",
+    "body_sentiment": {
+      "neg": 0.073,
+      "neu": 0.927,
+      "pos": 0.0,
+      "compound": -0.8439
+    },
+    "author": "ManufacturerFit5832",
+    "score": 25,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
+    "created_utc": "2025-05-21 10:39:42 CEST",
+    "num_comments": 2,
+    "url": "https://www.wien.gv.at/umweltschutz/repairfair.html",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Kurios: Kurios | Interesting",
+    "comments": [
+      {
+        "id": "mtg50e3",
+        "text": "RemindMe! 2 days",
+        "author": "CakeOk2392",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        },
+        "created": "2025-05-21 12:07:41 CEST"
+      }
+    ]
+  },
+  {
     "id": "1krqfzw",
     "title": "\"Nein zur Halle\" – Aktivisten planen neues Protestcamp | Heute.at",
     "title_sentiment": {
@@ -16,11 +58,11 @@
       "compound": 0.0
     },
     "author": "wegwerferie",
-    "score": 25,
-    "upvote_ratio": 0.73,
-    "controversiality": 13.770000000000001,
+    "score": 34,
+    "upvote_ratio": 0.78,
+    "controversiality": 18.04,
     "created_utc": "2025-05-21 07:46:38 CEST",
-    "num_comments": 51,
+    "num_comments": 82,
     "url": "https://www.heute.at/s/nein-zur-halle-aktivisten-planen-neues-protestcamp-120109110",
     "awards": 0,
     "edited": false,
@@ -68,32 +110,72 @@
     ]
   },
   {
-    "id": "1krsvyx",
-    "title": "Gratis Reparaturen",
+    "id": "1krsw1l",
+    "title": "Physik Bachelor lieber an der TU Wien oder Uni Wien?",
     "title_sentiment": {
       "neg": 0.0,
-      "neu": 0.455,
-      "pos": 0.545,
-      "compound": 0.0516
-    },
-    "selftext": "Weil das iwie nicht viele mitbekommen haben, aber diesen Freitag und Samstag findet von 10-18 Uhr die repair:fair Wien statt im Museumsquartier. Eine Reparaturmesse der Stadt Wien Umweltschutz (MA22). Dort kann man sich informieren über Reparaturen und aber auch kleinere Reparaturen direkt vor Ort erledigen lassen für Elektro und Textilien brauchts eine Anmeldung aber mit Fahrrädern kann man einfach so hin und sich die herrichten lassen. Außerdem gibt es Kleidertauschparty, Second-Hand Shops von der Volkshilfe, Caritas und der 48er (MA48). Außerdem gibt es musikalisches Rahmenprogramm, viele Reparatur-Aussteller zu unterschiedlichsten Dingen wie Puppen, Gitarren, PCs uvm. Alles bei freiem Eintritt. Mehr Infos bekommt ihr ausm Link! ",
-    "body_sentiment": {
-      "neg": 0.073,
-      "neu": 0.927,
+      "neu": 1.0,
       "pos": 0.0,
-      "compound": -0.8439
+      "compound": 0.0
     },
-    "author": "ManufacturerFit5832",
-    "score": 11,
-    "upvote_ratio": 1.0,
-    "controversiality": 0.0,
-    "created_utc": "2025-05-21 10:39:42 CEST",
-    "num_comments": 0,
-    "url": "https://www.wien.gv.at/umweltschutz/repairfair.html",
+    "selftext": "Wie der Titel schon sagt. Ich werde im Oktober nach Wien ziehen und habe jetzt oft gelesen, dass es im Bachelor noch ziemlich egal ist, an welcher der beiden man Physik studiert. Sollte ich dann eher anhand des Gebäudes/der Lage entscheiden oder welche Aspekte sollte ich betrachten?\n\nIch kann mich absolut nicht entscheiden, weil einige auch meinen, dass die TU irgendwie angesehener ist, bzw. der Abschluss höher gewertet wird aber eigentlich ist mir die Uni Wien sympathischer von dem, was ich so mitbekomme.",
+    "body_sentiment": {
+      "neg": 0.088,
+      "neu": 0.912,
+      "pos": 0.0,
+      "compound": -0.8316
+    },
+    "author": "xenuniz",
+    "score": 5,
+    "upvote_ratio": 0.7,
+    "controversiality": 3.0000000000000004,
+    "created_utc": "2025-05-21 10:39:51 CEST",
+    "num_comments": 10,
+    "url": "https://www.reddit.com/r/wien/comments/1krsw1l/physik_bachelor_lieber_an_der_tu_wien_oder_uni/",
     "awards": 0,
     "edited": false,
-    "flair": ":Kurios: Kurios | Interesting",
-    "comments": []
+    "flair": ":Bildung: Bildungsfrage | Education-related Question",
+    "comments": [
+      {
+        "id": "mtfx75d",
+        "text": "Von wem angesehener? Von wem höher gewertet?\nAm Ende ists Wurscht. Mach das, was du willst…was sich besser anfühlt für dich etc. VL auch das wo die Zeiten vom Unterricht etc. besser sind. Wo du schneller hinkommst oder sonstiges.\n\nEdit: niemand wird dich auf Grund deiner Wahl nicht anstellen wollen. Am Schluss hast du einen Abschluss in Physik und kannst ihn vermutlich sehr gut verkaufen.",
+        "author": "K00pfnu55",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.062,
+          "neu": 0.938,
+          "pos": 0.0,
+          "compound": -0.644
+        },
+        "created": "2025-05-21 10:47:36 CEST"
+      },
+      {
+        "id": "mtfyff2",
+        "text": "Niemand wird den Bachelor an beiden Unis gemacht haben, drum gibts keine objektiven Erfahrungsberichte. Ich kenne Leute an beiden Unis und würde es aus deren Erzählungen so einschätzen: an der TU muss man etwas mehr leisten als an der Uni Wien, die TU ist stärker organisiert, Uni Wien lässt etwas mehr Freiheiten. Die Bachelorstudiengänge werden aber keine massiven Unterschiede in den Inhalten haben. Du machst mit beiden Wahlen nichts falsch. Vibes von den Studenten kamen mir an der TU so vor, als wären sie mehr die typischen \"Techniker\". Aber wie gesagt: alles nur geraten.\n\nIch pesönlich würde mich für die TU entscheiden, weil ich von der klareren Organisation eher profitiere. Schau dir auch mal die Curricula beider Studiengänge an, vielleicht hilft dir das bei der Entscheidung. Ist etwas früh, aber ich würde auch schon überlegen ob und wo du den Master machen möchtest. Erfahrungsgemäß sind soziale Gruppen im Master schon ziemlich gefestigt, wenn du also vor hast an der TU deinen Master zu machen, würde ich den Bachelor auch an der TU machen.\n\nSchlussendlich würde ich empfehlen aus dem Bauch heraus zu entscheiden. Wie du gemerkt hast ist es nicht klar, welche Uni besser ist und das wirst du im vorhinein auch nicht entscheiden können. Solltest du deine Wahl bereuen, kannst du immer noch von der einen Uni an die Andere wechseln und dir deine Kurse anrechnen lassen.",
+        "author": "fzorn",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.095,
+          "neu": 0.905,
+          "pos": 0.0,
+          "compound": -0.9761
+        },
+        "created": "2025-05-21 11:00:22 CEST"
+      },
+      {
+        "id": "mtg2yax",
+        "text": "Habe auf beiden Unis Physik studiert! Der Unterschied ist minimal.. persönlich gefällt es mir auf der Uni Wien besser aber gibt auch Leute die das anders sehen.\n\nVom Schwierigkeitsgrad und Inhalt sind beide Bachelor quasi gleich, früher war die Uni Wien etwas einfacher weil Fächer wie Edyn nicht verpflichtend waren das wurde aber mittlerweile angeglichen.\n\nMittlerweile kannst du im Master auch fast lückenlos zwischen den Unis wechseln. Im Master ists dann halt wichtig eine Arbeitsgruppe zu finden, die Sachen macht die dich interessieren.",
+        "author": "PippoInzaghi07",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.202,
+          "neu": 0.798,
+          "pos": 0.0,
+          "compound": -0.9674
+        },
+        "created": "2025-05-21 11:47:40 CEST"
+      }
+    ]
   },
   {
     "id": "1kr827e",
@@ -112,11 +194,11 @@
       "compound": -0.9826
     },
     "author": "Educational-Dot-9430",
-    "score": 101,
+    "score": 111,
     "upvote_ratio": 0.94,
-    "controversiality": 2.8800000000000026,
+    "controversiality": 3.0000000000000027,
     "created_utc": "2025-05-20 17:41:26 CEST",
-    "num_comments": 48,
+    "num_comments": 50,
     "url": "https://www.reddit.com/r/wien/comments/1kr827e/seltsame_begegnung_am_naschmarkt_kennt_jemand_so/",
     "awards": 0,
     "edited": false,
@@ -126,7 +208,7 @@
         "id": "mtb9sow",
         "text": "klingt für mich eher nach geistiger verwirrung",
         "author": "AdvanceImpossible221",
-        "score": 251,
+        "score": 267,
         "sentiment": {
           "neg": 0.0,
           "neu": 1.0,
@@ -139,7 +221,7 @@
         "id": "mtbxan1",
         "text": "Ich glaub ich hab die in einer U-Bahnstation gesehen.\nHat auch nach einer Sonnenbrille gefragt. Bin einfach weitergegangen.\nIch glaub nicht, dass die was stehlen will. Nur verwirrt. Am besten ignorieren.",
         "author": "Karlotius",
-        "score": 25,
+        "score": 31,
         "sentiment": {
           "neg": 0.212,
           "neu": 0.788,
@@ -152,7 +234,7 @@
         "id": "mtbafw5",
         "text": "Wie konnte sie Dir ihren geklauten Ausweis zeigen? \n\nHört sich stark nach geistiger Verwirrung an. Gerade in Wien keine Seltenheit.",
         "author": "jschundpeter",
-        "score": 58,
+        "score": 67,
         "sentiment": {
           "neg": 0.0,
           "neu": 1.0,
@@ -160,6 +242,74 @@
           "compound": 0.0
         },
         "created": "2025-05-20 17:45:56 CEST"
+      }
+    ]
+  },
+  {
+    "id": "1krs125",
+    "title": "Anzeige how much of a fine to expect?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 0.795,
+      "pos": 0.205,
+      "compound": 0.2023
+    },
+    "selftext": "Hello everyone, If I parked in Vienna in a zone which says halten und parken verboten, and received an anzeige on my windshield stating that the abschleppen des Fahrzeugs wurde veranlasst“ yet I drove away before it got towed, how much of a fine will I be expecting? ",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.963,
+      "pos": 0.037,
+      "compound": 0.2023
+    },
+    "author": "Significant-City-379",
+    "score": 4,
+    "upvote_ratio": 0.63,
+    "controversiality": 2.59,
+    "created_utc": "2025-05-21 09:35:57 CEST",
+    "num_comments": 7,
+    "url": "https://www.reddit.com/r/wien/comments/1krs125/anzeige_how_much_of_a_fine_to_expect/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "comments": [
+      {
+        "id": "mtfr8rw",
+        "text": "the same thing happened to me couple of days ago. expect a fine of 58 euros in the post",
+        "author": "sendvo",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.909,
+          "pos": 0.091,
+          "compound": 0.2023
+        },
+        "created": "2025-05-21 09:44:26 CEST"
+      },
+      {
+        "id": "mtftl35",
+        "text": "Should be around 60€",
+        "author": "No-Perception5953",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        },
+        "created": "2025-05-21 10:08:55 CEST"
+      },
+      {
+        "id": "mtfqv33",
+        "text": "u will have to pay the fine for \"Abschleppen\" not sure how much 200-300 euros and also the parking fine...",
+        "author": "lerdmeister",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.146,
+          "neu": 0.697,
+          "pos": 0.157,
+          "compound": 0.0613
+        },
+        "created": "2025-05-21 09:40:29 CEST"
       }
     ]
   },
@@ -180,11 +330,11 @@
       "compound": 0.0343
     },
     "author": "Hydrozy",
-    "score": 118,
-    "upvote_ratio": 0.9,
-    "controversiality": 2.999999999999999,
+    "score": 125,
+    "upvote_ratio": 0.91,
+    "controversiality": 2.789999999999999,
     "created_utc": "2025-05-20 16:01:14 CEST",
-    "num_comments": 30,
+    "num_comments": 31,
     "url": "https://www.reddit.com/r/wien/comments/1kr5m00/sags_wien_ist_ja_wirklich_super/",
     "awards": 0,
     "edited": 1747769889.0,
@@ -194,7 +344,7 @@
         "id": "mtaws8u",
         "text": "Ich melde sehr gerne ausgefallene Beleuchtung. Das wird sich auch immer zeitnah angesehen und flott repariert.  \nDie App ist manchmal bissi buggy, aber alles in allem funktioniert es super! Kann sie auch sehr empfehlen.",
         "author": "Spontanvegetation420",
-        "score": 46,
+        "score": 54,
         "sentiment": {
           "neg": 0.098,
           "neu": 0.804,
@@ -207,7 +357,7 @@
         "id": "mtb2v23",
         "text": "Ich vrwends für entsorgte Räder, die seit einem Jahr an den Fahrradständer gekettet sind und schon komplett hin. Die bekommen dann ein Ettikett und werden entsprechend entsorgt. Funktioniert auch super.",
         "author": "-formic-acid-",
-        "score": 26,
+        "score": 29,
         "sentiment": {
           "neg": 0.202,
           "neu": 0.698,
@@ -220,7 +370,7 @@
         "id": "mtb4qfd",
         "text": "Hab da vor 2 Monaten mal einen Grünstreifen gemeldet der komplett verdreckt war, am nächsten Tag war das Ticket bearbeitet,am Tag darauf wars behoben :)",
         "author": "Craftingphil",
-        "score": 25,
+        "score": 28,
         "sentiment": {
           "neg": 0.322,
           "neu": 0.593,
@@ -228,6 +378,74 @@
           "compound": -0.8555
         },
         "created": "2025-05-20 17:18:06 CEST"
+      }
+    ]
+  },
+  {
+    "id": "1krdfhk",
+    "title": "People near main station in plain clothes claiming to be police is that legit?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Hi,\n\nToday I had a strange encounter near the main train station. Three people in plain clothes said they were police and asked for my ID. I asked for a badge, and they showed me one. Atleast to me badge looked fake. I gave them my ID, and they looked at it and took a few pictures.\n\nLater, I went to a real police station and explained what happened. They confirmed that plainclothes officers do check IDs sometimes, so that was somewhat reassuring.\n\nStill, I’m posting here to ask has anyone else experienced something like this? I’m a bit worried about identity theft. Is there something else I can do to mitigate the risk?",
+    "body_sentiment": {
+      "neg": 0.078,
+      "neu": 0.882,
+      "pos": 0.04,
+      "compound": -0.5651
+    },
+    "author": "Next_Adhesiveness423",
+    "score": 47,
+    "upvote_ratio": 0.89,
+    "controversiality": 5.169999999999999,
+    "created_utc": "2025-05-20 21:12:43 CEST",
+    "num_comments": 47,
+    "url": "https://www.reddit.com/r/wien/comments/1krdfhk/people_near_main_station_in_plain_clothes/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "comments": [
+      {
+        "id": "mtcoffe",
+        "text": "Called AGM, (Ausgleichsmaßnahmen Schengen) because there are no more border checkpoints at Austrias borders, so plainclothes officers do checks at public thoroughfares like train stations. That‘s absolutely legit.\n\n\nYou can also ask for their badge number (which can have anything between 5 and 8 numbers right now, and call a non emergency number to confirm that everything‘s fine.)",
+        "author": "Lobiatho",
+        "score": 68,
+        "sentiment": {
+          "neg": 0.075,
+          "neu": 0.816,
+          "pos": 0.108,
+          "compound": 0.0258
+        },
+        "created": "2025-05-20 21:48:27 CEST"
+      },
+      {
+        "id": "mtcknq6",
+        "text": "Did the ID look anything like this? [https://www.sn.at/salzburg/chronik/was-tun-wenn-falsche-polizisten-anlaeuten-die-salzburger-polizei-gibt-tipps-24862471](https://www.sn.at/salzburg/chronik/was-tun-wenn-falsche-polizisten-anlaeuten-die-salzburger-polizei-gibt-tipps-24862471)",
+        "author": "BMP83",
+        "score": 20,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.737,
+          "pos": 0.263,
+          "compound": 0.3612
+        },
+        "created": "2025-05-20 21:29:44 CEST"
+      },
+      {
+        "id": "mtd6t99",
+        "text": "Hi, It's totally legitimate. There's a special immigration police station at the main train station that does exactly that all day long. Since there are no longer any border controls, there are more frequent checks at stations and in the border area to see if there are any people present without a residence permit. It's also legally covered, and as long as they didn't take you with them, you shouldn't really face any consequences.",
+        "author": "Marokko100",
+        "score": 18,
+        "sentiment": {
+          "neg": 0.028,
+          "neu": 0.918,
+          "pos": 0.053,
+          "compound": 0.2263
+        },
+        "created": "2025-05-20 23:19:52 CEST"
       }
     ]
   },
@@ -248,7 +466,7 @@
       "compound": 0.0
     },
     "author": "nebulnaskigxulo",
-    "score": 260,
+    "score": 268,
     "upvote_ratio": 0.98,
     "controversiality": 0.8200000000000007,
     "created_utc": "2025-05-20 11:12:53 CEST",
@@ -275,7 +493,7 @@
         "id": "mt9mc5v",
         "text": "Die piefke flagge als \"deutsch\" flagge zu nehmen schreit doch nach provokation",
         "author": "Anders_142536",
-        "score": 124,
+        "score": 126,
         "sentiment": {
           "neg": 0.262,
           "neu": 0.738,
@@ -296,6 +514,129 @@
           "compound": 0.0
         },
         "created": "2025-05-20 11:24:34 CEST"
+      }
+    ]
+  },
+  {
+    "id": "1kr2r29",
+    "title": "Fahrradbremszüge wurden mit Seitenschneider gekappt",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "meme_is_no_sin",
+    "score": 100,
+    "upvote_ratio": 0.95,
+    "controversiality": 2.6000000000000023,
+    "created_utc": "2025-05-20 13:42:34 CEST",
+    "num_comments": 52,
+    "url": "https://i.redd.it/iqfaq3pccx1f1.jpeg",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Grant: Grantln | Grouching",
+    "comments": [
+      {
+        "id": "mta2vfy",
+        "text": "Bitte poste für Blinde unter *diesem Kommentar* eine Bildbeschreibung. [Hier](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) ein paar Tipps. // Please post an image description for the blind under *this comment*. [Here](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) are a few tips.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
+        "author": "AutoModerator",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.046,
+          "neu": 0.875,
+          "pos": 0.079,
+          "compound": 0.2263
+        },
+        "created": "2025-05-20 13:42:37 CEST"
+      },
+      {
+        "id": "mta4mg1",
+        "text": "Das Wiener Pendant zur Grazer autokratzerin?",
+        "author": "Spezi99",
+        "score": 61,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        },
+        "created": "2025-05-20 13:55:06 CEST"
+      },
+      {
+        "id": "mta6rxy",
+        "text": "Am Freitag und Samstag findet die reparfair Wien statt von 10-18 Uhr. Kannst dein Fahrrad dort gratis reparieren. Museumsquartier",
+        "author": "ManufacturerFit5832",
+        "score": 60,
+        "sentiment": {
+          "neg": 0.176,
+          "neu": 0.769,
+          "pos": 0.054,
+          "compound": -0.5719
+        },
+        "created": "2025-05-20 14:09:55 CEST"
+      }
+    ]
+  },
+  {
+    "id": "1krqkep",
+    "title": "Animal Organizations in Vienna? | Tierorganisationen in Wien?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Hello all,\n\nWhat animal organizations exist in Vienna? (Ex. zoo, sanctuary, animal shelter, farm, etc). I’d like to volunteer or work at one in the future. \n\nI don’t have a car so I’m only looking inside Vienna. I’m having trouble finding places online, but I figure locals would know more.\n\nSo far, I’m aware of TierQuarTier, Tiergarten Schönbrunn, Haus des Meeres, FourPaws, Tierschutz Vösendorf, Gut Aidlbichl, and ARGE Papageinschutz.\n\nThank you in advance!\n\nP.S. Yes, I am also taking German classes.",
+    "body_sentiment": {
+      "neg": 0.021,
+      "neu": 0.878,
+      "pos": 0.101,
+      "compound": 0.7901
+    },
+    "author": "zinbin",
+    "score": 3,
+    "upvote_ratio": 0.8,
+    "controversiality": 0.5999999999999999,
+    "created_utc": "2025-05-21 07:54:34 CEST",
+    "num_comments": 3,
+    "url": "https://www.reddit.com/r/wien/comments/1krqkep/animal_organizations_in_vienna_tierorganisationen/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Tiere: Tiere | Animals",
+    "comments": [
+      {
+        "id": "mtg3vqa",
+        "text": "Hey! They are looking for volunteers all around the city: [a gspia fias tier](https://www.volkshilfe-wien.at/angebote-services/beratung-psychosoziales/a-gspia-furs-tier/)\n\nJust fill out the contact form in english if you don't speak German :) and someone will contact you",
+        "author": "Ok_3518",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.08,
+          "neu": 0.92,
+          "pos": 0.0,
+          "compound": -0.416
+        },
+        "created": "2025-05-21 11:56:41 CEST"
+      },
+      {
+        "id": "mtfu53x",
+        "text": "Hi, not sure if this is exactly what you are looking for, but VGT (Organization against animal factories) is always happy about volunteers, they are based in Vienna :) \n\n[https://vgt.at/de/unterstuetzen/aktiv-werden.html](https://vgt.at/de/unterstuetzen/aktiv-werden.html)",
+        "author": "amynase",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.039,
+          "neu": 0.719,
+          "pos": 0.241,
+          "compound": 0.8614
+        },
+        "created": "2025-05-21 10:14:51 CEST"
       }
     ]
   }

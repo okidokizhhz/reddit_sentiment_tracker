@@ -10,11 +10,11 @@ TOP_POSTS_DATA_PATH = BASE_DIR / "data" / "top_posts_data.json"
 RISING_POSTS_DATA_PATH = BASE_DIR / "data" / "rising_posts_data.json"
 
 # rate limits
-RATE_LIMIT_TOP_POSTS = 5
-RATE_LIMIT_RISING_POSTS = 5
+RATE_LIMIT_TOP_POSTS = 10
+RATE_LIMIT_RISING_POSTS = 10
 COMMENT_LIMIT = 3
 # Nested comments depth
-REPLY_DEPTH = 1
+REPLY_DEPTH = 2
 
 # TIME FILTER
-TOP_POSTS_TIME_FILTER = "week"
+TOP_POSTS_TIME_FILTER = "all"
