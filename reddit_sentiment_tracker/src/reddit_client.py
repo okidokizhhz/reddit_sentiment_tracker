@@ -6,7 +6,6 @@ import os
 import json
 import praw
 from dotenv import load_dotenv
-from config import RATE_LIMIT_TOP_POSTS, RATE_LIMIT_RISING_POSTS, TOP_POSTS_TIME_FILTER
 from utils import to_vienna_time
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
@@ -18,7 +17,6 @@ sentiment_analyzer = SentimentIntensityAnalyzer()
 
 def get_reddit_client():
     """ Initialize and return authenticated Reddit client using credentials from environment variables. """
-
     return praw.Reddit(
         client_id=os.getenv("CLIENT_ID"),
         client_secret=os.getenv("SECRET_KEY"),
@@ -27,11 +25,9 @@ def get_reddit_client():
         password=os.getenv("REDDIT_PW")
     )
 
-
 def analyze_sentiment(text):
     """ Analyze text sentiment using VADER """
     return sentiment_analyzer.polarity_scores(text)
-
 
 def process_post(post):
     """ Process raw post data with sentiment analysis """
@@ -53,22 +49,19 @@ def process_post(post):
         "flair": post.link_flair_text if post.link_flair_text else None
     }
 
-
 # TOP POSTS
-def fetch_top_posts(subreddit_name):
+def fetch_top_posts(subreddit_name, reddit, RATE_LIMIT_TOP_POSTS, TOP_POSTS_TIME_FILTER):
     """ Fetches top posts from a subreddit """
     try:
-        # initialize reddit client
-        reddit = get_reddit_client()
-        # access a subreddit
+        # accessing subreddit
         subreddit = reddit.subreddit(subreddit_name)
     except Exception as e:
-        print(f"Error connecting to reddit client: {e}")
+        print(f"Error accessing subreddit: {e}")
 
     top_posts_data = []
 
+    # fetching data of subreddit
     try:
-        # fetching data
         for post in subreddit.top(limit=RATE_LIMIT_TOP_POSTS,
                                   time_filter=TOP_POSTS_TIME_FILTER):
             top_posts_data.append(process_post(post))
@@ -79,22 +72,22 @@ def fetch_top_posts(subreddit_name):
         print(f"Reddit API Exception: {e}")
         return []
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error fetching '{subreddit_name}' data: {e}")
         return []
 
 # RISING POSTS
-def fetch_rising_posts(subreddit_name):
+def fetch_rising_posts(subreddit_name, reddit, RATE_LIMIT_RISING_POSTS):
     """ Fetches rising posts from a subreddit. """
     try:
-        reddit = get_reddit_client()
+        # accessing subreddit
         subreddit = reddit.subreddit(subreddit_name)
     except Exception as e:
-        print(f"Error connecting to reddit client: {e}")
+        print(f"Error accessing subreddit: {e}")
 
     rising_posts_data = []
 
+    # fetching data of subreddit
     try:
-        # fetching data
         for post in subreddit.rising(limit=RATE_LIMIT_RISING_POSTS):
             rising_posts_data.append(process_post(post))
 
@@ -104,7 +97,7 @@ def fetch_rising_posts(subreddit_name):
         print(f"Reddit API Exception: {e}")
         return []
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error fetching '{subreddit_name}' data: {e}")
         return []
 
 

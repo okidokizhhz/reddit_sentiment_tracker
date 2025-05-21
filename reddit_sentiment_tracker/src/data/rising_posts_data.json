@@ -1,5 +1,237 @@
 [
   {
+    "id": "1krqfzw",
+    "title": "\"Nein zur Halle\" – Aktivisten planen neues Protestcamp | Heute.at",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "author": "wegwerferie",
+    "score": 25,
+    "upvote_ratio": 0.73,
+    "controversiality": 13.770000000000001,
+    "created_utc": "2025-05-21 07:46:38 CEST",
+    "num_comments": 51,
+    "url": "https://www.heute.at/s/nein-zur-halle-aktivisten-planen-neues-protestcamp-120109110",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Rathaus-L::Rathaus-M::Rathaus-R: Politik | Politics",
+    "comments": [
+      {
+        "id": "mtfjxw4",
+        "text": "Also hab ich das richtig verstanden: die Wien Holding plant dort seit längerem eine Eventhalle, hat aber bis sie soweit ist das Grundstück zur Zwischennutzung der Allgemeinheit geöffnet damit man sich dort mal so richtig austoben kann, und jetzt findet man es total fies und überhaupt nicht Bürgerbeteiligend, dass die Zwischennutzung jetzt ausläuft und die Wien Holding ihr Projekt bauen möchte?\n\nAlso ab und zu hab ich schon das Gefühl, dass die Leute an Schaden haben. Wenn man den kleinen Finger in Form eines befristeten Abenteuerspielplatzes gereicht bekommt, gleich mal versuchen den ganzen Arm zu bekommen und dann dem Gegenüber ans Bein brunzen...\nGut, nächstes mal sparen sie sich wohl diese unnötigen Scherereien und geben den Bauplatz nicht zwischenzeitlich frei. Dann liegt's halt wirklich brach, niemand hat was davon, aber ein paar Leute mussten ja gierig werden und ein freiwilliges Entgegenkommen als gottgegebes Recht betrachten...",
+        "author": "Syphilor",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.1,
+          "neu": 0.9,
+          "pos": 0.0,
+          "compound": -0.9485
+        },
+        "created": "2025-05-21 08:30:40 CEST"
+      },
+      {
+        "id": "mtfoks5",
+        "text": "Völlig überdimensionierte Halle, die in unmittelbarer Nähe zu bestehenden Event Locations gebaut wird. s Marx Halle, Arena, Gasometer, Stadion.. \n\n\nIntransparentes Ausschreibungsverfahren mit nur einem Bieter. Und die Stadt Wien beteiligt sich mit 200 Millionen Euro Förderung für den privaten Betreiber Eventim mit Monopolstellung im Ticketverkauf während Mieten explodieren und Sparkurs ansteht. \n\n\nVerstehe nicht, wie man irgendwie für die Halle sein kann",
+        "author": "Outpostit",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.168,
+          "neu": 0.832,
+          "pos": 0.0,
+          "compound": -0.9136
+        },
+        "created": "2025-05-21 09:16:35 CEST"
+      },
+      {
+        "id": "mtfnzs8",
+        "text": "Viele von euch stellen sich immer auf die Seite der Kapitalisten, ohne selbst jemals Kapital zu haben. Eine Millionen Halle soll gebaut werden an einem Ort welcher für viele Menschen anscheinend ein soziales Zentrum geworden ist. Anrainer werden hier verdrängt, zugunsten von mehr Gewinn. \n\nRechtlich gehört das Grundstück der Wien Holding, aber die Stadt den Bürgern.",
+        "author": "DrDreAcula",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.126,
+          "neu": 0.874,
+          "pos": 0.0,
+          "compound": -0.8316
+        },
+        "created": "2025-05-21 09:10:38 CEST"
+      }
+    ]
+  },
+  {
+    "id": "1krsvyx",
+    "title": "Gratis Reparaturen",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 0.455,
+      "pos": 0.545,
+      "compound": 0.0516
+    },
+    "selftext": "Weil das iwie nicht viele mitbekommen haben, aber diesen Freitag und Samstag findet von 10-18 Uhr die repair:fair Wien statt im Museumsquartier. Eine Reparaturmesse der Stadt Wien Umweltschutz (MA22). Dort kann man sich informieren über Reparaturen und aber auch kleinere Reparaturen direkt vor Ort erledigen lassen für Elektro und Textilien brauchts eine Anmeldung aber mit Fahrrädern kann man einfach so hin und sich die herrichten lassen. Außerdem gibt es Kleidertauschparty, Second-Hand Shops von der Volkshilfe, Caritas und der 48er (MA48). Außerdem gibt es musikalisches Rahmenprogramm, viele Reparatur-Aussteller zu unterschiedlichsten Dingen wie Puppen, Gitarren, PCs uvm. Alles bei freiem Eintritt. Mehr Infos bekommt ihr ausm Link! ",
+    "body_sentiment": {
+      "neg": 0.073,
+      "neu": 0.927,
+      "pos": 0.0,
+      "compound": -0.8439
+    },
+    "author": "ManufacturerFit5832",
+    "score": 11,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
+    "created_utc": "2025-05-21 10:39:42 CEST",
+    "num_comments": 0,
+    "url": "https://www.wien.gv.at/umweltschutz/repairfair.html",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Kurios: Kurios | Interesting",
+    "comments": []
+  },
+  {
+    "id": "1kr827e",
+    "title": "Seltsame Begegnung am Naschmarkt – kennt jemand so eine Masche?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Ich war heute mit einer Freundin in einem Restaurant beim Naschmarkt, wir saßen draußen und haben gegessen. Plötzlich spricht mich eine Frau im pinken Cocktailkleid an und fragt nach meiner Sonnenbrille. Ich antworte – aber sie reagiert irgendwie nicht richtig darauf, tut teilweise so, als würde sie mich nicht verstehen.\n\nDann sagt sie, ich würde einer Person ähneln, die ihren Ausweis gestohlen habe. Sie zeigt mir sogar ihren Ausweis und wird zunehmend aggressiver – behauptet, ich könnte ja diejenige sein. Ich habe ihr mehrfach gesagt, dass sie mich verwechseln muss.\n\nDie ganze Situation war total merkwürdig – ich hab sofort geschaut, ob meine Tasche sicher ist, auch meine Freundin hat auf ihre Sachen geachtet. Zum Glück wurde uns nichts gestohlen, aber die Frau ließ nicht locker und verabschiedete sich dann wütend mit einem „Be happy, be very happy“.\n\nWir sind etwas geschockt und wissen nicht, ob das eine gezielte Ablenkung war (z. B. um uns abzulenken für einen Diebstahl) oder ob sie wirklich verwirrt war oder ernsthaft dachte, dass ich diese Person bin, die den Ausweis geklaut hat.\n\nHat jemand von euch schon mal etwas Ähnliches erlebt oder von so einer Masche gehört?\n",
+    "body_sentiment": {
+      "neg": 0.143,
+      "neu": 0.841,
+      "pos": 0.017,
+      "compound": -0.9826
+    },
+    "author": "Educational-Dot-9430",
+    "score": 101,
+    "upvote_ratio": 0.94,
+    "controversiality": 2.8800000000000026,
+    "created_utc": "2025-05-20 17:41:26 CEST",
+    "num_comments": 48,
+    "url": "https://www.reddit.com/r/wien/comments/1kr827e/seltsame_begegnung_am_naschmarkt_kennt_jemand_so/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "comments": [
+      {
+        "id": "mtb9sow",
+        "text": "klingt für mich eher nach geistiger verwirrung",
+        "author": "AdvanceImpossible221",
+        "score": 251,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        },
+        "created": "2025-05-20 17:42:48 CEST"
+      },
+      {
+        "id": "mtbxan1",
+        "text": "Ich glaub ich hab die in einer U-Bahnstation gesehen.\nHat auch nach einer Sonnenbrille gefragt. Bin einfach weitergegangen.\nIch glaub nicht, dass die was stehlen will. Nur verwirrt. Am besten ignorieren.",
+        "author": "Karlotius",
+        "score": 25,
+        "sentiment": {
+          "neg": 0.212,
+          "neu": 0.788,
+          "pos": 0.0,
+          "compound": -0.8316
+        },
+        "created": "2025-05-20 19:36:18 CEST"
+      },
+      {
+        "id": "mtbafw5",
+        "text": "Wie konnte sie Dir ihren geklauten Ausweis zeigen? \n\nHört sich stark nach geistiger Verwirrung an. Gerade in Wien keine Seltenheit.",
+        "author": "jschundpeter",
+        "score": 58,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        },
+        "created": "2025-05-20 17:45:56 CEST"
+      }
+    ]
+  },
+  {
+    "id": "1kr5m00",
+    "title": "Sag's Wien ist ja wirklich super.",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 0.562,
+      "pos": 0.438,
+      "compound": 0.5994
+    },
+    "selftext": "Wollts euch nur sagen. Ist direkt von der Stadt im App Store.\n\n--- Edit: Das ging ja richtig durch die Decke, ist das nicht super schön? 17k views, die Developer sehen sicher einen riesen Spike bei den Downloads und können sich freuen :D",
+    "body_sentiment": {
+      "neg": 0.143,
+      "neu": 0.713,
+      "pos": 0.145,
+      "compound": 0.0343
+    },
+    "author": "Hydrozy",
+    "score": 118,
+    "upvote_ratio": 0.9,
+    "controversiality": 2.999999999999999,
+    "created_utc": "2025-05-20 16:01:14 CEST",
+    "num_comments": 30,
+    "url": "https://www.reddit.com/r/wien/comments/1kr5m00/sags_wien_ist_ja_wirklich_super/",
+    "awards": 0,
+    "edited": 1747769889.0,
+    "flair": ":Kamera: Visiting | Tourism",
+    "comments": [
+      {
+        "id": "mtaws8u",
+        "text": "Ich melde sehr gerne ausgefallene Beleuchtung. Das wird sich auch immer zeitnah angesehen und flott repariert.  \nDie App ist manchmal bissi buggy, aber alles in allem funktioniert es super! Kann sie auch sehr empfehlen.",
+        "author": "Spontanvegetation420",
+        "score": 46,
+        "sentiment": {
+          "neg": 0.098,
+          "neu": 0.804,
+          "pos": 0.098,
+          "compound": 0.0
+        },
+        "created": "2025-05-20 16:39:22 CEST"
+      },
+      {
+        "id": "mtb2v23",
+        "text": "Ich vrwends für entsorgte Räder, die seit einem Jahr an den Fahrradständer gekettet sind und schon komplett hin. Die bekommen dann ein Ettikett und werden entsprechend entsorgt. Funktioniert auch super.",
+        "author": "-formic-acid-",
+        "score": 26,
+        "sentiment": {
+          "neg": 0.202,
+          "neu": 0.698,
+          "pos": 0.101,
+          "compound": -0.5994
+        },
+        "created": "2025-05-20 17:09:01 CEST"
+      },
+      {
+        "id": "mtb4qfd",
+        "text": "Hab da vor 2 Monaten mal einen Grünstreifen gemeldet der komplett verdreckt war, am nächsten Tag war das Ticket bearbeitet,am Tag darauf wars behoben :)",
+        "author": "Craftingphil",
+        "score": 25,
+        "sentiment": {
+          "neg": 0.322,
+          "neu": 0.593,
+          "pos": 0.085,
+          "compound": -0.8555
+        },
+        "created": "2025-05-20 17:18:06 CEST"
+      }
+    ]
+  },
+  {
     "id": "1kr0e3k",
     "title": "How to say Vienna in various languages",
     "title_sentiment": {
@@ -16,392 +248,55 @@
       "compound": 0.0
     },
     "author": "nebulnaskigxulo",
-    "score": 119,
-    "upvote_ratio": 0.97,
-    "controversiality": 0.6900000000000006,
+    "score": 260,
+    "upvote_ratio": 0.98,
+    "controversiality": 0.8200000000000007,
     "created_utc": "2025-05-20 11:12:53 CEST",
-    "num_comments": 23,
+    "num_comments": 41,
     "url": "https://i.redd.it/yzelylqwot1f1.png",
     "awards": 0,
     "edited": false,
-    "flair": ":Memes: Memes"
-  },
-  {
-    "id": "1kqyh0j",
-    "title": "Parken in der Stadt ist zu billig, sagt der VCÖ",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "KFSattmann",
-    "score": 106,
-    "upvote_ratio": 0.84,
-    "controversiality": 12.960000000000003,
-    "created_utc": "2025-05-20 08:54:38 CEST",
-    "num_comments": 81,
-    "url": "https://www.derstandard.at/story/3000000270425/parken-in-der-stadt-ist-zu-billig-sagt-der-vcoe",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Posthorn-L: Nachrichten | News"
-  },
-  {
-    "id": "1kr0h6g",
-    "title": "Ankündigung der Eröffnung der U2 von Karlsplatz bis Schottenring (1980)",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "Turtle456",
-    "score": 49,
-    "upvote_ratio": 1.0,
-    "controversiality": 0.0,
-    "created_utc": "2025-05-20 11:19:05 CEST",
-    "num_comments": 13,
-    "url": "https://i.redd.it/hdh65xoamw1f1.jpeg",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Kurios: Kurios | Interesting"
-  },
-  {
-    "id": "1kr0ua4",
-    "title": "Unbekannte gegen \"Immowappla\": Wer hat die Gumpendorfer Straße 63E besetzt?",
-    "title_sentiment": {
-      "neg": 0.302,
-      "neu": 0.698,
-      "pos": 0.0,
-      "compound": -0.5994
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "KFSattmann",
-    "score": 29,
-    "upvote_ratio": 0.86,
-    "controversiality": 0.14,
-    "created_utc": "2025-05-20 11:44:58 CEST",
-    "num_comments": 1,
-    "url": "https://www.derstandard.at/story/3000000270431/unbekannte-gegen-immowappla-wer-hat-die-gumpendorfer-strasse-63e-besetzt",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Posthorn-L: Nachrichten | News"
-  },
-  {
-    "id": "1kqhi3y",
-    "title": "Strafe für Pfandflasche neben Müll",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Hallo Leute. Heute habe ich Glas zum Müllcontainer gebracht. Habe dabei bemerkt das ich eine Glaspfandflasche dabei hatte. Dachte mir zum Wegschmeißen zu schade also stell ich sie daneben hin falls ein Obdachloser oder wer es halt nötig hat als Pfand mitnehmen kann. Als ich sie abstellte und wegging hat mich eine waste watcher komplett zusammengeschissen und gesagt ich muß die Flasche entsorgen und was ich mir einbilden sie daneben stehen zu lassen. \nTja so läuft das in Wien. Das sind richtige heisln, wie krank ist das außerdem das die zu Zweit in Meidling eine Müllinsel bewachen. Sollten lieber mal den Zigtausend tschickstummel nachermitteln. \nFind es einfach frech in Deutschland stellst die Flaschen zum Müll hin und es nimmt sie wer. In Wien bekommt 50,- Strafe wenn du was gutes tun willst. ",
-    "body_sentiment": {
-      "neg": 0.102,
-      "neu": 0.898,
-      "pos": 0.0,
-      "compound": -0.9382
-    },
-    "author": "Ok-Commercial9489",
-    "score": 263,
-    "upvote_ratio": 0.84,
-    "controversiality": 20.640000000000004,
-    "created_utc": "2025-05-19 19:23:55 CEST",
-    "num_comments": 129,
-    "url": "https://www.reddit.com/r/wien/comments/1kqhi3y/strafe_für_pfandflasche_neben_müll/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Posthorn-L: Nachrichten | News"
-  },
-  {
-    "id": "1kqz2tk",
-    "title": "Das Burgenland und Niederösterreich in Wien",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "wegwerferie",
-    "score": 3,
-    "upvote_ratio": 0.72,
-    "controversiality": 0.0,
-    "created_utc": "2025-05-20 09:36:54 CEST",
-    "num_comments": 0,
-    "url": "https://wien.orf.at/stories/3305911/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Kultur: Kultur | Culture"
-  },
-  {
-    "id": "1kq6ai1",
-    "title": "Ignorieren, oder auszucken und melden? Falls melden... wen?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Sehe dieses Verhalten in letzter Zeit immer öfters, besonders bei Querparkern. Fahrzeuge, die bei weitem zu lang für die Stellfläche sind. Besonders witzig dann, wenn es zweispurig ist und du zum ausweichen in die Gegenfahrbahn muss.  \nBei dem Beispiel am Bild waren beim vorbeiquetschen links und rechts vllt. mal 10 cm zu den Rückspiegeln.\n\nMeldet ihr sowas, oder wird das einfach angefressen ignoriert? Falls man das melden will. Wohin wendet man sich?",
-    "body_sentiment": {
-      "neg": 0.149,
-      "neu": 0.851,
-      "pos": 0.0,
-      "compound": -0.9195
-    },
-    "author": "BulTV",
-    "score": 298,
-    "upvote_ratio": 0.92,
-    "controversiality": 6.959999999999996,
-    "created_utc": "2025-05-19 10:07:03 CEST",
-    "num_comments": 87,
-    "url": "https://i.redd.it/ml12w5lk4p1f1.jpeg",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question"
-  },
-  {
-    "id": "1kr08xe",
-    "title": "Bakterien, Viren und die Stadt Wien, arbeitet jemand in dem Bereich? Forschung zu Mikroben und der Stadt",
-    "title_sentiment": {
-      "neg": 0.196,
-      "neu": 0.804,
-      "pos": 0.0,
-      "compound": -0.5994
-    },
-    "selftext": "Hallo liebe Leute,\n\nich führe gerade ein Forschungsprojekt zu Mikroben und Stadt durch, genauer gesagt wie eine Stadt wie Wien mit der potentiellen Bedrohung, aber auch Notwendigkeit von mikrobieller Präsenz (Bakterien, Viren, etc.) umgeht, und wie die Tatsache der mikrobiellen Beweglichkeit politisch und Stadtverwalterisch gefasst werden kann. Das klingt sehr hochtrabend, aber im Grunde möchte ich gerne von Menschen erfahren, die damit in ihrer alltäglichen Arbeit konkret befasst sind, etwa im Umgang und der Entsorgung von biologischen Material (aus Krankenhäusern und Laboren etwa, aber auch Bestattung), im Abwassermonitoring oder Kläranlagen, in der Arbeit mit Tieren etc.\n\nFalls jemand in der Richtung etwas zu tun hat damit und das mit mir teilen möchte, würde ich mich sehr darüber freuen! \n\nNähere Infos gerne per DM\n\n\n\nLiebe Grüße! ",
-    "body_sentiment": {
-      "neg": 0.064,
-      "neu": 0.936,
-      "pos": 0.0,
-      "compound": -0.855
-    },
-    "author": "modertonne",
-    "score": 2,
-    "upvote_ratio": 0.75,
-    "controversiality": 1.25,
-    "created_utc": "2025-05-20 11:02:38 CEST",
-    "num_comments": 5,
-    "url": "https://www.reddit.com/r/wien/comments/1kr08xe/bakterien_viren_und_die_stadt_wien_arbeitet/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Arbeit: Arbeit | Work"
-  },
-  {
-    "id": "1kqwqfu",
-    "title": "Rotes Wien und die Welt des Mr. Pim | Cinema Austriaco",
-    "title_sentiment": {
-      "neg": 0.281,
-      "neu": 0.719,
-      "pos": 0.0,
-      "compound": -0.5994
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "wegwerferie",
-    "score": 4,
-    "upvote_ratio": 0.83,
-    "controversiality": 0.3400000000000001,
-    "created_utc": "2025-05-20 06:57:14 CEST",
-    "num_comments": 2,
-    "url": "https://cinema-austriaco.org/de/2023/07/16/rotes-wien-und-die-welt-des-mr-pim/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Kultur: Kultur | Culture"
-  },
-  {
-    "id": "1kr17nx",
-    "title": "Bewerbung für den Master an der WU Wien – Was zählt am meisten im Auswahlprozess?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Hallo zusammen!\nIch weiß, dass das hier nicht das offizielle Subreddit für die WU Wien ist, aber da dort nicht viel los ist, versuche ich hier mein Glück:\n\nIch plane, mich für ein Masterstudium an der WU Wien zu bewerben – idealerweise im Bereich Quantitative Finance oder ein anderes wirtschafts-/finanzbezogenes Programm – und würde mich sehr über Einblicke von Leuten freuen, die den Bewerbungsprozess schon hinter sich haben oder sich mit dem Thema gut auskennen.\n\nIch schließe bald meinen Bachelor in Finance mit guten Noten ab. Außerdem war ich als Analyst im Investment Fund meiner Uni aktiv und habe rund ein Jahr zusätzliche Erfahrung in finance-bezogenen Tätigkeiten gesammelt. Ich lerne aktuell für den GRE, auch wenn der für viele Programme nicht verpflichtend ist.\n\nMeine Fragen wären:\n\t•\tWorauf wird bei der Bewerbung am meisten geachtet? Noten? Relevante Erfahrung? Motivationsschreiben?\n\t•\tMacht es einen großen Unterschied, wenn man den (optionalen) GRE mitschickt?\n\t•\tGibt’s Dinge, die man über das Leben oder das Studium in Wien unbedingt wissen sollte?\n\nWürde mich riesig über Tipps, Erfahrungen oder einfach ehrliche Einschätzungen freuen – danke euch im Voraus!",
-    "body_sentiment": {
-      "neg": 0.087,
-      "neu": 0.913,
-      "pos": 0.0,
-      "compound": -0.9592
-    },
-    "author": "Warm-Wear1868",
-    "score": 0,
-    "upvote_ratio": 0.5,
-    "controversiality": 0.5,
-    "created_utc": "2025-05-20 12:09:50 CEST",
-    "num_comments": 1,
-    "url": "https://www.reddit.com/r/wien/comments/1kr17nx/bewerbung_für_den_master_an_der_wu_wien_was_zählt/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question"
-  },
-  {
-    "id": "1kqxy6h",
-    "title": "Wie voll ist es in der Albertina?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Ich würde gerne unter der Woche an einem für alle normalen Arbeitstag in die Albertina gehen. Hat jemand Erfahrungen damit, wie sehr es unter der Woche dort zugeht mit Touristen? Macht die Tageszeit einen Unterschied? ",
-    "body_sentiment": {
-      "neg": 0.198,
-      "neu": 0.802,
-      "pos": 0.0,
-      "compound": -0.8466
-    },
-    "author": "NetNo973",
-    "score": 2,
-    "upvote_ratio": 1.0,
-    "controversiality": 0.0,
-    "created_utc": "2025-05-20 08:17:47 CEST",
-    "num_comments": 2,
-    "url": "https://www.reddit.com/r/wien/comments/1kqxy6h/wie_voll_ist_es_in_der_albertina/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question"
-  },
-  {
-    "id": "1kqabbb",
-    "title": "How do i report junkies entering private property (Entschuldigung für Englisch post)?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "I live in the 10th (close to U1 Trostraße) in an apartment complex with a sort of 'garden'/green area right in front. It is technically private property, but there is just a gate that anyone can open, and other open entrances, so naturally a lot of just people come in and sit on the grass, leave trash etc. But what really bothers me more, is that almost everyday I  come out of my house and I am welcomed by someone, or sometimes multiple people, sitting on a bench injecting drugs. It's not even the same people everytime too.\n\nI find this so disrespectful, especially since there are obviously children around who have to see this right outside their home. Does anyone know what I can do about this? Who am I supposed to contact? I am still learning German so I get a bit discouraged to know how to speak to the authorities (and the correct ones).\n\nSo can anyone guide me as to who to report this case to? Maybe I have to call a certain department?\n\nVielen dank für ihren Hilfe!",
-    "body_sentiment": {
-      "neg": 0.045,
-      "neu": 0.925,
-      "pos": 0.03,
-      "compound": -0.4573
-    },
-    "author": "nbeecee",
-    "score": 31,
-    "upvote_ratio": 0.84,
-    "controversiality": 1.2800000000000002,
-    "created_utc": "2025-05-19 14:22:44 CEST",
-    "num_comments": 8,
-    "url": "https://www.reddit.com/r/wien/comments/1kqabbb/how_do_i_report_junkies_entering_private_property/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question"
-  },
-  {
-    "id": "1kqbig8",
-    "title": "Mehr Anzeigen wegen K.-o.-Tropfen",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "KFSattmann",
-    "score": 22,
-    "upvote_ratio": 0.96,
-    "controversiality": 0.1200000000000001,
-    "created_utc": "2025-05-19 15:20:07 CEST",
-    "num_comments": 3,
-    "url": "https://wien.orf.at/stories/3305950/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Posthorn-L: Nachrichten | News"
-  },
-  {
-    "id": "1kqbgp1",
-    "title": "Unfall und Versicherung? Erstes Mal...",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Ich hatte vor ca 1 Monat ein Fahrradunfall. Ich selbst hatte gsd nichts, aber der Autofahrer der ohne zu blinken und ohne zu schauen vor mir abgebogen ist war eindeutig Schuld. Er wollte mich mit eine Visitenkarte abspeisen weil er es so eilig hat, aber ich habe die Polizei geholt der zufällig gerade vorbeigefahren ist.\n\nEs wurde ein Unfallbericht ausgefüllt, und ich habe jetzt der Reparaturrechnung von mein Fahrrad.\n\nIch habe ein Mail an seine Versicherung geschickt mit der Frage wie ich weitermachen kann, und es wurde geantwortet dass noch keine Unfallmeldung vom ihm eingetroffen ist.\n\nEs wäre das erste Mal für mich, ich hatte nie selbst ein Auto, habe also nie ein Unfall beim meine Autoversicherung machen müssen. Ich weiß also nicht was zu tun ist...\n\nKann mir jemand weiterhelfen? Muss ich der Fahrer kontaktieren damit er ein Unfallbericht abgibt? Sein Auto hatte ja null Schaden, also warum sollte er das machen? Oder soll ich der Polizei kontaktieren ob die ein offizielles Unfallprotokoll aufgestellt haben? Es gab keine Verletzten, kein Schaden am Auto, nur ein kaputtes Fahrrad-Vorderrad...",
-    "body_sentiment": {
-      "neg": 0.067,
-      "neu": 0.933,
-      "pos": 0.0,
-      "compound": -0.9282
-    },
-    "author": "GreyDutchman",
-    "score": 9,
-    "upvote_ratio": 0.91,
-    "controversiality": 0.3599999999999999,
-    "created_utc": "2025-05-19 15:17:54 CEST",
-    "num_comments": 4,
-    "url": "https://www.reddit.com/r/wien/comments/1kqbgp1/unfall_und_versicherung_erstes_mal/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question"
-  },
-  {
-    "id": "1kr1882",
-    "title": "DSGVO ein Schimpfwort bei Wiener Wohnen?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Ich kenne mich leider nicht ganz so gut mit der DSGVO aus, aber ist es rechtens, wenn an 6 Bildschirmen im Wartebereich mein Name und die Namen der Personen, welche nach mir einen Termin haben (inkl Uhrzeit des Termins) angezeigt wird? \n\nFind ich ehrlich gesagt schon etwas komisch. Oder habe ich beim unterzeichnen meines Mietvertrages (schon paar Jährchen her) etwas im Kleingedruckten überlesen?  \n",
-    "body_sentiment": {
-      "neg": 0.064,
-      "neu": 0.936,
-      "pos": 0.0,
-      "compound": -0.644
-    },
-    "author": "master_ofpaprikachip",
-    "score": 0,
-    "upvote_ratio": 0.28,
-    "controversiality": 15.84,
-    "created_utc": "2025-05-20 12:10:50 CEST",
-    "num_comments": 22,
-    "url": "https://www.reddit.com/r/wien/comments/1kr1882/dsgvo_ein_schimpfwort_bei_wiener_wohnen/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question"
+    "flair": ":Memes: Memes",
+    "comments": [
+      {
+        "id": "mt9m0jl",
+        "text": "Bitte poste für Blinde unter *diesem Kommentar* eine Bildbeschreibung. [Hier](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) ein paar Tipps. // Please post an image description for the blind under *this comment*. [Here](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) are a few tips.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
+        "author": "AutoModerator",
+        "score": 1,
+        "sentiment": {
+          "neg": 0.046,
+          "neu": 0.875,
+          "pos": 0.079,
+          "compound": 0.2263
+        },
+        "created": "2025-05-20 11:12:54 CEST"
+      },
+      {
+        "id": "mt9mc5v",
+        "text": "Die piefke flagge als \"deutsch\" flagge zu nehmen schreit doch nach provokation",
+        "author": "Anders_142536",
+        "score": 124,
+        "sentiment": {
+          "neg": 0.262,
+          "neu": 0.738,
+          "pos": 0.0,
+          "compound": -0.5994
+        },
+        "created": "2025-05-20 11:16:25 CEST"
+      },
+      {
+        "id": "mt9n3s1",
+        "text": "Pa brate was soll ich dir jetzt sagen čulige",
+        "author": "TheWeeknd_",
+        "score": 41,
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        },
+        "created": "2025-05-20 11:24:34 CEST"
+      }
+    ]
   }
 ]
