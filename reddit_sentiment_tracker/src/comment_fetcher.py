@@ -21,11 +21,14 @@ def fetch_comments(reddit, post_id, REPLY_DEPTH, COMMENT_LIMIT) -> list[dict]:
         for comment in submission.comments[:limit]:
             comments_data.append({
                 "id": comment.id,
+                "parent_id": comment.parent_id,                     # id of the parent of comment
+                "depth": comment.depth,                             # nesting level (0 = top-level)
                 "text": comment.body,
                 "author": str(comment.author) if comment.author else "[deleted]",
                 "score": comment.score,
-                "sentiment": analyze_sentiment(comment.body),  # Your existing function
-                "created": to_vienna_time(comment.created_utc)  # Your existing function
+                "edited": comment.edited,
+                "created": to_vienna_time(comment.created_utc),  # Your existing function
+                "sentiment": analyze_sentiment(comment.body)  # Your existing function
             })
         
         return comments_data

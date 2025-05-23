@@ -1,642 +1,691 @@
 [
   {
-    "id": "1krsvyx",
-    "title": "Gratis Reparaturen",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 0.455,
-      "pos": 0.545,
-      "compound": 0.0516
-    },
-    "selftext": "Weil das iwie nicht viele mitbekommen haben, aber diesen Freitag und Samstag findet von 10-18 Uhr die repair:fair Wien statt im Museumsquartier. Eine Reparaturmesse der Stadt Wien Umweltschutz (MA22). Dort kann man sich informieren über Reparaturen und aber auch kleinere Reparaturen direkt vor Ort erledigen lassen für Elektro und Textilien brauchts eine Anmeldung aber mit Fahrrädern kann man einfach so hin und sich die herrichten lassen. Außerdem gibt es Kleidertauschparty, Second-Hand Shops von der Volkshilfe, Caritas und der 48er (MA48). Außerdem gibt es musikalisches Rahmenprogramm, viele Reparatur-Aussteller zu unterschiedlichsten Dingen wie Puppen, Gitarren, PCs uvm. Alles bei freiem Eintritt. Mehr Infos bekommt ihr ausm Link! ",
-    "body_sentiment": {
-      "neg": 0.073,
-      "neu": 0.927,
-      "pos": 0.0,
-      "compound": -0.8439
-    },
-    "author": "ManufacturerFit5832",
-    "score": 25,
-    "upvote_ratio": 1.0,
-    "controversiality": 0.0,
-    "created_utc": "2025-05-21 10:39:42 CEST",
-    "num_comments": 2,
-    "url": "https://www.wien.gv.at/umweltschutz/repairfair.html",
+    "id": "1ktc351",
+    "author": "Personal-Ad-7065",
+    "created_utc": "2025-05-23 07:45:52 CEST",
+    "num_comments": 12,
+    "url": "https://www.reddit.com/r/wien/comments/1ktc351/wo_kann_ich_am_besten_meine_xbox_360_samt_spielen/",
     "awards": 0,
     "edited": false,
-    "flair": ":Kurios: Kurios | Interesting",
-    "comments": [
-      {
-        "id": "mtg50e3",
-        "text": "RemindMe! 2 days",
-        "author": "CakeOk2392",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        },
-        "created": "2025-05-21 12:07:41 CEST"
-      }
-    ]
-  },
-  {
-    "id": "1krqfzw",
-    "title": "\"Nein zur Halle\" – Aktivisten planen neues Protestcamp | Heute.at",
+    "flair": ":Frage: Frage | Question",
+    "title": "Wo kann ich am besten meine Xbox 360 samt Spielen spenden?",
     "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "selftext": "",
+    "selftext": "Hallo, \nhat wer eine Idee wo ich meine alte Konsole mit x Spielen am besten spenden kann? \nIch hätte gerne dass sie dann nicht weiterverkauft wird, Carla/caritas fällt also weg. \n\nHat jemand eine Idee? \n\nDanke im Voraus :) ",
     "body_sentiment": {
       "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
+      "neu": 0.917,
+      "pos": 0.083,
+      "compound": 0.5204
     },
+    "score": 10,
+    "upvote_ratio": 0.86,
+    "controversiality": 1.6800000000000002,
+    "comments": [
+      {
+        "id": "mtsf6yu",
+        "parent_id": "t3_1ktc351",
+        "depth": 0,
+        "text": "Jugendzentrum vlt? Die freuen sich garantiert",
+        "author": "Kamomiru2000",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 07:54:21 CEST",
+        "sentiment": {
+          "neg": 0.438,
+          "neu": 0.562,
+          "pos": 0.0,
+          "compound": -0.5994
+        }
+      },
+      {
+        "id": "mtsh0ad",
+        "parent_id": "t3_1ktc351",
+        "depth": 0,
+        "text": "Hey Kinder und Jugend WGs freuen sich sicher sehr! :)\nEDIT: Es gibt ganz viele Träger die Kinder und Jugend WGs betreiben: z.B.: Jugend am Werk, Sozialwerke Clara Fey, Habit,Caritas… etc.",
+        "author": "MudKipops",
+        "score": 1,
+        "edited": 1747986030.0,
+        "created": "2025-05-23 08:10:40 CEST",
+        "sentiment": {
+          "neg": 0.096,
+          "neu": 0.665,
+          "pos": 0.239,
+          "compound": 0.6996
+        }
+      },
+      {
+        "id": "mtsgkd7",
+        "parent_id": "t3_1ktc351",
+        "depth": 0,
+        "text": "Frag mal bei PCs Für Alle :)",
+        "author": "DerFlamongo",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 08:06:42 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.667,
+          "pos": 0.333,
+          "compound": 0.4588
+        }
+      }
+    ]
+  },
+  {
+    "id": "1kt27nb",
     "author": "wegwerferie",
-    "score": 34,
-    "upvote_ratio": 0.78,
-    "controversiality": 18.04,
-    "created_utc": "2025-05-21 07:46:38 CEST",
-    "num_comments": 82,
-    "url": "https://www.heute.at/s/nein-zur-halle-aktivisten-planen-neues-protestcamp-120109110",
+    "created_utc": "2025-05-22 23:15:18 CEST",
+    "num_comments": 3,
+    "url": "https://www.profil.at/oesterreich/oevp-wien-muss-wohl-teil-der-parteienfoerderung-zurueckzahlen/403043779",
     "awards": 0,
     "edited": false,
     "flair": ":Rathaus-L::Rathaus-M::Rathaus-R: Politik | Politics",
-    "comments": [
-      {
-        "id": "mtfjxw4",
-        "text": "Also hab ich das richtig verstanden: die Wien Holding plant dort seit längerem eine Eventhalle, hat aber bis sie soweit ist das Grundstück zur Zwischennutzung der Allgemeinheit geöffnet damit man sich dort mal so richtig austoben kann, und jetzt findet man es total fies und überhaupt nicht Bürgerbeteiligend, dass die Zwischennutzung jetzt ausläuft und die Wien Holding ihr Projekt bauen möchte?\n\nAlso ab und zu hab ich schon das Gefühl, dass die Leute an Schaden haben. Wenn man den kleinen Finger in Form eines befristeten Abenteuerspielplatzes gereicht bekommt, gleich mal versuchen den ganzen Arm zu bekommen und dann dem Gegenüber ans Bein brunzen...\nGut, nächstes mal sparen sie sich wohl diese unnötigen Scherereien und geben den Bauplatz nicht zwischenzeitlich frei. Dann liegt's halt wirklich brach, niemand hat was davon, aber ein paar Leute mussten ja gierig werden und ein freiwilliges Entgegenkommen als gottgegebes Recht betrachten...",
-        "author": "Syphilor",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.1,
-          "neu": 0.9,
-          "pos": 0.0,
-          "compound": -0.9485
-        },
-        "created": "2025-05-21 08:30:40 CEST"
-      },
-      {
-        "id": "mtfoks5",
-        "text": "Völlig überdimensionierte Halle, die in unmittelbarer Nähe zu bestehenden Event Locations gebaut wird. s Marx Halle, Arena, Gasometer, Stadion.. \n\n\nIntransparentes Ausschreibungsverfahren mit nur einem Bieter. Und die Stadt Wien beteiligt sich mit 200 Millionen Euro Förderung für den privaten Betreiber Eventim mit Monopolstellung im Ticketverkauf während Mieten explodieren und Sparkurs ansteht. \n\n\nVerstehe nicht, wie man irgendwie für die Halle sein kann",
-        "author": "Outpostit",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.168,
-          "neu": 0.832,
-          "pos": 0.0,
-          "compound": -0.9136
-        },
-        "created": "2025-05-21 09:16:35 CEST"
-      },
-      {
-        "id": "mtfnzs8",
-        "text": "Viele von euch stellen sich immer auf die Seite der Kapitalisten, ohne selbst jemals Kapital zu haben. Eine Millionen Halle soll gebaut werden an einem Ort welcher für viele Menschen anscheinend ein soziales Zentrum geworden ist. Anrainer werden hier verdrängt, zugunsten von mehr Gewinn. \n\nRechtlich gehört das Grundstück der Wien Holding, aber die Stadt den Bürgern.",
-        "author": "DrDreAcula",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.126,
-          "neu": 0.874,
-          "pos": 0.0,
-          "compound": -0.8316
-        },
-        "created": "2025-05-21 09:10:38 CEST"
-      }
-    ]
-  },
-  {
-    "id": "1krsw1l",
-    "title": "Physik Bachelor lieber an der TU Wien oder Uni Wien?",
+    "title": "ÖVP Wien muss wohl Teil der Parteienförderung zurückzahlen",
     "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "selftext": "Wie der Titel schon sagt. Ich werde im Oktober nach Wien ziehen und habe jetzt oft gelesen, dass es im Bachelor noch ziemlich egal ist, an welcher der beiden man Physik studiert. Sollte ich dann eher anhand des Gebäudes/der Lage entscheiden oder welche Aspekte sollte ich betrachten?\n\nIch kann mich absolut nicht entscheiden, weil einige auch meinen, dass die TU irgendwie angesehener ist, bzw. der Abschluss höher gewertet wird aber eigentlich ist mir die Uni Wien sympathischer von dem, was ich so mitbekomme.",
+    "selftext": "",
     "body_sentiment": {
-      "neg": 0.088,
-      "neu": 0.912,
+      "neg": 0.0,
+      "neu": 0.0,
       "pos": 0.0,
-      "compound": -0.8316
+      "compound": 0.0
     },
-    "author": "xenuniz",
-    "score": 5,
-    "upvote_ratio": 0.7,
-    "controversiality": 3.0000000000000004,
-    "created_utc": "2025-05-21 10:39:51 CEST",
-    "num_comments": 10,
-    "url": "https://www.reddit.com/r/wien/comments/1krsw1l/physik_bachelor_lieber_an_der_tu_wien_oder_uni/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Bildung: Bildungsfrage | Education-related Question",
+    "score": 30,
+    "upvote_ratio": 0.96,
+    "controversiality": 0.1200000000000001,
     "comments": [
       {
-        "id": "mtfx75d",
-        "text": "Von wem angesehener? Von wem höher gewertet?\nAm Ende ists Wurscht. Mach das, was du willst…was sich besser anfühlt für dich etc. VL auch das wo die Zeiten vom Unterricht etc. besser sind. Wo du schneller hinkommst oder sonstiges.\n\nEdit: niemand wird dich auf Grund deiner Wahl nicht anstellen wollen. Am Schluss hast du einen Abschluss in Physik und kannst ihn vermutlich sehr gut verkaufen.",
-        "author": "K00pfnu55",
-        "score": 1,
+        "id": "mtq5b2c",
+        "parent_id": "t3_1kt27nb",
+        "depth": 0,
+        "text": "Ein wenig seltsam das Konzept mit vorgezogenen Parteiförderung die man zurückzahlen muss. Aber trotzdem witzig: \n\n>Je schneller sich SPÖ und Neos einig werden, desto teurer wird es für die ÖVP.\n\nXD",
+        "author": "wegwerferie",
+        "score": 10,
+        "edited": false,
+        "created": "2025-05-22 23:16:00 CEST",
         "sentiment": {
-          "neg": 0.062,
-          "neu": 0.938,
-          "pos": 0.0,
-          "compound": -0.644
-        },
-        "created": "2025-05-21 10:47:36 CEST"
-      },
-      {
-        "id": "mtfyff2",
-        "text": "Niemand wird den Bachelor an beiden Unis gemacht haben, drum gibts keine objektiven Erfahrungsberichte. Ich kenne Leute an beiden Unis und würde es aus deren Erzählungen so einschätzen: an der TU muss man etwas mehr leisten als an der Uni Wien, die TU ist stärker organisiert, Uni Wien lässt etwas mehr Freiheiten. Die Bachelorstudiengänge werden aber keine massiven Unterschiede in den Inhalten haben. Du machst mit beiden Wahlen nichts falsch. Vibes von den Studenten kamen mir an der TU so vor, als wären sie mehr die typischen \"Techniker\". Aber wie gesagt: alles nur geraten.\n\nIch pesönlich würde mich für die TU entscheiden, weil ich von der klareren Organisation eher profitiere. Schau dir auch mal die Curricula beider Studiengänge an, vielleicht hilft dir das bei der Entscheidung. Ist etwas früh, aber ich würde auch schon überlegen ob und wo du den Master machen möchtest. Erfahrungsgemäß sind soziale Gruppen im Master schon ziemlich gefestigt, wenn du also vor hast an der TU deinen Master zu machen, würde ich den Bachelor auch an der TU machen.\n\nSchlussendlich würde ich empfehlen aus dem Bauch heraus zu entscheiden. Wie du gemerkt hast ist es nicht klar, welche Uni besser ist und das wirst du im vorhinein auch nicht entscheiden können. Solltest du deine Wahl bereuen, kannst du immer noch von der einen Uni an die Andere wechseln und dir deine Kurse anrechnen lassen.",
-        "author": "fzorn",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.095,
-          "neu": 0.905,
-          "pos": 0.0,
-          "compound": -0.9761
-        },
-        "created": "2025-05-21 11:00:22 CEST"
-      },
-      {
-        "id": "mtg2yax",
-        "text": "Habe auf beiden Unis Physik studiert! Der Unterschied ist minimal.. persönlich gefällt es mir auf der Uni Wien besser aber gibt auch Leute die das anders sehen.\n\nVom Schwierigkeitsgrad und Inhalt sind beide Bachelor quasi gleich, früher war die Uni Wien etwas einfacher weil Fächer wie Edyn nicht verpflichtend waren das wurde aber mittlerweile angeglichen.\n\nMittlerweile kannst du im Master auch fast lückenlos zwischen den Unis wechseln. Im Master ists dann halt wichtig eine Arbeitsgruppe zu finden, die Sachen macht die dich interessieren.",
-        "author": "PippoInzaghi07",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.202,
-          "neu": 0.798,
-          "pos": 0.0,
-          "compound": -0.9674
-        },
-        "created": "2025-05-21 11:47:40 CEST"
+          "neg": 0.193,
+          "neu": 0.694,
+          "pos": 0.112,
+          "compound": -0.5052
+        }
       }
     ]
   },
   {
-    "id": "1kr827e",
-    "title": "Seltsame Begegnung am Naschmarkt – kennt jemand so eine Masche?",
+    "id": "1kt5kyw",
+    "author": "CubeXtron",
+    "created_utc": "2025-05-23 01:48:13 CEST",
+    "num_comments": 18,
+    "url": "https://www.reddit.com/r/wien/comments/1kt5kyw/wie_am_friday_night_skating_freunde_fiden_ohne/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "title": "Wie am Friday Night Skating Freunde fiden ohne lästig/creepy/cringe zu sein?",
     "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "selftext": "Ich war heute mit einer Freundin in einem Restaurant beim Naschmarkt, wir saßen draußen und haben gegessen. Plötzlich spricht mich eine Frau im pinken Cocktailkleid an und fragt nach meiner Sonnenbrille. Ich antworte – aber sie reagiert irgendwie nicht richtig darauf, tut teilweise so, als würde sie mich nicht verstehen.\n\nDann sagt sie, ich würde einer Person ähneln, die ihren Ausweis gestohlen habe. Sie zeigt mir sogar ihren Ausweis und wird zunehmend aggressiver – behauptet, ich könnte ja diejenige sein. Ich habe ihr mehrfach gesagt, dass sie mich verwechseln muss.\n\nDie ganze Situation war total merkwürdig – ich hab sofort geschaut, ob meine Tasche sicher ist, auch meine Freundin hat auf ihre Sachen geachtet. Zum Glück wurde uns nichts gestohlen, aber die Frau ließ nicht locker und verabschiedete sich dann wütend mit einem „Be happy, be very happy“.\n\nWir sind etwas geschockt und wissen nicht, ob das eine gezielte Ablenkung war (z. B. um uns abzulenken für einen Diebstahl) oder ob sie wirklich verwirrt war oder ernsthaft dachte, dass ich diese Person bin, die den Ausweis geklaut hat.\n\nHat jemand von euch schon mal etwas Ähnliches erlebt oder von so einer Masche gehört?\n",
+    "selftext": "\nIch bin ein wenig Schüchtern und habe keine Freunde bis jetzt in Wien gefunden, aber ich bin ein sehr großer Fan von Friday Night Skating. Gibt's jemanden der an dem Event teilnimmt und ist interessiert ist daran neue Freundschaften zu knüpfen? Danke.",
     "body_sentiment": {
-      "neg": 0.143,
-      "neu": 0.841,
-      "pos": 0.017,
-      "compound": -0.9826
+      "neg": 0.0,
+      "neu": 0.947,
+      "pos": 0.053,
+      "compound": 0.3182
     },
-    "author": "Educational-Dot-9430",
-    "score": 111,
-    "upvote_ratio": 0.94,
-    "controversiality": 3.0000000000000027,
-    "created_utc": "2025-05-20 17:41:26 CEST",
-    "num_comments": 50,
-    "url": "https://www.reddit.com/r/wien/comments/1kr827e/seltsame_begegnung_am_naschmarkt_kennt_jemand_so/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question",
+    "score": 16,
+    "upvote_ratio": 0.78,
+    "controversiality": 3.9599999999999995,
     "comments": [
       {
-        "id": "mtb9sow",
-        "text": "klingt für mich eher nach geistiger verwirrung",
-        "author": "AdvanceImpossible221",
-        "score": 267,
+        "id": "mts96r8",
+        "parent_id": "t3_1kt5kyw",
+        "depth": 0,
+        "text": "Cool, das du postest.\nWar sicher eine Überwindung.\n\nUnd vergiss die Assis die hier dumm schreiben.\n\nFriday night is cool.\n\nMorgen is übrigens auch die https://www.kidicalmass.at/wien\n\nDas  vergleichbare Event inkl. Kinder.",
+        "author": "Aggressive_Peach_768",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 07:03:00 CEST",
+        "sentiment": {
+          "neg": 0.329,
+          "neu": 0.506,
+          "pos": 0.165,
+          "compound": -0.8689
+        }
+      },
+      {
+        "id": "mtsle1b",
+        "parent_id": "t3_1kt5kyw",
+        "depth": 0,
+        "text": "Man könnte ein Treffen für Leute aus r/radwien organisieren…",
+        "author": "lovelyloner11",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 08:50:57 CEST",
         "sentiment": {
           "neg": 0.0,
           "neu": 1.0,
           "pos": 0.0,
           "compound": 0.0
-        },
-        "created": "2025-05-20 17:42:48 CEST"
+        }
       },
       {
-        "id": "mtbxan1",
-        "text": "Ich glaub ich hab die in einer U-Bahnstation gesehen.\nHat auch nach einer Sonnenbrille gefragt. Bin einfach weitergegangen.\nIch glaub nicht, dass die was stehlen will. Nur verwirrt. Am besten ignorieren.",
-        "author": "Karlotius",
-        "score": 31,
-        "sentiment": {
-          "neg": 0.212,
-          "neu": 0.788,
-          "pos": 0.0,
-          "compound": -0.8316
-        },
-        "created": "2025-05-20 19:36:18 CEST"
-      },
-      {
-        "id": "mtbafw5",
-        "text": "Wie konnte sie Dir ihren geklauten Ausweis zeigen? \n\nHört sich stark nach geistiger Verwirrung an. Gerade in Wien keine Seltenheit.",
-        "author": "jschundpeter",
-        "score": 67,
+        "id": "mtslorh",
+        "parent_id": "t3_1kt5kyw",
+        "depth": 0,
+        "text": "Ich finde offen, freundlich und interessiert auf Menschen zugehen ist nie creepy/cringe. Go!",
+        "author": "LamaLove98",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 08:53:41 CEST",
         "sentiment": {
           "neg": 0.0,
           "neu": 1.0,
           "pos": 0.0,
           "compound": 0.0
-        },
-        "created": "2025-05-20 17:45:56 CEST"
+        }
       }
     ]
   },
   {
-    "id": "1krs125",
-    "title": "Anzeige how much of a fine to expect?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 0.795,
-      "pos": 0.205,
-      "compound": 0.2023
-    },
-    "selftext": "Hello everyone, If I parked in Vienna in a zone which says halten und parken verboten, and received an anzeige on my windshield stating that the abschleppen des Fahrzeugs wurde veranlasst“ yet I drove away before it got towed, how much of a fine will I be expecting? ",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.963,
-      "pos": 0.037,
-      "compound": 0.2023
-    },
-    "author": "Significant-City-379",
-    "score": 4,
-    "upvote_ratio": 0.63,
-    "controversiality": 2.59,
-    "created_utc": "2025-05-21 09:35:57 CEST",
-    "num_comments": 7,
-    "url": "https://www.reddit.com/r/wien/comments/1krs125/anzeige_how_much_of_a_fine_to_expect/",
+    "id": "1ksqc0j",
+    "author": "MathSpecialist2692",
+    "created_utc": "2025-05-22 15:11:39 CEST",
+    "num_comments": 62,
+    "url": "https://www.reddit.com/r/wien/comments/1ksqc0j/rückkehr_zu_den_wiener_linien_aber_bewerbungen/",
     "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question",
-    "comments": [
-      {
-        "id": "mtfr8rw",
-        "text": "the same thing happened to me couple of days ago. expect a fine of 58 euros in the post",
-        "author": "sendvo",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 0.909,
-          "pos": 0.091,
-          "compound": 0.2023
-        },
-        "created": "2025-05-21 09:44:26 CEST"
-      },
-      {
-        "id": "mtftl35",
-        "text": "Should be around 60€",
-        "author": "No-Perception5953",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        },
-        "created": "2025-05-21 10:08:55 CEST"
-      },
-      {
-        "id": "mtfqv33",
-        "text": "u will have to pay the fine for \"Abschleppen\" not sure how much 200-300 euros and also the parking fine...",
-        "author": "lerdmeister",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.146,
-          "neu": 0.697,
-          "pos": 0.157,
-          "compound": 0.0613
-        },
-        "created": "2025-05-21 09:40:29 CEST"
-      }
-    ]
-  },
-  {
-    "id": "1kr5m00",
-    "title": "Sag's Wien ist ja wirklich super.",
+    "edited": 1747920577.0,
+    "flair": ":Arbeit: Arbeit | Work",
+    "title": "Rückkehr zu den Wiener Linien – aber Bewerbungen werden automatisch abgelehnt?",
     "title_sentiment": {
       "neg": 0.0,
-      "neu": 0.562,
-      "pos": 0.438,
-      "compound": 0.5994
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
     },
-    "selftext": "Wollts euch nur sagen. Ist direkt von der Stadt im App Store.\n\n--- Edit: Das ging ja richtig durch die Decke, ist das nicht super schön? 17k views, die Developer sehen sicher einen riesen Spike bei den Downloads und können sich freuen :D",
+    "selftext": "**Hallo zusammen!**\n\nIch war früher Busfahrer bei den Wiener Linien. Die Arbeit selbst lief gut, aber ich habe damals (mit anderen zusammen) gekündigt, weil plötzlich verlangt wurde, regelmäßig zwei weit entfernte Garagen anzufahren – obwohl ursprünglich nur von einer die Rede war. Wohnort oder Shuttle-Lösung gab es keine, daher war das für mich nicht machbar.\n\nSeit einiger Zeit versuche ich, wieder einzusteigen, aber alle meine Bewerbungen werden automatisch abgelehnt – immer mit derselben Standardantwort, ohne konkrete Begründung.\n\nDamals ist bei meiner Einstellung seitens HR leider einiges schiefgelaufen, und sie wurden dafür intern auch zur Rede gestellt. Ich habe ein bisschen die Sorge, dass man mir das jetzt nachträgt und meine Bewerbungen deshalb gar nicht mehr wirklich in Betracht gezogen werden.\n\nHat jemand von euch Einblick in solche Abläufe oder Tipps, wie ich meine Chancen verbessern könnte?\n\nDanke euch im Voraus!\n\n  \nEdit: gegenseitigen Einvernehmen",
     "body_sentiment": {
-      "neg": 0.143,
-      "neu": 0.713,
-      "pos": 0.145,
-      "compound": 0.0343
+      "neg": 0.149,
+      "neu": 0.851,
+      "pos": 0.0,
+      "compound": -0.9776
     },
-    "author": "Hydrozy",
-    "score": 125,
+    "score": 76,
     "upvote_ratio": 0.91,
-    "controversiality": 2.789999999999999,
-    "created_utc": "2025-05-20 16:01:14 CEST",
-    "num_comments": 31,
-    "url": "https://www.reddit.com/r/wien/comments/1kr5m00/sags_wien_ist_ja_wirklich_super/",
-    "awards": 0,
-    "edited": 1747769889.0,
-    "flair": ":Kamera: Visiting | Tourism",
+    "controversiality": 5.579999999999998,
     "comments": [
       {
-        "id": "mtaws8u",
-        "text": "Ich melde sehr gerne ausgefallene Beleuchtung. Das wird sich auch immer zeitnah angesehen und flott repariert.  \nDie App ist manchmal bissi buggy, aber alles in allem funktioniert es super! Kann sie auch sehr empfehlen.",
-        "author": "Spontanvegetation420",
-        "score": 54,
+        "id": "mtnezgy",
+        "parent_id": "t3_1ksqc0j",
+        "depth": 0,
+        "text": "Wenn's automatisch erfolgt wird es evtl. automatisch generiert, dass Dienstnehmer die bei den WL ausgetreten sind nicht wieder aufgenommen werden.\n\nHast du noch Kontakt etc. zu deinen Vorgesetzten etc. von damals dass du evtl. persönlich mit denen redest und sagst dass du zurückkommen willst? Damit kannst du vielleicht den normalen Bewerbungsprozess umgehen.",
+        "author": "SprinklesOk2847",
+        "score": 77,
+        "edited": false,
+        "created": "2025-05-22 15:15:22 CEST",
         "sentiment": {
-          "neg": 0.098,
-          "neu": 0.804,
-          "pos": 0.098,
-          "compound": 0.0
-        },
-        "created": "2025-05-20 16:39:22 CEST"
-      },
-      {
-        "id": "mtb2v23",
-        "text": "Ich vrwends für entsorgte Räder, die seit einem Jahr an den Fahrradständer gekettet sind und schon komplett hin. Die bekommen dann ein Ettikett und werden entsprechend entsorgt. Funktioniert auch super.",
-        "author": "-formic-acid-",
-        "score": 29,
-        "sentiment": {
-          "neg": 0.202,
-          "neu": 0.698,
-          "pos": 0.101,
+          "neg": 0.071,
+          "neu": 0.929,
+          "pos": 0.0,
           "compound": -0.5994
-        },
-        "created": "2025-05-20 17:09:01 CEST"
+        }
       },
       {
-        "id": "mtb4qfd",
-        "text": "Hab da vor 2 Monaten mal einen Grünstreifen gemeldet der komplett verdreckt war, am nächsten Tag war das Ticket bearbeitet,am Tag darauf wars behoben :)",
-        "author": "Craftingphil",
-        "score": 28,
+        "id": "mtnf0ms",
+        "parent_id": "t3_1ksqc0j",
+        "depth": 0,
+        "text": "Wie ist deine Kündigung denn abgelaufen?\nVon welchem Zeitraum redest du wenn du \"früher\" verwendest?\n\n\nGenerell kommt es schonmal vor dass Mitarbeiter beim ausscheiden von der Personalabteilung auf eine schwarze Liste gesetzt werden. ",
+        "author": "DrBhu",
+        "score": 26,
+        "edited": false,
+        "created": "2025-05-22 15:15:33 CEST",
         "sentiment": {
-          "neg": 0.322,
-          "neu": 0.593,
-          "pos": 0.085,
-          "compound": -0.8555
-        },
-        "created": "2025-05-20 17:18:06 CEST"
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtng3to",
+        "parent_id": "t3_1ksqc0j",
+        "depth": 0,
+        "text": "Hast deinen Account im Bewerbungsportal schonmal neu angelegt?",
+        "author": "adorable__elephant",
+        "score": 20,
+        "edited": false,
+        "created": "2025-05-22 15:21:39 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
       }
     ]
   },
   {
-    "id": "1krdfhk",
-    "title": "People near main station in plain clothes claiming to be police is that legit?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Hi,\n\nToday I had a strange encounter near the main train station. Three people in plain clothes said they were police and asked for my ID. I asked for a badge, and they showed me one. Atleast to me badge looked fake. I gave them my ID, and they looked at it and took a few pictures.\n\nLater, I went to a real police station and explained what happened. They confirmed that plainclothes officers do check IDs sometimes, so that was somewhat reassuring.\n\nStill, I’m posting here to ask has anyone else experienced something like this? I’m a bit worried about identity theft. Is there something else I can do to mitigate the risk?",
-    "body_sentiment": {
-      "neg": 0.078,
-      "neu": 0.882,
-      "pos": 0.04,
-      "compound": -0.5651
-    },
-    "author": "Next_Adhesiveness423",
-    "score": 47,
-    "upvote_ratio": 0.89,
-    "controversiality": 5.169999999999999,
-    "created_utc": "2025-05-20 21:12:43 CEST",
-    "num_comments": 47,
-    "url": "https://www.reddit.com/r/wien/comments/1krdfhk/people_near_main_station_in_plain_clothes/",
+    "id": "1kte7uh",
+    "author": "Cenny1010",
+    "created_utc": "2025-05-23 10:12:35 CEST",
+    "num_comments": 1,
+    "url": "https://www.reddit.com/r/wien/comments/1kte7uh/gibts_irgendwo_in_wien_ein_public_viewing_vom_ssc/",
     "awards": 0,
     "edited": false,
     "flair": ":Frage: Frage | Question",
-    "comments": [
-      {
-        "id": "mtcoffe",
-        "text": "Called AGM, (Ausgleichsmaßnahmen Schengen) because there are no more border checkpoints at Austrias borders, so plainclothes officers do checks at public thoroughfares like train stations. That‘s absolutely legit.\n\n\nYou can also ask for their badge number (which can have anything between 5 and 8 numbers right now, and call a non emergency number to confirm that everything‘s fine.)",
-        "author": "Lobiatho",
-        "score": 68,
-        "sentiment": {
-          "neg": 0.075,
-          "neu": 0.816,
-          "pos": 0.108,
-          "compound": 0.0258
-        },
-        "created": "2025-05-20 21:48:27 CEST"
-      },
-      {
-        "id": "mtcknq6",
-        "text": "Did the ID look anything like this? [https://www.sn.at/salzburg/chronik/was-tun-wenn-falsche-polizisten-anlaeuten-die-salzburger-polizei-gibt-tipps-24862471](https://www.sn.at/salzburg/chronik/was-tun-wenn-falsche-polizisten-anlaeuten-die-salzburger-polizei-gibt-tipps-24862471)",
-        "author": "BMP83",
-        "score": 20,
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 0.737,
-          "pos": 0.263,
-          "compound": 0.3612
-        },
-        "created": "2025-05-20 21:29:44 CEST"
-      },
-      {
-        "id": "mtd6t99",
-        "text": "Hi, It's totally legitimate. There's a special immigration police station at the main train station that does exactly that all day long. Since there are no longer any border controls, there are more frequent checks at stations and in the border area to see if there are any people present without a residence permit. It's also legally covered, and as long as they didn't take you with them, you shouldn't really face any consequences.",
-        "author": "Marokko100",
-        "score": 18,
-        "sentiment": {
-          "neg": 0.028,
-          "neu": 0.918,
-          "pos": 0.053,
-          "compound": 0.2263
-        },
-        "created": "2025-05-20 23:19:52 CEST"
-      }
-    ]
-  },
-  {
-    "id": "1kr0e3k",
-    "title": "How to say Vienna in various languages",
+    "title": "Gibts irgendwo in Wien ein Public Viewing vom SSC Napoli Fußballspiel heute?",
     "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "selftext": "",
+    "selftext": "Gibt‘s hier Fußballfans (Ssc Napoli)? Heute ist ja das wichtigste Spiel der Saison und ich wollt mal fragen ob es ihn Wien vllt irgendwo ein Public Viewing gibt oder so? Bin erst vor kurzem hergezogen und das wär halt mega wenn man da irgendwo mit anderen Fans mitfiebern könnte! Bin für alle Tipps dankbar",
     "body_sentiment": {
       "neg": 0.0,
-      "neu": 0.0,
+      "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "author": "nebulnaskigxulo",
-    "score": 268,
-    "upvote_ratio": 0.98,
-    "controversiality": 0.8200000000000007,
-    "created_utc": "2025-05-20 11:12:53 CEST",
-    "num_comments": 41,
-    "url": "https://i.redd.it/yzelylqwot1f1.png",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Memes: Memes",
+    "score": 2,
+    "upvote_ratio": 0.75,
+    "controversiality": 0.25,
     "comments": [
       {
-        "id": "mt9m0jl",
-        "text": "Bitte poste für Blinde unter *diesem Kommentar* eine Bildbeschreibung. [Hier](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) ein paar Tipps. // Please post an image description for the blind under *this comment*. [Here](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) are a few tips.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
-        "author": "AutoModerator",
+        "id": "mtsuh3x",
+        "parent_id": "t3_1kte7uh",
+        "depth": 0,
+        "text": "Public Viewing im engeren Sinne wohl kaum, aber vielleicht gibt es ja eine neapolitanische Pizzeria, die nicht von Türken/Arabern/Indern geleitet wird sondern tatsächlich von Neapolitanern. Ansonsten halt irgendein Pub als Alternative.",
+        "author": "csabinho",
         "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:20:24 CEST",
         "sentiment": {
-          "neg": 0.046,
-          "neu": 0.875,
-          "pos": 0.079,
-          "compound": 0.2263
-        },
-        "created": "2025-05-20 11:12:54 CEST"
-      },
-      {
-        "id": "mt9mc5v",
-        "text": "Die piefke flagge als \"deutsch\" flagge zu nehmen schreit doch nach provokation",
-        "author": "Anders_142536",
-        "score": 126,
-        "sentiment": {
-          "neg": 0.262,
-          "neu": 0.738,
+          "neg": 0.115,
+          "neu": 0.885,
           "pos": 0.0,
           "compound": -0.5994
-        },
-        "created": "2025-05-20 11:16:25 CEST"
+        }
       },
       {
-        "id": "mt9n3s1",
-        "text": "Pa brate was soll ich dir jetzt sagen čulige",
-        "author": "TheWeeknd_",
-        "score": 41,
+        "id": "mtsy0sq",
+        "parent_id": "t3_1kte7uh",
+        "depth": 0,
+        "text": "Kein Fussballfan, aber evtl. im 1516? Dort läuft immer Fußball",
+        "author": "ExasperatedRabbitor",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:56:36 CEST",
         "sentiment": {
           "neg": 0.0,
           "neu": 1.0,
           "pos": 0.0,
           "compound": 0.0
-        },
-        "created": "2025-05-20 11:24:34 CEST"
+        }
       }
     ]
   },
   {
-    "id": "1kr2r29",
-    "title": "Fahrradbremszüge wurden mit Seitenschneider gekappt",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 0.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "author": "meme_is_no_sin",
-    "score": 100,
-    "upvote_ratio": 0.95,
-    "controversiality": 2.6000000000000023,
-    "created_utc": "2025-05-20 13:42:34 CEST",
-    "num_comments": 52,
-    "url": "https://i.redd.it/iqfaq3pccx1f1.jpeg",
+    "id": "1kt3aly",
+    "author": "xXshadowboiXx",
+    "created_utc": "2025-05-23 00:01:29 CEST",
+    "num_comments": 20,
+    "url": "https://www.reddit.com/r/wien/comments/1kt3aly/were_we_in_the_wrong_horrid_taxi_experience/",
     "awards": 0,
     "edited": false,
-    "flair": ":Grant: Grantln | Grouching",
+    "flair": ":Frage: Frage | Question",
+    "title": "Were we in the wrong? Horrid taxi experience",
+    "title_sentiment": {
+      "neg": 0.524,
+      "neu": 0.476,
+      "pos": 0.0,
+      "compound": -0.765
+    },
+    "selftext": "Hi all, my girlfriend and I are currently on a 3 day trip here in Vienna and up until tonight we were having an absolutely lovely time. Due to the rain we decided to book a Bolt taxi back to our airbnb. In the app we accidentally selected the cash option and only realized when we go to our destination. Asked the driver if I could pay with card bu any chance and he literally went “ if you want card why the fuck did you select cash”. I told him we didn’t know it’s not possible to pay with card in the car. Then I told her I can get him the cas from the atm that was literally next to the car, to which he yelled it’s a waste of time and drove us for an extra 2 blocks to stop and start screaming to get the fuck out of his car.\n\nWe genuinely didn’t want any confrontation and I have offered multiple times to withdraw the money for him.\n\nIs it something that happens regularly here? Because i have used Bolt countless times in Budapest and Warsaw and both places the drivers were absolutely chill and never made such a scene. Here we were scared that he is gonna do something when he drove off with us still in the car.",
+    "body_sentiment": {
+      "neg": 0.109,
+      "neu": 0.85,
+      "pos": 0.041,
+      "compound": -0.9394
+    },
+    "score": 14,
+    "upvote_ratio": 0.67,
+    "controversiality": 6.6,
     "comments": [
       {
-        "id": "mta2vfy",
-        "text": "Bitte poste für Blinde unter *diesem Kommentar* eine Bildbeschreibung. [Hier](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) ein paar Tipps. // Please post an image description for the blind under *this comment*. [Here](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) are a few tips.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
-        "author": "AutoModerator",
-        "score": 1,
+        "id": "mtqiroa",
+        "parent_id": "t3_1kt3aly",
+        "depth": 0,
+        "text": "Thats really not normal. Okay of course its unfortunate that you accidentally selected the cash option. Buts that NOT a excuse for the driver to react this way. Get money from an ATM to pay the driver should be possible. + a generous tip/fee for the extra time. \n\nPlease report this driver. That not normal behavior. \nI used bolt several times in Vienna and it was always a normal experience. Had no such bad drivers yet.",
+        "author": "rudlolf",
+        "score": 75,
+        "edited": false,
+        "created": "2025-05-23 00:28:51 CEST",
         "sentiment": {
-          "neg": 0.046,
-          "neu": 0.875,
-          "pos": 0.079,
-          "compound": 0.2263
-        },
-        "created": "2025-05-20 13:42:37 CEST"
+          "neg": 0.139,
+          "neu": 0.765,
+          "pos": 0.096,
+          "compound": -0.1783
+        }
       },
       {
-        "id": "mta4mg1",
-        "text": "Das Wiener Pendant zur Grazer autokratzerin?",
-        "author": "Spezi99",
-        "score": 61,
+        "id": "mtr1pa0",
+        "parent_id": "t3_1kt3aly",
+        "depth": 0,
+        "text": "I think normally they'd drive you to an ATM and leave the meter running while waiting for you to get cash. But hey, you got a free ride...",
+        "author": "SirWitzig",
+        "score": 28,
+        "edited": false,
+        "created": "2025-05-23 02:17:30 CEST",
         "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        },
-        "created": "2025-05-20 13:55:06 CEST"
+          "neg": 0.035,
+          "neu": 0.824,
+          "pos": 0.141,
+          "compound": 0.6542
+        }
       },
       {
-        "id": "mta6rxy",
-        "text": "Am Freitag und Samstag findet die reparfair Wien statt von 10-18 Uhr. Kannst dein Fahrrad dort gratis reparieren. Museumsquartier",
-        "author": "ManufacturerFit5832",
-        "score": 60,
+        "id": "mtql883",
+        "parent_id": "t3_1kt3aly",
+        "depth": 0,
+        "text": "No you just stumbled on a huge ahole. I advise you to always carry some cash when going to different towns and countries just in case.",
+        "author": "ThatDisplay2487",
+        "score": 28,
+        "edited": false,
+        "created": "2025-05-23 00:42:45 CEST",
         "sentiment": {
-          "neg": 0.176,
-          "neu": 0.769,
-          "pos": 0.054,
-          "compound": -0.5719
-        },
-        "created": "2025-05-20 14:09:55 CEST"
+          "neg": 0.077,
+          "neu": 0.842,
+          "pos": 0.081,
+          "compound": 0.0258
+        }
       }
     ]
   },
   {
-    "id": "1krqkep",
-    "title": "Animal Organizations in Vienna? | Tierorganisationen in Wien?",
+    "id": "1ktem89",
+    "author": "felpower",
+    "created_utc": "2025-05-23 10:42:12 CEST",
+    "num_comments": 7,
+    "url": "https://www.reddit.com/r/wien/comments/1ktem89/wo_kann_man_in_wien_noch_bier_in_plastikflaschen/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Essn: Moizeit | Cuisine",
+    "title": "Wo kann man in Wien noch Bier in Plastikflaschen kaufen?",
     "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "selftext": "Hello all,\n\nWhat animal organizations exist in Vienna? (Ex. zoo, sanctuary, animal shelter, farm, etc). I’d like to volunteer or work at one in the future. \n\nI don’t have a car so I’m only looking inside Vienna. I’m having trouble finding places online, but I figure locals would know more.\n\nSo far, I’m aware of TierQuarTier, Tiergarten Schönbrunn, Haus des Meeres, FourPaws, Tierschutz Vösendorf, Gut Aidlbichl, and ARGE Papageinschutz.\n\nThank you in advance!\n\nP.S. Yes, I am also taking German classes.",
+    "selftext": "Ja ich weiß, in Österreich sowas zu fragen sollte verboten sein, aber ich brauche so etwas als Scherz für einen Freund.  \nWo kann man in Wien noch Bier in Plastikflaschen kaufen, idealerweiße die 1.5L Schwechater Maxi Plastikflaschen die es früher zu kaufen gab. Aber wenn jemand etwas anderes kennt, reicht auch 0.5L PET Flaschen. Danke im vorraus!\n\nhttps://preview.redd.it/et4gj7omuh2f1.jpg?width=1200&format=pjpg&auto=webp&s=bec1cf7e46e398a2da54de99347b1ea7aba06c56\n\n",
     "body_sentiment": {
-      "neg": 0.021,
-      "neu": 0.878,
-      "pos": 0.101,
-      "compound": 0.7901
+      "neg": 0.126,
+      "neu": 0.874,
+      "pos": 0.0,
+      "compound": -0.8439
     },
-    "author": "zinbin",
-    "score": 3,
-    "upvote_ratio": 0.8,
-    "controversiality": 0.5999999999999999,
-    "created_utc": "2025-05-21 07:54:34 CEST",
+    "score": 0,
+    "upvote_ratio": 0.5,
+    "controversiality": 3.5,
+    "comments": [
+      {
+        "id": "mtsx7xt",
+        "parent_id": "t3_1ktem89",
+        "depth": 0,
+        "text": "Reported",
+        "author": "Wisho",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:48:29 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtsxdl0",
+        "parent_id": "t3_1ktem89",
+        "depth": 0,
+        "text": "Ja hallo Herr Landespolizeidirektion, ich möchte ein Hassverbrechen melden",
+        "author": "MisterDropFish",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:50:04 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtswr0h",
+        "parent_id": "t3_1ktem89",
+        "depth": 0,
+        "text": "🤔penny",
+        "author": "Due_Tension121",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:43:43 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1kt1dyx",
+    "author": "dashailn",
+    "created_utc": "2025-05-22 22:41:55 CEST",
+    "num_comments": 28,
+    "url": "https://www.reddit.com/r/wien/comments/1kt1dyx/das_gartenhaus_vom_nachbarhaus_blockiert_mein/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "title": "Das Gartenhaus vom Nachbarhaus blockiert mein Küchenfenster – was kann ich tun?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Servus!\n\nVielleicht kann mir jemand mit Infos helfen 🙏\n\nIch will eine Wohnung kaufen, aber es gibt ein Problem, das ich vielleicht lösen kann. Das Küchenfenster wird von so einem Gartenhaus blokiert. Ich wohne im Erdgeschoss und meine Küchenfenster gehen auf so einen Hinterhofgarten vom Nachbarhaus. Das Haus ist etwa 4-5 Meter von meinem entfernt. Das Gartenhaus (oder was auch immer das ist) ist 3 cm von meinem Fenster entfernt. Die anderen Nachbarn scheinen leere Hinterhöfe mit Bänken und Blumen zu haben, aber keine Anbauten.\n\nIch weiß nicht, warum es dort gebaut wurde und ob es überhaupt legal ist. Es wäre wirklich schön, etwas Licht in der Küche zu haben (derzeit gibt es gar kein Licht 🥲).\n\nKönnte mir bitte jemand einen Rat geben, wie ich in dieser Situation vorgehen soll? An wen könnte ich mich in der Stadt wenden, um mich beraten zu lassen?\n\nIch bin für jeden Tipp dankbar 🙌",
+    "body_sentiment": {
+      "neg": 0.045,
+      "neu": 0.945,
+      "pos": 0.009,
+      "compound": -0.7752
+    },
+    "score": 10,
+    "upvote_ratio": 0.86,
+    "controversiality": 3.9200000000000004,
+    "comments": [
+      {
+        "id": "mtpzxjp",
+        "parent_id": "t3_1kt1dyx",
+        "depth": 0,
+        "text": "Am besten bei der Baupolizei (MA37) anrufen und fragen, wie dbzgl die Rechtslage in Wien ist.",
+        "author": "Hubble1000",
+        "score": 31,
+        "edited": false,
+        "created": "2025-05-22 22:49:11 CEST",
+        "sentiment": {
+          "neg": 0.206,
+          "neu": 0.794,
+          "pos": 0.0,
+          "compound": -0.5994
+        }
+      },
+      {
+        "id": "mtq24iq",
+        "parent_id": "t3_1kt1dyx",
+        "depth": 0,
+        "text": "Wenn, das Ding rechtmäßig gebaut wurde kannst wahrscheinlich nichts machen.\n\nVor allem weil, du als Käufer nach dem erbau erst kaufst.\n\nAber nur wenn der Nachbar eine Baubewilligung hat, ... Also Stadt Wien fragen bzw. Verwaltungsgericht, bzw. MA37",
+        "author": "Aggressive_Peach_768",
+        "score": 9,
+        "edited": false,
+        "created": "2025-05-22 22:59:51 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtryxdi",
+        "parent_id": "t3_1kt1dyx",
+        "depth": 0,
+        "text": "Das ist eine ungewöhnliche Situation. Grundsätzlich haben Fenster wie schon geschrieben wurde, einen Abstand zum Nachbargrundstück zu haben, den dieses Haus offenbar nicht einhält. Das kommt natürlich in der Realität trotzdem immer wieder vor. Etwa wenn das Fenster irgendwann illegal in die Wand geschlagen wurde (bei Altbestand von z.B. ehemaligen Manufakturen oder Betriebsanlagen ist das manchmal der Fall), oder das Grundstück irgendwann geteilt wurde, und am Nachbargrundstück erst später gebaut wurde.  \n  \nSollte das Fenster nicht bewilligt sein hast du schlechte Karten. rechtlich existiert es dann einfach nicht.   \nWenn das Fenster legal ist, sieht die Sache schon anders aus. Laut §488 ABGB hast du zwar kein Recht auf Aussicht, aber auf Licht und Luft. Das sehe ich bei 3cm Abstand nicht gewährleistet.   \nZudem gibt es da das OGH Urteil GZ [6 Ob 129/14k](https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&Dokumentnummer=JJT_20141119_OGH0002_0060OB00129_14K0000_000&ResultFunctionToken=18435a1e-157b-4e2c-8641-46267ce6f7de&Position=1&Gericht=&Rechtssatznummer=&Rechtssatz=&Fundstelle=&AenderungenSeit=Undefined&SucheNachRechtssatz=True&SucheNachText=True&GZ=6Ob129/14k&VonDatum=&BisDatum=04.03.2015&Norm=&ImRisSeit=Undefined&ResultPageSize=50&Suchworte=) nachdem man sogar ein bisschen Himmel sehen können muss.   \n  \nThat said: ich würde vor dem Kauf mit diesem Nachbarn das Gespräch suchen. Eine Gartenhütte vor einem Fenster klingt mehr nach einem Statement, als nach Zufall. Vielleicht hatte er Streit mit den Vorbesitzern, vielleicht stand die Wohnung lange leer und er hat sich nichts dabei gedacht,  vielleicht ist er aber auch einfach ein professionelles Orschgeigerl. Du wirst mit diesem Menschen jedenfalls noch länger auskommen müssen, und \"Guten Tag, ich bin der neue Nachbar. Hier ist ein Kuchen und da eine Unterlassungserklärung\" ist ein denkbar schlechter Einstig für eine Nachbarschaft. Vor allem wenn nicht klar ist, wie ein etwaiger Rechtsstreit enden würde.\n\nNachtrag: ich bin kein Anwalt, aber Inhaber eines Fensters in einer Feuermauer und muss mich wegen neuer Nachbarn gerade selbst mit der Thematik herumschlagen.",
+        "author": "Last_Torf",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 05:44:06 CEST",
+        "sentiment": {
+          "neg": 0.055,
+          "neu": 0.94,
+          "pos": 0.005,
+          "compound": -0.9413
+        }
+      }
+    ]
+  },
+  {
+    "id": "1kt0ex2",
+    "author": "Sure_Scholar3352",
+    "created_utc": "2025-05-22 22:02:48 CEST",
+    "num_comments": 5,
+    "url": "https://www.reddit.com/r/wien/comments/1kt0ex2/wo_finde_ich_australischeneuseeländische/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "title": "Wo finde ich Australische/Neuseeländische Lebensmittel?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Ich bin für meinen Freund (Neuseeländer) auf der Suche nach einem Laden, in dem man Australische oder Neuseeländische Lebensmittel (hier besonders Snacks und Süßigkeiten wie Whittaker's oder Cherry Ripe) kaufen kann. Diese ganzen US Süßigkeiten Shops wie zum Beispiel auf der MaHü hab ich alle schon durch. Da gibt's aber leider nichts in die Richtung :( ich freue mich über jeden Vorschlag :) \n\nTLDR: wo in Wien finde ich Australische oder Neuseeländische Snacks/Schokolade?",
+    "body_sentiment": {
+      "neg": 0.085,
+      "neu": 0.877,
+      "pos": 0.038,
+      "compound": -0.5859
+    },
+    "score": 8,
+    "upvote_ratio": 0.91,
+    "controversiality": 0.44999999999999984,
+    "comments": [
+      {
+        "id": "mtpsaju",
+        "parent_id": "t3_1kt0ex2",
+        "depth": 0,
+        "text": "Bobby's?",
+        "author": "M_B_M",
+        "score": 7,
+        "edited": false,
+        "created": "2025-05-22 22:12:28 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtpt06t",
+        "parent_id": "t3_1kt0ex2",
+        "depth": 0,
+        "text": "Also helfen kann ich nur insofern, dass ich dir leider sagen muss, dass ich einen Freund aus Australien habe, der mir australisches Lebensmittel verschenken wollte, aber nach erfolgloser Suche in lokalen Geschäften hat er sich schließlich für Online Shops entschlossen. \n\nWenn du aber was findest, würde ich gern wissen!",
+        "author": "blink-1hundert2und80",
+        "score": 3,
+        "edited": false,
+        "created": "2025-05-22 22:15:53 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtq2j9t",
+        "parent_id": "t3_1kt0ex2",
+        "depth": 0,
+        "text": "Ich wollt schon mehrmals Stone and Wood Bier importieren. Aber wollt mich auch noch nicht mit den Kosten auseinandersetzen. Wüsst da vllt wär was?",
+        "author": "Open_Fig4998",
+        "score": 2,
+        "edited": false,
+        "created": "2025-05-22 23:01:53 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1ktcc15",
+    "author": "sayayori",
+    "created_utc": "2025-05-23 08:02:04 CEST",
     "num_comments": 3,
-    "url": "https://www.reddit.com/r/wien/comments/1krqkep/animal_organizations_in_vienna_tierorganisationen/",
+    "url": "https://www.reddit.com/r/wien/comments/1ktcc15/music_shops_in_vienna_with_a_focus_on_local_music/",
     "awards": 0,
     "edited": false,
-    "flair": ":Tiere: Tiere | Animals",
+    "flair": ":Frage: Frage | Question",
+    "title": "Music shops in Vienna with a focus on local music?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Hello! I'm going to be visiting Vienna for the first time in years, and I really am interested in learning more about the local music scene...specifically current (or semi-recent) local bands.\n\nOne thing in particular I'd love to do is find a shop that sells CD's or other merchandise of any potential local bands. I'd love to take back some music from my trip to explore deeper, and maybe anything else that can help me learn about the local music beyond yknow. Composers who are pretty easy to find relevant spots to.\n\n  \nIn particular, I love genres like punk, new wave, rock (hard, psychedelic, etc), shoegaze, dreampop, darkwave, etc. If you even have local band recs for those genres or anything along those lines (and where I may stumble across the local music scene/can buy their music), I'd really appreciate it!\n\n  \nThank you c:",
+    "body_sentiment": {
+      "neg": 0.008,
+      "neu": 0.793,
+      "pos": 0.198,
+      "compound": 0.9859
+    },
+    "score": 1,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
     "comments": [
       {
-        "id": "mtg3vqa",
-        "text": "Hey! They are looking for volunteers all around the city: [a gspia fias tier](https://www.volkshilfe-wien.at/angebote-services/beratung-psychosoziales/a-gspia-furs-tier/)\n\nJust fill out the contact form in english if you don't speak German :) and someone will contact you",
-        "author": "Ok_3518",
+        "id": "mtspvrz",
+        "parent_id": "t3_1ktcc15",
+        "depth": 0,
+        "text": "I think MediaMarkt has an Austropop section. For Electronic music there‘s a shop in Neubau I think but I forgot its name",
+        "author": "ClemWon",
         "score": 1,
+        "edited": false,
+        "created": "2025-05-23 09:34:25 CEST",
         "sentiment": {
-          "neg": 0.08,
-          "neu": 0.92,
+          "neg": 0.0,
+          "neu": 1.0,
           "pos": 0.0,
-          "compound": -0.416
-        },
-        "created": "2025-05-21 11:56:41 CEST"
-      },
-      {
-        "id": "mtfu53x",
-        "text": "Hi, not sure if this is exactly what you are looking for, but VGT (Organization against animal factories) is always happy about volunteers, they are based in Vienna :) \n\n[https://vgt.at/de/unterstuetzen/aktiv-werden.html](https://vgt.at/de/unterstuetzen/aktiv-werden.html)",
-        "author": "amynase",
-        "score": 1,
-        "sentiment": {
-          "neg": 0.039,
-          "neu": 0.719,
-          "pos": 0.241,
-          "compound": 0.8614
-        },
-        "created": "2025-05-21 10:14:51 CEST"
+          "compound": 0.0
+        }
       }
     ]
   }
