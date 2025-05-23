@@ -30,9 +30,8 @@ def analyze_sentiment(text):
 def process_post(post):
     """ Process raw post data with sentiment analysis """
     return {
-        "id": post.id,
+        "post_id": post.id,
         "author": str(post.author) if post.author else "N/A",
-
         "created_utc": to_vienna_time(post.created_utc),
         "num_comments": post.num_comments,
         "url": post.url,

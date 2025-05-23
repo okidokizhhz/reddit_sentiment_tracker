@@ -1,9 +1,163 @@
 [
   {
+    "id": "1ktfm8f",
+    "author": "zimbarimba",
+    "created_utc": "2025-05-23 11:54:00 CEST",
+    "num_comments": 25,
+    "url": "https://www.reddit.com/gallery/1ktfm8f",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Humor: Satire | Humor",
+    "title": "Hat wer von euch schon mal einen UFO-Landeplatz bei der MA 3000 beantragt?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "score": 120,
+    "upvote_ratio": 0.99,
+    "controversiality": 0.2500000000000002,
+    "comments": [
+      {
+        "id": "mtt3rwn",
+        "parent_id": "t3_1ktfm8f",
+        "depth": 0,
+        "text": "Bitte poste für Blinde unter *diesem Kommentar* eine Bildbeschreibung. [Hier](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) ein paar Tipps. // Please post an image description for the blind under *this comment*. [Here](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) are a few tips. \n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
+        "author": "AutoModerator",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 11:54:00 CEST",
+        "sentiment": {
+          "neg": 0.046,
+          "neu": 0.875,
+          "pos": 0.079,
+          "compound": 0.2263
+        }
+      },
+      {
+        "id": "mtt4slv",
+        "parent_id": "t3_1ktfm8f",
+        "depth": 0,
+        "text": "Ist es noch ein unbekanntes Flugobjekt wenn es einen Zulassungsschein hat?",
+        "author": "AstroFlippy",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 12:03:27 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtt422y",
+        "parent_id": "t3_1ktfm8f",
+        "depth": 0,
+        "text": "Als Erdnationalist bin ich ja dafür, dass Keplerianer nicht mehr bei uns landen dürfen, aber auf mich gheat ja eh koaner",
+        "author": "imnotokayandthatso-k",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 11:56:38 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      }
+    ]
+  },
+  {
+    "id": "1ktfw0e",
+    "author": "erk1nger",
+    "created_utc": "2025-05-23 12:11:26 CEST",
+    "num_comments": 14,
+    "url": "https://i.redd.it/it1d4vhoai2f1.jpeg",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Bilder: Bilder | Pictures",
+    "title": "Wiedner Hauptstraße",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "score": 55,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
+    "comments": [
+      {
+        "id": "mtt5nos",
+        "parent_id": "t3_1ktfw0e",
+        "depth": 0,
+        "text": "Bitte poste für Blinde unter *diesem Kommentar* eine Bildbeschreibung. [Hier](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) ein paar Tipps. // Please post an image description for the blind under *this comment*. [Here](https://www.reddit.com/r/wien/wiki/index/image-descriptions_bildbeschreibung) are a few tips.\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
+        "author": "AutoModerator",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 12:11:28 CEST",
+        "sentiment": {
+          "neg": 0.046,
+          "neu": 0.875,
+          "pos": 0.079,
+          "compound": 0.2263
+        }
+      },
+      {
+        "id": "mttdnna",
+        "parent_id": "t3_1ktfw0e",
+        "depth": 0,
+        "text": "Extra von TU Freihaus wegeschauend, damit man sich diesen Anblick nicht geben muss.",
+        "author": "SirMeep2",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 13:17:57 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtt7nu8",
+        "parent_id": "t3_1ktfw0e",
+        "depth": 0,
+        "text": "Es war schon früher besser…",
+        "author": "sup3r_hero",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 12:29:25 CEST",
+        "sentiment": {
+          "neg": 0.494,
+          "neu": 0.506,
+          "pos": 0.0,
+          "compound": -0.5994
+        }
+      }
+    ]
+  },
+  {
     "id": "1ktc351",
     "author": "Personal-Ad-7065",
     "created_utc": "2025-05-23 07:45:52 CEST",
-    "num_comments": 12,
+    "num_comments": 14,
     "url": "https://www.reddit.com/r/wien/comments/1ktc351/wo_kann_ich_am_besten_meine_xbox_360_samt_spielen/",
     "awards": 0,
     "edited": false,
@@ -22,9 +176,9 @@
       "pos": 0.083,
       "compound": 0.5204
     },
-    "score": 10,
-    "upvote_ratio": 0.86,
-    "controversiality": 1.6800000000000002,
+    "score": 13,
+    "upvote_ratio": 0.88,
+    "controversiality": 1.68,
     "comments": [
       {
         "id": "mtsf6yu",
@@ -99,9 +253,9 @@
       "pos": 0.0,
       "compound": 0.0
     },
-    "score": 30,
-    "upvote_ratio": 0.96,
-    "controversiality": 0.1200000000000001,
+    "score": 42,
+    "upvote_ratio": 1.0,
+    "controversiality": 0.0,
     "comments": [
       {
         "id": "mtq5b2c",
@@ -109,7 +263,7 @@
         "depth": 0,
         "text": "Ein wenig seltsam das Konzept mit vorgezogenen Parteiförderung die man zurückzahlen muss. Aber trotzdem witzig: \n\n>Je schneller sich SPÖ und Neos einig werden, desto teurer wird es für die ÖVP.\n\nXD",
         "author": "wegwerferie",
-        "score": 10,
+        "score": 9,
         "edited": false,
         "created": "2025-05-22 23:16:00 CEST",
         "sentiment": {
@@ -122,10 +276,87 @@
     ]
   },
   {
+    "id": "1kte7uh",
+    "author": "Cenny1010",
+    "created_utc": "2025-05-23 10:12:35 CEST",
+    "num_comments": 5,
+    "url": "https://www.reddit.com/r/wien/comments/1kte7uh/gibts_irgendwo_in_wien_ein_public_viewing_vom_ssc/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":Frage: Frage | Question",
+    "title": "Gibts irgendwo in Wien ein Public Viewing vom SSC Napoli Fußballspiel heute?",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "Gibt‘s hier Fußballfans (Ssc Napoli)? Heute ist ja das wichtigste Spiel der Saison und ich wollt mal fragen ob es ihn Wien vllt irgendwo ein Public Viewing gibt oder so? Bin erst vor kurzem hergezogen und das wär halt mega wenn man da irgendwo mit anderen Fans mitfiebern könnte! Bin für alle Tipps dankbar",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "score": 6,
+    "upvote_ratio": 0.87,
+    "controversiality": 0.65,
+    "comments": [
+      {
+        "id": "mtsuh3x",
+        "parent_id": "t3_1kte7uh",
+        "depth": 0,
+        "text": "Public Viewing im engeren Sinne wohl kaum, aber vielleicht gibt es ja eine neapolitanische Pizzeria, die nicht von Türken/Arabern/Indern geleitet wird sondern tatsächlich von Neapolitanern. Ansonsten halt irgendein Pub als Alternative.",
+        "author": "csabinho",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:20:24 CEST",
+        "sentiment": {
+          "neg": 0.115,
+          "neu": 0.885,
+          "pos": 0.0,
+          "compound": -0.5994
+        }
+      },
+      {
+        "id": "mtsy9wt",
+        "parent_id": "t3_1kte7uh",
+        "depth": 0,
+        "text": "Wettbüros zeigen es sicher",
+        "author": "TheFamousSpy",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:59:09 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtsy0sq",
+        "parent_id": "t3_1kte7uh",
+        "depth": 0,
+        "text": "Kein Fussballfan, aber evtl. im 1516? Dort läuft immer Fußball",
+        "author": "ExasperatedRabbitor",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 10:56:36 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      }
+    ]
+  },
+  {
     "id": "1kt5kyw",
     "author": "CubeXtron",
     "created_utc": "2025-05-23 01:48:13 CEST",
-    "num_comments": 18,
+    "num_comments": 22,
     "url": "https://www.reddit.com/r/wien/comments/1kt5kyw/wie_am_friday_night_skating_freunde_fiden_ohne/",
     "awards": 0,
     "edited": false,
@@ -144,9 +375,9 @@
       "pos": 0.053,
       "compound": 0.3182
     },
-    "score": 16,
-    "upvote_ratio": 0.78,
-    "controversiality": 3.9599999999999995,
+    "score": 21,
+    "upvote_ratio": 0.82,
+    "controversiality": 3.960000000000001,
     "comments": [
       {
         "id": "mts96r8",
@@ -199,10 +430,55 @@
     ]
   },
   {
+    "id": "1ktfdg6",
+    "author": "imnotokayandthatso-k",
+    "created_utc": "2025-05-23 11:37:02 CEST",
+    "num_comments": 1,
+    "url": "https://www.reddit.com/r/wien/comments/1ktfdg6/antragsfrist_für_bachelordiplomstudien_mit/",
+    "awards": 0,
+    "edited": false,
+    "flair": ":OhneSchmaeh: Ohne Schmäh | Serious",
+    "title": "Antragsfrist für Bachelor-/Diplomstudien mit Aufnahme-/ Eignungsverfahren endet am 3. Juni an der Universität Wien. (Detto für Architektur und Informatik @TU Wien)",
+    "title_sentiment": {
+      "neg": 0.0,
+      "neu": 1.0,
+      "pos": 0.0,
+      "compound": 0.0
+    },
+    "selftext": "# Antragsfrist für das Studienjahr 2025/26\n\n# 3. März bis 3. Juni 2025\n\n* [Betriebswirtschaft](https://studieren.univie.ac.at/aufnahmeverfahren/studien/betriebswirtschaftinternationale-betriebswirtschaft/internationale-betriebswirtschaft/)\n* [Bildungswissenschaft](https://studieren.univie.ac.at/aufnahmeverfahren/studien/bildungswissenschaft/bildungswissenschaft/)\n* [Biologie](https://studieren.univie.ac.at/aufnahmeverfahren/studien/biologie/biologie/)\n* [Chemie](https://studieren.univie.ac.at/aufnahmeverfahren/studien/chemie/chemie/)\n* [English and American Studies](https://studieren.univie.ac.at/aufnahmeverfahren/studien/english-and-american-studies/english-and-american-studies/)\n* [Ernährungswissenschaften](https://studieren.univie.ac.at/aufnahmeverfahren/studien/ernaehrungswissenschaften/ernaehrungswissenschaften/)\n* [Informatik](https://studieren.univie.ac.at/aufnahmeverfahren/studien/informatikwirtschaftsinformatik/wirtschafts-informatik/)\n* [Internationale Betriebswirtschaft](https://studieren.univie.ac.at/aufnahmeverfahren/studien/betriebswirtschaftinternationale-betriebswirtschaft/internationale-betriebswirtschaft/)\n* [Internationale Rechtswissenschaften](https://studieren.univie.ac.at/aufnahmeverfahren/internationale-rechtswissenschaften/)\n* [Koreanologie](https://studieren.univie.ac.at/aufnahmeverfahren/koreanologie/)\n* [Kultur- und Sozialanthropologie](https://studieren.univie.ac.at/aufnahmeverfahren/studien/kultur-und-sozialanthropologie/kultur-und-sozialanthropologie/)\n\n* [Lehramt](https://studieren.univie.ac.at/aufnahmeverfahren/studien/lehramt/lehramt/)\n* [Pharmazie](https://studieren.univie.ac.at/aufnahmeverfahren/studien/pharmazie/pharmazie/) \n* [Politikwissenschaft](https://studieren.univie.ac.at/aufnahmeverfahren/studien/politikwissenschaft/politikwissenschaft/)\n* [Psychologie](https://studieren.univie.ac.at/studien-mit-aufnahme-eignungsverfahren/studien/psychologie/psychologie/) \n* [Publizistik- und Kommunikationswissenschaft](https://studieren.univie.ac.at/aufnahmeverfahren/studien/publizistik-und-kommunikationswissenschaft/publizistik-und-kommunikationswissenschaft/)\n* [Rechtswissenschaften](https://studieren.univie.ac.at/aufnahmeverfahren/studien/rechtswissenschaften/rechtswissenschaften/)\n* [Soziologie](https://studieren.univie.ac.at/aufnahmeverfahren/studien/soziologie/soziologie/) \n* [Transkulturelle Kommunikation](https://studieren.univie.ac.at/aufnahmeverfahren/studien/transkulturelle-kommunikation/transkulturelle-kommunikation/)\n* [Volkswirtschaftslehre](https://studieren.univie.ac.at/aufnahmeverfahren/studien/vwl/volkswirtschaftslehre/)\n* [Wirtschaftsinformatik](https://studieren.univie.ac.at/aufnahmeverfahren/studien/informatikwirtschaftsinformatik/wirtschafts-informatik/)\n\n[https://studieren.univie.ac.at/aufnahmeverfahren/fristen-fuer-aufnahme-eignungsverfahren/](https://studieren.univie.ac.at/aufnahmeverfahren/fristen-fuer-aufnahme-eignungsverfahren/)\n\nBONUS TU\n\n[https://www.tuwien.at/studium/zulassung/studienjahr-2024-25/allgemeine-zulassungsfrist](https://www.tuwien.at/studium/zulassung/studienjahr-2024-25/allgemeine-zulassungsfrist)",
+    "body_sentiment": {
+      "neg": 0.0,
+      "neu": 0.941,
+      "pos": 0.059,
+      "compound": 0.6408
+    },
+    "score": 2,
+    "upvote_ratio": 0.75,
+    "controversiality": 0.25,
+    "comments": [
+      {
+        "id": "mtt1zuz",
+        "parent_id": "t3_1ktfdg6",
+        "depth": 0,
+        "text": "Oida, die Person, die diesen Post veröffentlicht hat, hat diesen mit dem „ohne Schmäh“ Flair versehen. Bitte vermeide Sarkasmus, Zynismus, Ironie oder nicht fundierte Spekulationen in deinen Kommentaren.\n_____________\nOida, the person who published this post has added the \"kein Schmäh | Serious\" flair.Please refrain from sarcasm, cynicism, irony, or unsubstantiated speculation in your comments.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/wien) if you have any questions or concerns.*",
+        "author": "AutoModerator",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 11:37:03 CEST",
+        "sentiment": {
+          "neg": 0.167,
+          "neu": 0.807,
+          "pos": 0.026,
+          "compound": -0.891
+        }
+      }
+    ]
+  },
+  {
     "id": "1ksqc0j",
     "author": "MathSpecialist2692",
     "created_utc": "2025-05-22 15:11:39 CEST",
-    "num_comments": 62,
+    "num_comments": 79,
     "url": "https://www.reddit.com/r/wien/comments/1ksqc0j/rückkehr_zu_den_wiener_linien_aber_bewerbungen/",
     "awards": 0,
     "edited": 1747920577.0,
@@ -221,9 +497,9 @@
       "pos": 0.0,
       "compound": -0.9776
     },
-    "score": 76,
+    "score": 78,
     "upvote_ratio": 0.91,
-    "controversiality": 5.579999999999998,
+    "controversiality": 7.109999999999998,
     "comments": [
       {
         "id": "mtnezgy",
@@ -231,7 +507,7 @@
         "depth": 0,
         "text": "Wenn's automatisch erfolgt wird es evtl. automatisch generiert, dass Dienstnehmer die bei den WL ausgetreten sind nicht wieder aufgenommen werden.\n\nHast du noch Kontakt etc. zu deinen Vorgesetzten etc. von damals dass du evtl. persönlich mit denen redest und sagst dass du zurückkommen willst? Damit kannst du vielleicht den normalen Bewerbungsprozess umgehen.",
         "author": "SprinklesOk2847",
-        "score": 77,
+        "score": 80,
         "edited": false,
         "created": "2025-05-22 15:15:22 CEST",
         "sentiment": {
@@ -276,71 +552,10 @@
     ]
   },
   {
-    "id": "1kte7uh",
-    "author": "Cenny1010",
-    "created_utc": "2025-05-23 10:12:35 CEST",
-    "num_comments": 1,
-    "url": "https://www.reddit.com/r/wien/comments/1kte7uh/gibts_irgendwo_in_wien_ein_public_viewing_vom_ssc/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question",
-    "title": "Gibts irgendwo in Wien ein Public Viewing vom SSC Napoli Fußballspiel heute?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Gibt‘s hier Fußballfans (Ssc Napoli)? Heute ist ja das wichtigste Spiel der Saison und ich wollt mal fragen ob es ihn Wien vllt irgendwo ein Public Viewing gibt oder so? Bin erst vor kurzem hergezogen und das wär halt mega wenn man da irgendwo mit anderen Fans mitfiebern könnte! Bin für alle Tipps dankbar",
-    "body_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "score": 2,
-    "upvote_ratio": 0.75,
-    "controversiality": 0.25,
-    "comments": [
-      {
-        "id": "mtsuh3x",
-        "parent_id": "t3_1kte7uh",
-        "depth": 0,
-        "text": "Public Viewing im engeren Sinne wohl kaum, aber vielleicht gibt es ja eine neapolitanische Pizzeria, die nicht von Türken/Arabern/Indern geleitet wird sondern tatsächlich von Neapolitanern. Ansonsten halt irgendein Pub als Alternative.",
-        "author": "csabinho",
-        "score": 1,
-        "edited": false,
-        "created": "2025-05-23 10:20:24 CEST",
-        "sentiment": {
-          "neg": 0.115,
-          "neu": 0.885,
-          "pos": 0.0,
-          "compound": -0.5994
-        }
-      },
-      {
-        "id": "mtsy0sq",
-        "parent_id": "t3_1kte7uh",
-        "depth": 0,
-        "text": "Kein Fussballfan, aber evtl. im 1516? Dort läuft immer Fußball",
-        "author": "ExasperatedRabbitor",
-        "score": 1,
-        "edited": false,
-        "created": "2025-05-23 10:56:36 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      }
-    ]
-  },
-  {
     "id": "1kt3aly",
     "author": "xXshadowboiXx",
     "created_utc": "2025-05-23 00:01:29 CEST",
-    "num_comments": 20,
+    "num_comments": 26,
     "url": "https://www.reddit.com/r/wien/comments/1kt3aly/were_we_in_the_wrong_horrid_taxi_experience/",
     "awards": 0,
     "edited": false,
@@ -359,9 +574,9 @@
       "pos": 0.041,
       "compound": -0.9394
     },
-    "score": 14,
-    "upvote_ratio": 0.67,
-    "controversiality": 6.6,
+    "score": 13,
+    "upvote_ratio": 0.63,
+    "controversiality": 9.62,
     "comments": [
       {
         "id": "mtqiroa",
@@ -369,7 +584,7 @@
         "depth": 0,
         "text": "Thats really not normal. Okay of course its unfortunate that you accidentally selected the cash option. Buts that NOT a excuse for the driver to react this way. Get money from an ATM to pay the driver should be possible. + a generous tip/fee for the extra time. \n\nPlease report this driver. That not normal behavior. \nI used bolt several times in Vienna and it was always a normal experience. Had no such bad drivers yet.",
         "author": "rudlolf",
-        "score": 75,
+        "score": 84,
         "edited": false,
         "created": "2025-05-23 00:28:51 CEST",
         "sentiment": {
@@ -385,7 +600,7 @@
         "depth": 0,
         "text": "I think normally they'd drive you to an ATM and leave the meter running while waiting for you to get cash. But hey, you got a free ride...",
         "author": "SirWitzig",
-        "score": 28,
+        "score": 32,
         "edited": false,
         "created": "2025-05-23 02:17:30 CEST",
         "sentiment": {
@@ -401,7 +616,7 @@
         "depth": 0,
         "text": "No you just stumbled on a huge ahole. I advise you to always carry some cash when going to different towns and countries just in case.",
         "author": "ThatDisplay2487",
-        "score": 28,
+        "score": 29,
         "edited": false,
         "created": "2025-05-23 00:42:45 CEST",
         "sentiment": {
@@ -414,272 +629,73 @@
     ]
   },
   {
-    "id": "1ktem89",
-    "author": "felpower",
-    "created_utc": "2025-05-23 10:42:12 CEST",
-    "num_comments": 7,
-    "url": "https://www.reddit.com/r/wien/comments/1ktem89/wo_kann_man_in_wien_noch_bier_in_plastikflaschen/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Essn: Moizeit | Cuisine",
-    "title": "Wo kann man in Wien noch Bier in Plastikflaschen kaufen?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Ja ich weiß, in Österreich sowas zu fragen sollte verboten sein, aber ich brauche so etwas als Scherz für einen Freund.  \nWo kann man in Wien noch Bier in Plastikflaschen kaufen, idealerweiße die 1.5L Schwechater Maxi Plastikflaschen die es früher zu kaufen gab. Aber wenn jemand etwas anderes kennt, reicht auch 0.5L PET Flaschen. Danke im vorraus!\n\nhttps://preview.redd.it/et4gj7omuh2f1.jpg?width=1200&format=pjpg&auto=webp&s=bec1cf7e46e398a2da54de99347b1ea7aba06c56\n\n",
-    "body_sentiment": {
-      "neg": 0.126,
-      "neu": 0.874,
-      "pos": 0.0,
-      "compound": -0.8439
-    },
-    "score": 0,
-    "upvote_ratio": 0.5,
-    "controversiality": 3.5,
-    "comments": [
-      {
-        "id": "mtsx7xt",
-        "parent_id": "t3_1ktem89",
-        "depth": 0,
-        "text": "Reported",
-        "author": "Wisho",
-        "score": 1,
-        "edited": false,
-        "created": "2025-05-23 10:48:29 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      },
-      {
-        "id": "mtsxdl0",
-        "parent_id": "t3_1ktem89",
-        "depth": 0,
-        "text": "Ja hallo Herr Landespolizeidirektion, ich möchte ein Hassverbrechen melden",
-        "author": "MisterDropFish",
-        "score": 1,
-        "edited": false,
-        "created": "2025-05-23 10:50:04 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      },
-      {
-        "id": "mtswr0h",
-        "parent_id": "t3_1ktem89",
-        "depth": 0,
-        "text": "🤔penny",
-        "author": "Due_Tension121",
-        "score": 1,
-        "edited": false,
-        "created": "2025-05-23 10:43:43 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      }
-    ]
-  },
-  {
-    "id": "1kt1dyx",
-    "author": "dashailn",
-    "created_utc": "2025-05-22 22:41:55 CEST",
+    "id": "1ktf0wz",
+    "author": "ReconKAOS",
+    "created_utc": "2025-05-23 11:12:00 CEST",
     "num_comments": 28,
-    "url": "https://www.reddit.com/r/wien/comments/1kt1dyx/das_gartenhaus_vom_nachbarhaus_blockiert_mein/",
+    "url": "https://www.reddit.com/r/wien/comments/1ktf0wz/wie_verschicke_ich_am_sichersten_ein_produkt_über/",
     "awards": 0,
     "edited": false,
-    "flair": ":Frage: Frage | Question",
-    "title": "Das Gartenhaus vom Nachbarhaus blockiert mein Küchenfenster – was kann ich tun?",
+    "flair": ":Bildung: Bildungsfrage | Education-related Question",
+    "title": "Wie verschicke ich am sichersten ein Produkt über Willhaben, ohne gescammt zu werden?",
     "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
     },
-    "selftext": "Servus!\n\nVielleicht kann mir jemand mit Infos helfen 🙏\n\nIch will eine Wohnung kaufen, aber es gibt ein Problem, das ich vielleicht lösen kann. Das Küchenfenster wird von so einem Gartenhaus blokiert. Ich wohne im Erdgeschoss und meine Küchenfenster gehen auf so einen Hinterhofgarten vom Nachbarhaus. Das Haus ist etwa 4-5 Meter von meinem entfernt. Das Gartenhaus (oder was auch immer das ist) ist 3 cm von meinem Fenster entfernt. Die anderen Nachbarn scheinen leere Hinterhöfe mit Bänken und Blumen zu haben, aber keine Anbauten.\n\nIch weiß nicht, warum es dort gebaut wurde und ob es überhaupt legal ist. Es wäre wirklich schön, etwas Licht in der Küche zu haben (derzeit gibt es gar kein Licht 🥲).\n\nKönnte mir bitte jemand einen Rat geben, wie ich in dieser Situation vorgehen soll? An wen könnte ich mich in der Stadt wenden, um mich beraten zu lassen?\n\nIch bin für jeden Tipp dankbar 🙌",
+    "selftext": "Hab was auf Willhaben verkauft, Käufer will Versand. Was ist der sicherste Weg, Geld zu bekommen, bevor ich's losschicke? Tipps zu Versand & Zahlung? Will nicht gescammt werden.",
     "body_sentiment": {
-      "neg": 0.045,
-      "neu": 0.945,
-      "pos": 0.009,
-      "compound": -0.7752
-    },
-    "score": 10,
-    "upvote_ratio": 0.86,
-    "controversiality": 3.9200000000000004,
-    "comments": [
-      {
-        "id": "mtpzxjp",
-        "parent_id": "t3_1kt1dyx",
-        "depth": 0,
-        "text": "Am besten bei der Baupolizei (MA37) anrufen und fragen, wie dbzgl die Rechtslage in Wien ist.",
-        "author": "Hubble1000",
-        "score": 31,
-        "edited": false,
-        "created": "2025-05-22 22:49:11 CEST",
-        "sentiment": {
-          "neg": 0.206,
-          "neu": 0.794,
-          "pos": 0.0,
-          "compound": -0.5994
-        }
-      },
-      {
-        "id": "mtq24iq",
-        "parent_id": "t3_1kt1dyx",
-        "depth": 0,
-        "text": "Wenn, das Ding rechtmäßig gebaut wurde kannst wahrscheinlich nichts machen.\n\nVor allem weil, du als Käufer nach dem erbau erst kaufst.\n\nAber nur wenn der Nachbar eine Baubewilligung hat, ... Also Stadt Wien fragen bzw. Verwaltungsgericht, bzw. MA37",
-        "author": "Aggressive_Peach_768",
-        "score": 9,
-        "edited": false,
-        "created": "2025-05-22 22:59:51 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      },
-      {
-        "id": "mtryxdi",
-        "parent_id": "t3_1kt1dyx",
-        "depth": 0,
-        "text": "Das ist eine ungewöhnliche Situation. Grundsätzlich haben Fenster wie schon geschrieben wurde, einen Abstand zum Nachbargrundstück zu haben, den dieses Haus offenbar nicht einhält. Das kommt natürlich in der Realität trotzdem immer wieder vor. Etwa wenn das Fenster irgendwann illegal in die Wand geschlagen wurde (bei Altbestand von z.B. ehemaligen Manufakturen oder Betriebsanlagen ist das manchmal der Fall), oder das Grundstück irgendwann geteilt wurde, und am Nachbargrundstück erst später gebaut wurde.  \n  \nSollte das Fenster nicht bewilligt sein hast du schlechte Karten. rechtlich existiert es dann einfach nicht.   \nWenn das Fenster legal ist, sieht die Sache schon anders aus. Laut §488 ABGB hast du zwar kein Recht auf Aussicht, aber auf Licht und Luft. Das sehe ich bei 3cm Abstand nicht gewährleistet.   \nZudem gibt es da das OGH Urteil GZ [6 Ob 129/14k](https://www.ris.bka.gv.at/Dokument.wxe?Abfrage=Justiz&Dokumentnummer=JJT_20141119_OGH0002_0060OB00129_14K0000_000&ResultFunctionToken=18435a1e-157b-4e2c-8641-46267ce6f7de&Position=1&Gericht=&Rechtssatznummer=&Rechtssatz=&Fundstelle=&AenderungenSeit=Undefined&SucheNachRechtssatz=True&SucheNachText=True&GZ=6Ob129/14k&VonDatum=&BisDatum=04.03.2015&Norm=&ImRisSeit=Undefined&ResultPageSize=50&Suchworte=) nachdem man sogar ein bisschen Himmel sehen können muss.   \n  \nThat said: ich würde vor dem Kauf mit diesem Nachbarn das Gespräch suchen. Eine Gartenhütte vor einem Fenster klingt mehr nach einem Statement, als nach Zufall. Vielleicht hatte er Streit mit den Vorbesitzern, vielleicht stand die Wohnung lange leer und er hat sich nichts dabei gedacht,  vielleicht ist er aber auch einfach ein professionelles Orschgeigerl. Du wirst mit diesem Menschen jedenfalls noch länger auskommen müssen, und \"Guten Tag, ich bin der neue Nachbar. Hier ist ein Kuchen und da eine Unterlassungserklärung\" ist ein denkbar schlechter Einstig für eine Nachbarschaft. Vor allem wenn nicht klar ist, wie ein etwaiger Rechtsstreit enden würde.\n\nNachtrag: ich bin kein Anwalt, aber Inhaber eines Fensters in einer Feuermauer und muss mich wegen neuer Nachbarn gerade selbst mit der Thematik herumschlagen.",
-        "author": "Last_Torf",
-        "score": 1,
-        "edited": false,
-        "created": "2025-05-23 05:44:06 CEST",
-        "sentiment": {
-          "neg": 0.055,
-          "neu": 0.94,
-          "pos": 0.005,
-          "compound": -0.9413
-        }
-      }
-    ]
-  },
-  {
-    "id": "1kt0ex2",
-    "author": "Sure_Scholar3352",
-    "created_utc": "2025-05-22 22:02:48 CEST",
-    "num_comments": 5,
-    "url": "https://www.reddit.com/r/wien/comments/1kt0ex2/wo_finde_ich_australischeneuseeländische/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question",
-    "title": "Wo finde ich Australische/Neuseeländische Lebensmittel?",
-    "title_sentiment": {
       "neg": 0.0,
       "neu": 1.0,
       "pos": 0.0,
       "compound": 0.0
-    },
-    "selftext": "Ich bin für meinen Freund (Neuseeländer) auf der Suche nach einem Laden, in dem man Australische oder Neuseeländische Lebensmittel (hier besonders Snacks und Süßigkeiten wie Whittaker's oder Cherry Ripe) kaufen kann. Diese ganzen US Süßigkeiten Shops wie zum Beispiel auf der MaHü hab ich alle schon durch. Da gibt's aber leider nichts in die Richtung :( ich freue mich über jeden Vorschlag :) \n\nTLDR: wo in Wien finde ich Australische oder Neuseeländische Snacks/Schokolade?",
-    "body_sentiment": {
-      "neg": 0.085,
-      "neu": 0.877,
-      "pos": 0.038,
-      "compound": -0.5859
-    },
-    "score": 8,
-    "upvote_ratio": 0.91,
-    "controversiality": 0.44999999999999984,
-    "comments": [
-      {
-        "id": "mtpsaju",
-        "parent_id": "t3_1kt0ex2",
-        "depth": 0,
-        "text": "Bobby's?",
-        "author": "M_B_M",
-        "score": 7,
-        "edited": false,
-        "created": "2025-05-22 22:12:28 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      },
-      {
-        "id": "mtpt06t",
-        "parent_id": "t3_1kt0ex2",
-        "depth": 0,
-        "text": "Also helfen kann ich nur insofern, dass ich dir leider sagen muss, dass ich einen Freund aus Australien habe, der mir australisches Lebensmittel verschenken wollte, aber nach erfolgloser Suche in lokalen Geschäften hat er sich schließlich für Online Shops entschlossen. \n\nWenn du aber was findest, würde ich gern wissen!",
-        "author": "blink-1hundert2und80",
-        "score": 3,
-        "edited": false,
-        "created": "2025-05-22 22:15:53 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      },
-      {
-        "id": "mtq2j9t",
-        "parent_id": "t3_1kt0ex2",
-        "depth": 0,
-        "text": "Ich wollt schon mehrmals Stone and Wood Bier importieren. Aber wollt mich auch noch nicht mit den Kosten auseinandersetzen. Wüsst da vllt wär was?",
-        "author": "Open_Fig4998",
-        "score": 2,
-        "edited": false,
-        "created": "2025-05-22 23:01:53 CEST",
-        "sentiment": {
-          "neg": 0.0,
-          "neu": 1.0,
-          "pos": 0.0,
-          "compound": 0.0
-        }
-      }
-    ]
-  },
-  {
-    "id": "1ktcc15",
-    "author": "sayayori",
-    "created_utc": "2025-05-23 08:02:04 CEST",
-    "num_comments": 3,
-    "url": "https://www.reddit.com/r/wien/comments/1ktcc15/music_shops_in_vienna_with_a_focus_on_local_music/",
-    "awards": 0,
-    "edited": false,
-    "flair": ":Frage: Frage | Question",
-    "title": "Music shops in Vienna with a focus on local music?",
-    "title_sentiment": {
-      "neg": 0.0,
-      "neu": 1.0,
-      "pos": 0.0,
-      "compound": 0.0
-    },
-    "selftext": "Hello! I'm going to be visiting Vienna for the first time in years, and I really am interested in learning more about the local music scene...specifically current (or semi-recent) local bands.\n\nOne thing in particular I'd love to do is find a shop that sells CD's or other merchandise of any potential local bands. I'd love to take back some music from my trip to explore deeper, and maybe anything else that can help me learn about the local music beyond yknow. Composers who are pretty easy to find relevant spots to.\n\n  \nIn particular, I love genres like punk, new wave, rock (hard, psychedelic, etc), shoegaze, dreampop, darkwave, etc. If you even have local band recs for those genres or anything along those lines (and where I may stumble across the local music scene/can buy their music), I'd really appreciate it!\n\n  \nThank you c:",
-    "body_sentiment": {
-      "neg": 0.008,
-      "neu": 0.793,
-      "pos": 0.198,
-      "compound": 0.9859
     },
     "score": 1,
-    "upvote_ratio": 1.0,
-    "controversiality": 0.0,
+    "upvote_ratio": 0.54,
+    "controversiality": 12.879999999999999,
     "comments": [
       {
-        "id": "mtspvrz",
-        "parent_id": "t3_1ktcc15",
+        "id": "mtszqar",
+        "parent_id": "t3_1ktf0wz",
         "depth": 0,
-        "text": "I think MediaMarkt has an Austropop section. For Electronic music there‘s a shop in Neubau I think but I forgot its name",
-        "author": "ClemWon",
+        "text": "Paylivery?",
+        "author": "Lattenrostbrecher",
         "score": 1,
         "edited": false,
-        "created": "2025-05-23 09:34:25 CEST",
+        "created": "2025-05-23 11:14:09 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 1.0,
+          "pos": 0.0,
+          "compound": 0.0
+        }
+      },
+      {
+        "id": "mtszui8",
+        "parent_id": "t3_1ktf0wz",
+        "depth": 0,
+        "text": "Versand nach Zahlungseingang.\n\nPacketzettel aufbewahren, foto von artikel, artikel im packet und so.\n\ndem kunden dann foto und sendungsnummer schicken, sobald eine hast, damit sie sich auch safe fühlen, immerhin hast vorschussvertrauen bekommen.",
+        "author": "CertainDeath777",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 11:15:20 CEST",
+        "sentiment": {
+          "neg": 0.0,
+          "neu": 0.917,
+          "pos": 0.083,
+          "compound": 0.4404
+        }
+      },
+      {
+        "id": "mtt1mu4",
+        "parent_id": "t3_1ktf0wz",
+        "depth": 0,
+        "text": "Bitte nicht hier, für Willhaben gibt's einen eigenen, sehr aktiven sub! r/willhaben\n\n(Is jetzt eh schon zu spät aber für's nächste Mal halt).",
+        "author": "FrozenEarthworm",
+        "score": 1,
+        "edited": false,
+        "created": "2025-05-23 11:33:31 CEST",
         "sentiment": {
           "neg": 0.0,
           "neu": 1.0,
