@@ -1,4 +1,5 @@
 # ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/storage/connection.py
+
 import os
 from sqlalchemy import create_engine, MetaData
 from dotenv import load_dotenv
