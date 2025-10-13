@@ -1,58 +1,59 @@
 # ~/reddit_sentiment_tracker/src/data_collection/post_fetcher.py
 
+import praw
 import praw.exceptions
 from .post_processor import process_post
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-# TOP POSTS
-def fetch_top_posts(subreddit_name, reddit, RATE_LIMIT_TOP_POSTS, TOP_POSTS_TIME_FILTER):
-    """ Fetches top posts from a subreddit """
+def fetch_top_posts(subreddit_name: str, reddit, RATE_LIMIT_TOP_POSTS: int, TOP_POSTS_TIME_FILTER: str) -> list:
+    """ Fetches top posts from a Subreddit """
     try:
-        # accessing subreddit
-        subreddit = reddit.subreddit(subreddit_name)
+        subreddit = reddit.subreddit(subreddit_name)           # accessing subreddit
+        logger.info(f"Accessed the subreddit: {subreddit_name}")
     except Exception as e:
-        print(f"Error accessing subreddit: {e}")
+        logger.error(f"Error accessing subreddit via Reddit Client: {e}", exc_info=True)
 
     top_posts_data = []
 
-    # fetching data of subreddit
+    # fetching Top Posts data of subreddit
     try:
         for post in subreddit.top(limit=RATE_LIMIT_TOP_POSTS,
                                   time_filter=TOP_POSTS_TIME_FILTER):
             top_posts_data.append(process_post(post))
 
+        logger.info(f"Top Posts of subreddit '{subreddit_name}' fetched successfully")
         return top_posts_data 
 
     except praw.exceptions.APIException as e:
-        print(f"Reddit API Exception: {e}")
+        logger.error(f"Reddit API Exception: {e}")
         return []
     except Exception as e:
-        print(f"Error fetching '{subreddit_name}' data: {e}")
+        logger.error(f"Error fetching '{subreddit_name}' data: {e}", exc_info=True)
         return []
 
-# RISING POSTS
-def fetch_rising_posts(subreddit_name, reddit, RATE_LIMIT_RISING_POSTS):
-    """ Fetches rising posts from a subreddit. """
+def fetch_rising_posts(subreddit_name: str, reddit, RATE_LIMIT_RISING_POSTS: int) -> list:
+    """ Fetches rising posts from a Subreddit. """
     try:
-        # accessing subreddit
-        subreddit = reddit.subreddit(subreddit_name)
+        subreddit = reddit.subreddit(subreddit_name)           # accessing subreddit
+        logger.info(f"Accessed the subreddit: {subreddit_name}")
     except Exception as e:
-        print(f"Error accessing subreddit: {e}")
+        logger.error(f"Error accessing subreddit: {e}", exc_info=True)
 
     rising_posts_data = []
 
-    # fetching data of subreddit
+    # fetching Rising Posts data of subreddit
     try:
         for post in subreddit.rising(limit=RATE_LIMIT_RISING_POSTS):
             rising_posts_data.append(process_post(post))
 
+        logger.info(f"Rising Posts of subreddit '{subreddit_name}' fetched successfully")
         return rising_posts_data 
 
     except praw.exceptions.APIException as e:
-        print(f"Reddit API Exception: {e}")
+        logger.error(f"Reddit API Exception: {e}")
         return []
     except Exception as e:
-        print(f"Error fetching '{subreddit_name}' data: {e}")
+        logger.error(f"Error fetching '{subreddit_name}' data: {e}", exc_info=True)
         return []
