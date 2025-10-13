@@ -1,6 +1,6 @@
 # ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/comment_fetcher.py
 from reddit_client import analyze_sentiment
-from utils import to_vienna_time
+from ..utils.utils import to_vienna_time
 
 def fetch_comments(reddit, post_id, REPLY_DEPTH, COMMENT_LIMIT) -> list[dict]:
     """ 

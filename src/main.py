@@ -1,8 +1,8 @@
 # ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/main.py
 
-from reddit_client import fetch_top_posts, fetch_rising_posts, save_to_json, get_reddit_client
+from .data_collection.reddit_client import fetch_top_posts, fetch_rising_posts, save_to_json, get_reddit_client
 from config import TOP_POSTS_DATA_PATH, RISING_POSTS_DATA_PATH, RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
-from comment_fetcher import fetch_comments
+from .data_collection.comment_fetcher import fetch_comments
 
 
 def main():

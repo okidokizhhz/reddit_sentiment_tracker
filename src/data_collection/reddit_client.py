@@ -4,7 +4,7 @@ import os
 import json
 import praw
 from dotenv import load_dotenv
-from utils import to_vienna_time
+from ..utils.utils import to_vienna_time
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # loading environmental variables load_dotenv()
