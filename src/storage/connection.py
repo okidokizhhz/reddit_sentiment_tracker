@@ -2,8 +2,8 @@
 
 import os
 from sqlalchemy import create_engine, MetaData
+from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
-from schema_manager import rising_posts, top_posts
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
@@ -16,17 +16,45 @@ USER_DB = os.getenv("USER_DB")
 PASSWORD_DB = os.getenv("PASSWORD_DB")
 PORT_DB = os.getenv("PORT_DB")
 
-# Setup, Connection to postgresql
-engine = create_engine(f"postgresql://{USER_DB}:{PASSWORD_DB}@{HOST_DB}:{PORT_DB}/{NAME_DB}",
-                        pool_size=5, max_overflow=10, pool_pre_ping=True)
+# missing env var logic
+required_vars = ["HOST_DB", "NAME_DB", "USER_DB", "PASSWORD_DB", "PORT_DB"]
+missing_vars = []
+for var in required_vars:
+    if not os.getenv(var):
+        missing_vars.append(var)
 
-# metadata object to hold table definitions
+if missing_vars:
+    logger.critical(f"DB: missing required variables: {', '.join(missing_vars)}")
+    raise ValueError(f"DB: missing required variables: {', '.join(missing_vars)}")
+
+
+# Setup, Connection to postgresql
+try:
+    engine = create_engine(f"postgresql://{USER_DB}:{PASSWORD_DB}@{HOST_DB}:{PORT_DB}/{NAME_DB}",
+                           pool_size=5, 
+                           max_overflow=10, 
+                           pool_pre_ping=True)
+
+    logger.info(f"Postgres Database created successfully")
+
+except Exception as e:
+    logger.critical(f"Error creating Postgres Database: {e}", exc_info=True)
+    raise ValueError(f"Error creating Postgres Database: {e}")
+
+
+# intitializing metadata object to hold table definitions
 metadata = MetaData()
 
-rising_posts = rising_posts
-top_posts = top_posts
 
 # Create all tables (run once)
 def initialize_database():
-    """Creates all defined tables in the database"""
-    metadata.create_all(engine)
+    """ Creates all defined tables in the database """
+    try:
+        metadata.create_all(engine)
+        logger.info("Tables created successfully")
+    except SQLAlchemyError as e:
+        logger.critical(f"Error creating Tables: {e}")
+        raise
+    except Exception as e:
+        logger.critical(f"Error creating Tables for Database: {e}", exc_info=True)
+        raise ValueError(f"Error creating Tables for Database")
