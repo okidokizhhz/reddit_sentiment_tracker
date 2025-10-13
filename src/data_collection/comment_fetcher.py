@@ -2,11 +2,12 @@
 
 from ..sentiment_analysis.sentiment_analyzer import analyze_sentiment
 from ..utils.utils import to_vienna_time
+from typing import Any
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def fetch_comments(reddit, post_id, REPLY_DEPTH, COMMENT_LIMIT) -> list[dict]:
+def fetch_comments(reddit, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> list[dict[str, Any]]:
     """ 
     Comment fetcher - gets top-level comments only
     Returns: List of comment dicts with basic info + sentiment
@@ -35,8 +36,10 @@ def fetch_comments(reddit, post_id, REPLY_DEPTH, COMMENT_LIMIT) -> list[dict]:
                 "sentiment": analyze_sentiment(comment.body)  # Your existing function
             })
         
+        logger.info(f"Fetching {len(comments_data)} comments of {post_id} successful")
+
         return comments_data
     
     except Exception as e:
-        print(f"Failed to fetch comments: {e}")
+        logger.error(f"Failed to fetch comments for post {post_id}: {e}", exc_info=True)
         return []

@@ -10,36 +10,48 @@ from .logger import setup_logger
 logger = setup_logger("reddit_sentiment_tracker")
 
 def main():
-    # getting Reddit Client
+    # get Reddit Client
     try:
         reddit = get_reddit_client()
     except Exception as e:
         logger.fatal(f"Failed to retrieve Reddit client. Exiting Program: {e}", exc_info=True)
         sys.exit(1)         # Exit program on failure
 
-    # getting Top Posts
-    top_posts_data = fetch_top_posts("wien",
-                                     reddit,
-                                     RATE_LIMIT_TOP_POSTS,
-                                     TOP_POSTS_TIME_FILTER)
-    # getting comments of Top Posts
-    for post in top_posts_data:
-        post_id = post["id"]
-        post["comments"] = fetch_comments(reddit,
-                                          post_id,
-                                          REPLY_DEPTH,
-                                          COMMENT_LIMIT)
+    # get Top Posts
+    try:
+        top_posts_data = fetch_top_posts("wien",
+                                         reddit,
+                                         RATE_LIMIT_TOP_POSTS,
+                                         TOP_POSTS_TIME_FILTER)
+        # get comments of Top Posts
+        try:
+            for post in top_posts_data:
+                post_id = post["id"]
+                post["comments"] = fetch_comments(reddit,
+                                                  post_id,
+                                                  REPLY_DEPTH,
+                                                  COMMENT_LIMIT)
+        except Exception as e:
+            logger.error(f"Failed to fetch comments for Top Posts", exc_info=True)
+    except Exception as e:
+        logger.error(f"Failed to fetch top posts", exc_info=True)
 
-    # getting Rising Posts
-    rising_posts_data = fetch_rising_posts("wien",
-                                           reddit,
-                                           RATE_LIMIT_RISING_POSTS)
-    # getting comments of Rising Posts
-    for post in rising_posts_data:
-        post["comments"] = fetch_comments(reddit,
-                                          post["id"],
-                                          REPLY_DEPTH,
-                                          COMMENT_LIMIT)
+    # get Rising Posts
+    try:
+        rising_posts_data = fetch_rising_posts("wien",
+                                               reddit,
+                                               RATE_LIMIT_RISING_POSTS)
+        # get comments of Rising Posts
+        try:
+            for post in rising_posts_data:
+                post["comments"] = fetch_comments(reddit,
+                                                  post["id"],
+                                                  REPLY_DEPTH,
+                                                  COMMENT_LIMIT)
+        except Exception as e:
+            logger.error(f"Failed to fetch comments for Rising Posts", exc_info=True)
+    except Exception as e:
+        logger.error(f"failed to fetch rising posts", exc_info=True)
 
 if __name__ == "__main__":
     main()

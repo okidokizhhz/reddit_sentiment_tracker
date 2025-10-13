@@ -33,8 +33,9 @@ def fetch_top_posts(subreddit_name: str, reddit, RATE_LIMIT_TOP_POSTS: int, TOP_
         logger.error(f"Error fetching '{subreddit_name}' data: {e}", exc_info=True)
         return []
 
+
 def fetch_rising_posts(subreddit_name: str, reddit, RATE_LIMIT_RISING_POSTS: int) -> list:
-    """ Fetches rising posts from a Subreddit. """
+    """ Fetches rising posts from a Subreddit """
     try:
         subreddit = reddit.subreddit(subreddit_name)           # accessing subreddit
         logger.info(f"Accessed the subreddit: {subreddit_name}")
