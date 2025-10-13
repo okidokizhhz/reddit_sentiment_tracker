@@ -1,13 +1,16 @@
-# reddit_sentiment_tracker/reddit_sentiment_tracker/src.config.py
+# reddit_sentiment_tracker/src.config.py
 
 from pathlib import Path
 
 # current location of config.py acts as root
-BASE_DIR = Path(__file__).resolve().parent
-# Paths
-TOP_POSTS_DATA_PATH = BASE_DIR / "data" / "top_posts_data.json"
-# Path to save rising posts data
-RISING_POSTS_DATA_PATH = BASE_DIR / "data" / "rising_posts_data.json"
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# top posts path
+TOP_POSTS_DATA_PATH = BASE_DIR / "fetched_posts" / "top_posts_data.json"
+# rising posts path
+RISING_POSTS_DATA_PATH = BASE_DIR / "fetched_posts" / "rising_posts_data.json"
+# log path
+LOG_DIR = BASE_DIR / "logs"
 
 # rate limits
 RATE_LIMIT_TOP_POSTS = 10

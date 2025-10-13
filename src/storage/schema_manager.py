@@ -1,10 +1,13 @@
-# ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/storage/schema_manager.py
+# ~/reddit_sentiment_tracker/src/storage/schema_manager.py
 
 from datetime import datetime
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy import (Column, ForeignKey, Table,
                         String, Integer, Float, DateTime, Text, Boolean)
 from connection import metadata
+import logging
+
+logger = logging.getLogger("reddit_sentiment_tracker")
 
 # Schema/Table definitions
 # Posts

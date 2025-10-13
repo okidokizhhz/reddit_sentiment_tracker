@@ -1,9 +1,12 @@
-# ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/storage/connection.py
+# ~/reddit_sentiment_tracker/src/storage/connection.py
 
 import os
 from sqlalchemy import create_engine, MetaData
 from dotenv import load_dotenv
 from schema_manager import rising_posts, top_posts
+import logging
+
+logger = logging.getLogger("reddit_sentiment_tracker")
 
 # getting evironmental variables for db authentication
 load_dotenv()

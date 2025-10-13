@@ -1,12 +1,20 @@
-# ~/reddit_sentiment_tracker/reddit_sentiment_tracker/src/main.py
+# ~/reddit_sentiment_tracker/src/main.py
 
-from .data_collection.reddit_client import fetch_top_posts, fetch_rising_posts, save_to_json, get_reddit_client
-from config import TOP_POSTS_DATA_PATH, RISING_POSTS_DATA_PATH, RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
+import sys
+from .data_collection.reddit_client import get_reddit_client
+from .data_collection.post_fetcher import fetch_top_posts, fetch_rising_posts
 from .data_collection.comment_fetcher import fetch_comments
+from .config import TOP_POSTS_DATA_PATH, RISING_POSTS_DATA_PATH, RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
+from .logger import setup_logger
 
+logger = setup_logger("reddit_sentiment_tracker")
 
 def main():
-    reddit = get_reddit_client()
+    try:
+        reddit = get_reddit_client()
+    except Exception as e:
+        logger.fatal(f"Failed to retrieve Reddit client. Exiting Program: {e}", exc_info=True)
+        sys.exit(1)         # Exit program on failure
 
     top_posts_data = fetch_top_posts("wien",
                                      reddit,
