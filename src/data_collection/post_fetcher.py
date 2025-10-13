@@ -3,11 +3,12 @@
 import praw
 import praw.exceptions
 from .post_processor import process_post
+from typing import List, Dict, Any
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def fetch_top_posts(subreddit_name: str, reddit, RATE_LIMIT_TOP_POSTS: int, TOP_POSTS_TIME_FILTER: str) -> list:
+def fetch_top_posts(subreddit_name: str, reddit, RATE_LIMIT_TOP_POSTS: int, TOP_POSTS_TIME_FILTER: str) -> List[Dict[str, Any]]:
     """ Fetches top posts from a Subreddit """
     try:
         subreddit = reddit.subreddit(subreddit_name)           # accessing subreddit
@@ -34,7 +35,7 @@ def fetch_top_posts(subreddit_name: str, reddit, RATE_LIMIT_TOP_POSTS: int, TOP_
         return []
 
 
-def fetch_rising_posts(subreddit_name: str, reddit, RATE_LIMIT_RISING_POSTS: int) -> list:
+def fetch_rising_posts(subreddit_name: str, reddit, RATE_LIMIT_RISING_POSTS: int) -> List[Dict[str, Any]]:
     """ Fetches rising posts from a Subreddit """
     try:
         subreddit = reddit.subreddit(subreddit_name)           # accessing subreddit
