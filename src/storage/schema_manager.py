@@ -1,51 +1,66 @@
 # ~/reddit_sentiment_tracker/src/storage/schema_manager.py
 
-from datetime import datetime
+from datetime import datetime, timezone
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy import (Column, ForeignKey, Table,
-                        String, Integer, Float, DateTime, Text, Boolean)
-from connection import metadata
-import logging
+                        String, Integer, Float, DateTime, Text)
+from .connection import metadata
 
-logger = logging.getLogger("reddit_sentiment_tracker")
+subreddits = Table(
+    'subreddits', metadata,
+    Column('id', String, primary_key=True),
+    Column('name', String, unique=True, nullable=False),
+    Column('description', Text, nullable=True),
+    Column('subscriber_count', Integer, nullable=True),
+    Column('created_at', DateTime, default=datetime.now(timezone.utc), nullable=False, index=True)   # index for time based queries
 
-# Schema/Table definitions
-# Posts
+)
+
 posts = Table(
     'posts', metadata,
     Column('id', String, primary_key=True),
-    Column('posts-type', String(100), nullable=False),
-    Column('author', String(100)),
-    Column('created_utc', String(100), nullable=False),
-    Column('num_comments', Integer),
-    Column('url', String(500)),
-    Column('awards', Integer),
-    Column('edited', Boolean),
-    Column('flair', String(100)),
-    Column('title', String(500)),
-    Column('title_sentiment', JSONB),
+    Column('subreddit_id', String, ForeignKey('subreddits.id'), nullable=False, index=True),  # index for subreddit id
+    Column('author', String),
+    Column('post_type', String, nullable=False),
+    Column('title', String(500), nullable=False),
     Column('selftext', Text),
+    Column('url', String),
+    Column('flair', String),
+    Column('created_utc', DateTime, nullable=False),
+    Column('fetched_at', DateTime, default=datetime.now(timezone.utc), nullable=False),
+)
+
+post_sentiment_history = Table(
+    'post_sentiment_history', metadata,
+    Column('id', Integer, primary_key=True, autoincrement=True),
+    Column('post_id', String, ForeignKey('posts.id'), nullable=False, index=True),    # index for post id
+    Column('title_sentiment', JSONB),
     Column('body_sentiment', JSONB),
     Column('score', Integer),
     Column('upvote_ratio', Float),
     Column('controversiality', Float),
-    Column('created_at', DateTime, default=datetime.utcnow),
-    Column('last_updated', DateTime, onupdate=datetime.utcnow),
-    Column('comments', JSONB)
+    Column('num_comments', Integer),
+    Column('measured_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
 )
 
-# Comments
 comments = Table(
     'comments', metadata,
-    Column('id', String, primary_key=True),          # reddit comment id
-    Column('parent_id', String(100), ForeignKey('posts.id')), # relation to posts id
+    Column('id', String, primary_key=True),
+    Column('post_id', String, ForeignKey('posts.id'), nullable=False, index=True),    # index for post id
+    Column('parent_comment_id', String, ForeignKey('comments.id'), nullable=True, index=True),   # index for parent comment id
     Column('depth', Integer),
-    Column('author', String(100)),
+    Column('author', String),
     Column('text', Text),
     Column('score', Integer),
-    Column('edited', Boolean),
-    Column("created_utc", String(100)),
-    Column('sentiment', JSONB),
-    Column('created_at', DateTime, default=datetime.utcnow),
-    Column('last_updated', DateTime, onupdate=datetime.utcnow)
+    Column('created_utc', DateTime, nullable=False, index=True),     # index for time based queries
+    Column('fetched_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
 )    
+
+comment_sentiment_history = Table(
+    'comment_sentiment_history', metadata,
+    Column('id', Integer, primary_key=True, autoincrement=True),
+    Column('comment_id', String, ForeignKey('comments.id'), nullable=False, index=True),  # index for comment id
+    Column('comment_sentiment', JSONB),
+    Column('score', Integer),
+    Column('measured_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
+)
