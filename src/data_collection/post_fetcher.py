@@ -28,7 +28,7 @@ def fetch_top_posts(subreddit_name: str, reddit, RATE_LIMIT_TOP_POSTS: int, TOP_
         return top_posts_data 
 
     except praw.exceptions.APIException as e:
-        logger.error(f"Reddit API Exception: {e}")
+        logger.error(f"Reddit API Exception while fetching metadata for '{subreddit_name}': {e}")
         return []
     except Exception as e:
         logger.error(f"Error fetching '{subreddit_name}' data: {e}", exc_info=True)
