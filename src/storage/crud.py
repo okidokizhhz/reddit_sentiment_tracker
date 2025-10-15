@@ -157,5 +157,31 @@ def insert_post_sentiment(post_data):
         logger.info(f"Successfully inserted sentiment of post/s into DB")
 
     except Exception as e:
-        logger.error(f"Failure inserting sentiment of post into DB: {e}", exc_info=True)
+        logger.error(f"Failure inserting sentiment of post/s into DB: {e}", exc_info=True)
+        raise
+
+def insert_comment_sentiment(post_comments):
+    """ Inserting the Sentiment of comments into DB in a transaction """
+    if not post_comments:
+        logger.info("No post comments to insert")
+        return
+
+    comment_sentiment_to_insert = []
+
+    for comment in post_comments:
+        comment_sentiment_db_data = {
+            "comment_id": comment["id"],
+            "comment_sentiment": comment["sentiment"],
+            "score": comment["score"],
+        }
+        comment_sentiment_to_insert.append(comment_sentiment_db_data)
+
+    try:
+        with db_session() as conn:
+            conn.execute(comment_sentiment_history.insert(), comment_sentiment_to_insert)
+
+        logger.info("Successfully inserted sentiment of comment/s into DB")
+
+    except Exception as e:
+        logger.error(f"Failure inserting sentiment of comment/s into DB: {e}", exc_info=True)
         raise
