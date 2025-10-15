@@ -7,7 +7,7 @@ from .data_collection.comment_fetcher import fetch_comments
 from .data_collection.subreddit_fetcher import fetch_subreddit_metadata
 from .config import RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
 from .storage.connection import initialize_database
-from .storage.crud import insert_subreddit_metadata, insert_top_posts, insert_rising_posts
+from .storage.crud import insert_subreddit_metadata, insert_top_posts, insert_rising_posts, insert_comments
 from .logger import setup_logger
 
 logger = setup_logger("reddit_sentiment_tracker")
@@ -73,6 +73,15 @@ def main():
                                               post_id,
                                               REPLY_DEPTH,
                                               COMMENT_LIMIT)
+            post_comments = post["comments"]
+
+            # DB: inserting comments of Top Posts
+            try: 
+                insert_comments(post_comments, post_id)
+                logger.info(f"Post id {post_id}: Inserting comments of Top Posts into DB successful")
+
+            except Exception as e:
+                logger.error(f"Post id {post_id}: Failed to insert comments of Top Posts into DB: {e}", exc_info=True)
     except Exception as e:
         logger.error(f"Failed to fetch comments for Top Posts", exc_info=True)
 
@@ -97,10 +106,22 @@ def main():
     # Rising Posts Comments fetching
     try:
         for post in rising_posts_data:
+            post_id = post["id"]
             post["comments"] = fetch_comments(reddit,
                                               post["id"],
                                               REPLY_DEPTH,
                                               COMMENT_LIMIT)
+            post_comments = post["comments"]
+
+            # DB: inserting comments of Rising Posts
+            try: 
+                insert_comments(post_comments, post_id)
+                logger.info(f"Post id {post_id}: Inserting comments of Rising Posts into DB successful")
+
+            except Exception as e:
+                logger.error(f"Post id {post_id}: Failed to insert comments of Rising Posts into DB: {e}", exc_info=True)
+
+
     except Exception as e:
         logger.error(f"Failed to fetch comments for Rising Posts", exc_info=True)
 

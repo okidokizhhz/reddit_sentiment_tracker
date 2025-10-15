@@ -97,3 +97,34 @@ def insert_rising_posts(rising_posts_data, subreddit_id):
     except Exception as e:
         logger.error(f"Failure inserting posts data into DB: {e}", exc_info=True)
         raise
+
+def insert_comments(post_comments, post_id):
+    """ Inserting comments of Posts into DB in a transaction """
+    if not post_comments:
+        logger.info("No commments data of Top Posts to insert")
+        return
+
+    comments_to_insert = []
+
+    for comment in post_comments:
+        comments_db_data = {
+            "id": comment["id"], 
+            "post_id": post_id, 
+            "parent_comment_id": comment["parent_id"], 
+            "depth": comment["depth"], 
+            "author": comment["author"],
+            "text": comment["text"],
+            "score": comment["score"],
+            "created_utc": comment["created_utc"],
+        }
+        comments_to_insert.append(comments_db_data)
+
+    try:
+        with db_session() as conn:
+            conn.execute(comments.insert(), comments_to_insert)
+
+        logger.info(f"Successfully inserted comments of post id '{post_id}' into DB")
+
+    except Exception as e:
+        logger.error(f"Failure inserting comments of posts id '{post_id}' into DB: {e}", exc_info=True)
+        raise
