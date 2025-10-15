@@ -12,7 +12,8 @@ subreddits = Table(
     Column('name', String, unique=True, nullable=False),
     Column('description', Text, nullable=True),
     Column('subscriber_count', Integer, nullable=True),
-    Column('created_at', DateTime, default=datetime.now(timezone.utc), nullable=False, index=True)   # index for time based queries
+    Column('created_utc', DateTime,  nullable=False),
+    Column('fetched_at', DateTime, default=datetime.now(timezone.utc), nullable=False, index=True)   # index for time based queries
 
 )
 
