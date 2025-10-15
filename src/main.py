@@ -7,7 +7,7 @@ from .data_collection.comment_fetcher import fetch_comments
 from .data_collection.subreddit_fetcher import fetch_subreddit_metadata
 from .config import RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
 from .storage.connection import initialize_database
-from .storage.crud import insert_subreddit_metadata, insert_top_posts, insert_rising_posts, insert_comments
+from .storage.crud import insert_subreddit_metadata, insert_top_posts, insert_rising_posts, insert_comments, insert_post_sentiment
 from .logger import setup_logger
 
 logger = setup_logger("reddit_sentiment_tracker")
@@ -58,12 +58,14 @@ def main():
     except Exception as e:
         logger.error(f"Failed to fetch top posts", exc_info=True)
 
-    # DB: inserting Top Posts
+    # DB: inserting Top Posts, inserting Sentiment of Top Posts
     try:
         insert_top_posts(top_posts_data, subreddit_id)
-        logger.info("Inserting top posts data into DB successful")
+        insert_post_sentiment(top_posts_data)
+
+        logger.info("Inserting top posts and sentiment data into DB successful")
     except Exception as e:
-        logger.error(f"Failed to insert top posts data into DB: {e}", exc_info=True)
+        logger.error(f"Failed to insert top posts and sentiment data into DB: {e}", exc_info=True)
 
     # Top Posts Comments fetching
     try:
@@ -98,9 +100,11 @@ def main():
     # DB: inserting Rising Posts
     try: 
         insert_rising_posts(rising_posts_data, subreddit_id)
-        logger.info("Inserting rising posts data into DB successful")
+        insert_post_sentiment(top_posts_data)
+
+        logger.info("Inserting rising posts and sentiment data into DB successful")
     except Exception as e:
-        logger.error(f"Failed to insert rising posts data into DB: {e}", exc_info=True)
+        logger.error(f"Failed to insert rising posts and sentiment data into DB: {e}", exc_info=True)
 
 
     # Rising Posts Comments fetching
