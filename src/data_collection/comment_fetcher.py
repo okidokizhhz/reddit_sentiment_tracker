@@ -32,7 +32,7 @@ def fetch_comments(reddit, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -
                 "author": str(comment.author) if comment.author else "[deleted]",
                 "score": comment.score,
                 "edited": comment.edited,
-                "created": to_vienna_time(comment.created_utc),  # Your existing function
+                "created_utc": to_vienna_time(comment.created_utc),  # Your existing function
                 "sentiment": analyze_sentiment(comment.body)  # Your existing function
             })
         
