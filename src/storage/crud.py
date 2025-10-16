@@ -1,6 +1,7 @@
 import logging
 from contextlib import contextmanager
 from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy import select
 from .connection import engine
 from .schema_manager import subreddits, posts, comments, post_sentiment_history, comment_sentiment_history
 
@@ -26,9 +27,19 @@ def insert_subreddit_metadata(subreddit_metadata: dict):
 
     try:
         with db_session() as conn:
+            # checking if subreddit already exists
+            exists = conn.execute(
+                select(subreddits.c.id).where(subreddits.c.id == subreddit_metadata["id"])
+            ).fetchone()
+
+            if exists:
+                logger.info(f"The Subreddit '{subreddit_metadata["id"]}' already exists. Skipped inserting")
+                return
+
+            # otherwise insert
             conn.execute(subreddits.insert(), subreddit_metadata)
 
-        logger.info(f"Successfully inserted subreddit metadata into DB")
+            logger.info(f"Successfully inserted subreddit metadata into DB")
 
     except Exception as e:
         logger.error(f"Failure inserting subreddit metadata into DB: {e}", exc_info=True)
@@ -40,27 +51,38 @@ def insert_top_posts(top_posts_data, subreddit_id):
         logger.info("No posts data to insert")
         return
 
-    posts_to_insert = []
-
-    for post in top_posts_data:
-        post_db_data = {
-            "id": post["id"],
-            "subreddit_id": subreddit_id,
-            "author": post["author"],
-            "post_type": "top",
-            "title": post["title"],
-            "selftext": post["selftext"],
-            "url": post["url"],
-            "flair": post["flair"],
-            "created_utc": post["created_utc"]
-        }
-        posts_to_insert.append(post_db_data)
-
     try:
         with db_session() as conn:
-            conn.execute(posts.insert(), posts_to_insert)
+            # getting post_id for each iteration
+            for post in top_posts_data:
+                post_id = post["id"]
 
-        logger.info(f"Successfully inserted posts data into DB")
+                # check if post already exists
+                exists = conn.execute(
+                    select(posts.c.id).where(posts.c.id == post_id)
+                ).fetchone()
+
+                # return if duplicate
+                if exists:
+                    logger.info(f"The Post ID: '{post_id}' already exists. Skipped inserting")
+                    continue
+
+                post_db_data = {
+                    "id": post["id"],
+                    "subreddit_id": subreddit_id,
+                    "author": post["author"],
+                    "post_type": "top",
+                    "title": post["title"],
+                    "selftext": post["selftext"],
+                    "url": post["url"],
+                    "flair": post["flair"],
+                    "created_utc": post["created_utc"]
+                }
+
+                # otherwise insert
+                conn.execute(posts.insert(), post_db_data)
+
+            logger.info(f"Successfully inserted new top posts into DB (duplicates skipped)")
 
     except Exception as e:
         logger.error(f"Failure inserting posts data into DB: {e}", exc_info=True)
@@ -72,30 +94,39 @@ def insert_rising_posts(rising_posts_data, subreddit_id):
         logger.info("No posts data to insert")
         return
 
-    posts_to_insert = []
-
-    for post in rising_posts_data:
-        post_db_data = {
-            "id": post["id"],
-            "subreddit_id": subreddit_id,
-            "author": post["author"],
-            "post_type": "rising",
-            "title": post["title"],
-            "selftext": post["selftext"],
-            "url": post["url"],
-            "flair": post["flair"],
-            "created_utc": post["created_utc"]
-        }
-        posts_to_insert.append(post_db_data)
-
     try:
         with db_session() as conn:
-            conn.execute(posts.insert(), posts_to_insert)
+            for post in rising_posts_data:
+                post_id = post["id"]
 
-        logger.info(f"Successfully inserted posts data into DB")
+                # check if post already exists
+                exists = conn.execute(
+                    select(posts.c.id).where(posts.c.id == post_id)
+                ).fetchone()
+
+                # continue iterations if duplicate
+                if exists:
+                    logger.info(f"The Post ID: '{post_id}' already exists. Skipped inserting")
+                    continue
+
+                post_db_data = {
+                    "id": post["id"],
+                    "subreddit_id": subreddit_id,
+                    "author": post["author"],
+                    "post_type": "rising",
+                    "title": post["title"],
+                    "selftext": post["selftext"],
+                    "url": post["url"],
+                    "flair": post["flair"],
+                    "created_utc": post["created_utc"]
+                }
+
+                conn.execute(posts.insert(), post_db_data)
+
+            logger.info(f"Successfully inserted new rising posts into DB (skipped duplicates)")
 
     except Exception as e:
-        logger.error(f"Failure inserting posts data into DB: {e}", exc_info=True)
+        logger.error(f"Failure inserting rising posts data into DB: {e}", exc_info=True)
         raise
 
 def insert_comments(post_comments, post_id):
