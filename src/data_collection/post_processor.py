@@ -1,8 +1,8 @@
 # ~/reddit_sentiment_tracker/src/data_collection/post_processor.py
 
-from ..utils.utils import to_vienna_time
 from ..sentiment_analysis.sentiment_analyzer import analyze_sentiment
 from typing import Dict, Any, Optional
+from datetime import datetime, timezone
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
@@ -15,7 +15,7 @@ def process_post(post) -> Optional[Dict[str, Any]]:
         return {
             "id": post.id,
             "author": str(post.author) if post.author else "N/A",
-            "created_utc": to_vienna_time(post.created_utc),
+            "created_utc": datetime.fromtimestamp(post.created_utc, tz=timezone.utc),
             "num_comments": post.num_comments,
             "url": post.url,
             "awards": len(post.all_awardings),

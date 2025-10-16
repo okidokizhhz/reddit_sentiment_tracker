@@ -1,7 +1,7 @@
 # ~/reddit_sentiment_tracker/src/data_collection/comment_fetcher.py
 
 from ..sentiment_analysis.sentiment_analyzer import analyze_sentiment
-from ..utils.utils import to_vienna_time
+from datetime import datetime, timezone
 from typing import Any
 import logging
 
@@ -32,7 +32,7 @@ def fetch_comments(reddit, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -
                 "author": str(comment.author) if comment.author else "[deleted]",
                 "score": comment.score,
                 "edited": comment.edited,
-                "created_utc": to_vienna_time(comment.created_utc),  # Your existing function
+                "created_utc": datetime.fromtimestamp(comment.created_utc, tz=timezone.utc),
                 "sentiment": analyze_sentiment(comment.body)  # Your existing function
             })
         

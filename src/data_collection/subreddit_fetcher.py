@@ -2,6 +2,7 @@
 
 import praw
 import praw.exceptions
+from datetime import datetime, timezone
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
@@ -17,7 +18,7 @@ def fetch_subreddit_metadata(subreddit_name: str, reddit) -> dict:
             "name": subreddit.name,
             "description": subreddit.description,
             "subscriber_count": subreddit.subscribers,
-            "created_utc": subreddit.created_utc
+            "created_utc": datetime.fromtimestamp(subreddit.created_utc, tz=timezone.utc)
         }
 
         logger.info(f"Subreddit Metadata of: '{subreddit_name}' successfully fetched")
