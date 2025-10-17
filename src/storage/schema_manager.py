@@ -65,3 +65,16 @@ comment_sentiment_history = Table(
     Column('score', Integer),
     Column('measured_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
 )
+
+average_daily_sentiment = Table(
+    'average_daily_sentiment', metadata,
+    Column('id', Integer, primary_key=True, autoincrement=True),
+    Column('date', DateTime, nullable=False, index=True),
+    Column('subreddit_id', String, ForeignKey('subreddits.id'), nullable=False, index=True),
+    Column('average_post_sentiment', Float),
+    Column('average_comment_sentiment', Float),
+    Column('overall_sentiment', Float),
+    Column('post_count', Integer),
+    Column('comment_count', Integer),
+    Column('calculated_at', DateTime, default=datetime.now(timezone.utc), nullable=False, index=True)
+)
