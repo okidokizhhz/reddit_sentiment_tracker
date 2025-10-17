@@ -149,10 +149,17 @@ def insert_comments(post_comments, post_id):
                     logger.info(f"The Commment ID: '{comment_id}' already exists. Skipped inserting")
                     continue
 
+                # handling parent_comment_id
+                parent_comment_id = comment["parent_id"]
+                if parent_comment_id.startswith("t3_"):     # t3_ are top level comments - no parent id
+                    parent_comment_id = None
+                elif parent_comment_id.startswith("t1_"):   # t1_ are comment replies - parent id
+                    parent_comment_id = parent_comment_id[3:]
+
                 comments_db_data = {
                     "id": comment["id"], 
                     "post_id": post_id, 
-                    "parent_comment_id": comment["parent_id"], 
+                    "parent_comment_id": parent_comment_id, 
                     "depth": comment["depth"], 
                     "author": comment["author"],
                     "text": comment["text"],
