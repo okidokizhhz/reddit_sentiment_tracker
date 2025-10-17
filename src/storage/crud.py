@@ -135,30 +135,39 @@ def insert_comments(post_comments, post_id):
         logger.info("No commments data of Top Posts to insert")
         return
 
-    comments_to_insert = []
-
-    for comment in post_comments:
-        comments_db_data = {
-            "id": comment["id"], 
-            "post_id": post_id, 
-            "parent_comment_id": comment["parent_id"], 
-            "depth": comment["depth"], 
-            "author": comment["author"],
-            "text": comment["text"],
-            "score": comment["score"],
-            "created_utc": comment["created_utc"],
-        }
-        comments_to_insert.append(comments_db_data)
-
     try:
         with db_session() as conn:
-            conn.execute(comments.insert(), comments_to_insert)
+            for comment in post_comments:
+                comment_id = comment["id"]
 
-        logger.info(f"Successfully inserted comments of post id '{post_id}' into DB")
+                exists = conn.execute(
+                    select(comments.c.id).where(comments.c.id == comment_id)
+                ).fetchone()
+
+                # continue iterations if duplicate
+                if exists:
+                    logger.info(f"The Commment ID: '{comment_id}' already exists. Skipped inserting")
+                    continue
+
+                comments_db_data = {
+                    "id": comment["id"], 
+                    "post_id": post_id, 
+                    "parent_comment_id": comment["parent_id"], 
+                    "depth": comment["depth"], 
+                    "author": comment["author"],
+                    "text": comment["text"],
+                    "score": comment["score"],
+                    "created_utc": comment["created_utc"],
+                }
+
+                conn.execute(comments.insert(), comments_db_data)
+
+            logger.info(f"Successfully inserted comments of Post '{post_id}' into DB (skipped duplicates)")
 
     except Exception as e:
-        logger.error(f"Failure inserting comments of posts id '{post_id}' into DB: {e}", exc_info=True)
+        logger.error(f"Failure inserting comments of Post '{post_id}' into DB: {e}", exc_info=True)
         raise
+
 
 def insert_post_sentiment(post_data):
     """ Inserting the Sentiment of posts into DB in a transaction """
