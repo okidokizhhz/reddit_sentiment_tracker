@@ -2,7 +2,7 @@ import logging
 from contextlib import contextmanager
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import select
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
 from .connection import engine
 from .schema_manager import subreddits, posts, comments, post_sentiment_history, comment_sentiment_history
 
@@ -260,4 +260,67 @@ def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
 
     except Exception as e:
         logger.error(f"Failed to retrieve metadata for '{subreddit_name}': {e}", exc_info=True)
+        raise
+
+
+def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
+    """ Read Posts Data (title, author, score, sentiment score) from a Subreddit from DB """
+    try:
+        with db_session() as conn:
+            query = (
+                select(                                                                         # selecting desired data
+                    posts.c.id,
+                    posts.c.title,
+                    posts.c.author,
+                    posts.c.created_utc,
+                    post_sentiment_history.c.title_sentiment,
+                    post_sentiment_history.c.body_sentiment,
+                    post_sentiment_history.c.score,
+                    post_sentiment_history.c.upvote_ratio,
+                    post_sentiment_history.c.controversiality,
+                    post_sentiment_history.c.num_comments,
+                    post_sentiment_history.c.measured_at
+                )
+                .select_from(                                                                   # selecting Tables to join
+                    posts.join(                                                         # Start: "posts" 1st JOIN with "subreddits"
+                        subreddits, posts.c.subreddit_id == subreddits.c.id    # connecting via ForeignKey and primary_key
+                    ).join(                                                                     # 2nd JOIN with "post_sentiment_history"
+                        post_sentiment_history, posts.c.id == post_sentiment_history.c.post_id  # connecting via ForeignKey and primary_key
+                    )
+                )
+                .where(subreddits.c.name == subreddit_name)   # Filter Condition: user input "subreddit_name"
+                .limit(limit)                                        # Limit: of posts retrieved (default = 5)
+            )
+
+            results = conn.execute(query).fetchall()
+
+            if not results:
+                logger.warning(f"No Posts found for Subreddit '{subreddit_name}' in Database")
+                return []
+
+
+            # results is a sqlalchemy row object so we have to iterate through it and convert it to a dict
+            posts_list = []
+
+            for row in results:
+                post_data = {
+                "id": row.id,
+                "title": row.title,
+                "author": row.author,
+                "created_utc": row.created_utc,
+                "title_sentiment": row.title_sentiment,
+                "body_sentiment": row.body_sentiment,
+                "score": row.score,
+                "upvote_ratio": row.upvote_ratio,
+                "controversiality": row.controversiality,
+                "num_comments": row.num_comments,
+                "measured_at": row.measured_at
+                }
+
+                posts_list.append(post_data)
+
+            return posts_list
+
+    except Exception as e:
+        logger.error(f"Failed to retrieve Posts data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         raise
