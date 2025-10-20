@@ -264,7 +264,7 @@ def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
 
 
 def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
-    """ Read Posts Data (title, author, score, sentiment score) from a Subreddit from DB """
+    """ Read Posts Data (title, author, score, sentiment score etc.) from a Subreddit from DB """
     try:
         with db_session() as conn:
             query = (
@@ -323,4 +323,59 @@ def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]
 
     except Exception as e:
         logger.error(f"Failed to retrieve Posts data of Subreddit '{subreddit_name}': {e}", exc_info=True)
+        raise
+
+def retrieve_comments_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
+    """ Read Comments Data () from a Subreddit from DB """
+    try:
+        with db_session() as conn:
+            query = (
+                select(
+                    comments.c.id,
+                    comments.c.author,
+                    comments.c.text,
+                    comments.c.score,
+                    comments.c.created_utc,
+                    comment_sentiment_history.c.comment_sentiment,
+                    comment_sentiment_history.c.measured_at,
+                )
+                .select_from(
+                    comments.join(
+                        posts, comments.c.post_id == posts.c.id
+                    ).join(
+                        subreddits, posts.c.subreddit_id == subreddits.c.id
+                    ).join(
+                        comment_sentiment_history, comments.c.id == comment_sentiment_history.c.comment_id
+                    )
+                )
+                .where(subreddits.c.name == subreddit_name)
+                .limit(limit)
+            )
+
+            results = conn.execute(query).fetchall()
+
+            if not results:
+                logger.warning(f"No Comments found for Subreddit '{subreddit_name}' in Database")
+                return []
+
+            # results is a sqlalchemy row object so we have to iterate through it and convert it to a dict
+            comments_list = []
+
+            for row in results:
+                comment_data = {
+                    "id": row.id,
+                    "author": row.author,
+                    "text": row.text,
+                    "score": row.score,
+                    "created_utc": row.created_utc,
+                    "comment_sentiment": row.comment_sentiment,
+                    "measured_at": row.measured_at
+                }
+
+                comments_list.append(comment_data)
+
+            return comments_list
+
+    except Exception as e:
+        logger.error(f"Failed to retrieve Comments data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         raise

@@ -9,7 +9,7 @@ from fastapi import FastAPI
 
 from src.logger import setup_logger
 from src.storage.connection import initialize_database
-from src.storage.crud import retrieve_metadata, retrieve_posts_data
+from src.storage.crud import retrieve_metadata, retrieve_posts_data, retrieve_comments_data
 
 logger = setup_logger("reddit_sentiment_tracker")
 
@@ -61,7 +61,6 @@ async def health_check():
 @app.get("/subreddit_metadata/{subreddit_name}")                                   # get request to /subreddit_metadata with parameter
 async def get_subreddit_metadata(subreddit_name: str):
     """ Get Subreddit Metadata (name, description, subscriber count, created at) endpoint """
-
     try:
         subreddit_metadata = retrieve_metadata(subreddit_name)
 
@@ -80,7 +79,6 @@ async def get_subreddit_metadata(subreddit_name: str):
 @app.get("/posts")
 async def get_posts(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]:
     """ Get Posts data with Sentiments endpoint """
-
     try:
         posts_data = retrieve_posts_data(subreddit_name, limit)
 
@@ -92,5 +90,23 @@ async def get_posts(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]
         return posts_data
 
     except Exception as e:
-        logger.error(f"Error retrieving Posts Data of Subreddit '{subreddit_name}: {e}'", exc_info=True)
+        logger.error(f"Error retrieving Posts Data of Subreddit '{subreddit_name}': {e}", exc_info=True)
+        return []
+
+
+@app.get("/comments")
+async def get_comments(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]:
+    """ Get Comments with Sentiments endpoint """
+    try:
+        comments_data = retrieve_comments_data(subreddit_name, limit)
+
+        if comments_data is None:
+            logger.warning(f"No Comments data for Subreddit '{subreddit_name}' found")
+            return []
+
+        logger.info(f"Comments data for Subreddit '{subreddit_name}' successfully retrieved")
+        return comments_data
+
+    except Exception as e:
+        logger.error(f"Error retrieving Comments data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         return []
