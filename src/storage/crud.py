@@ -243,7 +243,7 @@ def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
                 select(
                     subreddits.c.description,
                     subreddits.c.subscriber_count,
-                    subreddits.c.created_at
+                    subreddits.c.created_utc
                 ).where(subreddits.c.name == subreddit_name)
             ).fetchone()
 
@@ -255,7 +255,7 @@ def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
                 "name": subreddit_name,
                 "description": result.description,
                 "subscribers": result.subscriber_count,
-                "created_at": result.created_at
+                "created_at": result.created_utc
             }
 
     except Exception as e:
