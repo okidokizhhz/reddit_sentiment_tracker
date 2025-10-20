@@ -2,6 +2,7 @@ import logging
 from contextlib import contextmanager
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import select
+from typing import Optional, Dict, Any
 from .connection import engine
 from .schema_manager import subreddits, posts, comments, post_sentiment_history, comment_sentiment_history
 
@@ -231,4 +232,32 @@ def insert_comment_sentiment(post_comments):
 
     except Exception as e:
         logger.error(f"Failure inserting sentiment of comment/s into DB: {e}", exc_info=True)
+        raise
+
+
+def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
+    """ Read basic subreddit metadata (name, description, subscriber count, created at) from DB by name """
+    try:
+        with db_session() as conn:
+            result = conn.execute(
+                select(
+                    subreddits.c.description,
+                    subreddits.c.subscriber_count,
+                    subreddits.c.created_at
+                ).where(subreddits.c.name == subreddit_name)
+            ).fetchone()
+
+            if not result:
+                logger.warning(f"Subreddit '{subreddit_name}' not found in Database")
+                return None
+
+            return {
+                "name": subreddit_name,
+                "description": result.description,
+                "subscribers": result.subscriber_count,
+                "created_at": result.created_at
+            }
+
+    except Exception as e:
+        logger.error(f"Failed to retrieve metadata for '{subreddit_name}': {e}", exc_info=True)
         raise
