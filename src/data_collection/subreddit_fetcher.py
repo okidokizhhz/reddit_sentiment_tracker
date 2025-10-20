@@ -15,7 +15,7 @@ def fetch_subreddit_metadata(subreddit_name: str, reddit) -> dict:
         # fetching metadata
         metadata = {
             "id": subreddit.id,
-            "name": subreddit.name,
+            "name": subreddit.display_name,
             "description": subreddit.description,
             "subscriber_count": subreddit.subscribers,
             "created_utc": datetime.fromtimestamp(subreddit.created_utc, tz=timezone.utc)
