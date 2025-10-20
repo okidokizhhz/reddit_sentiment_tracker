@@ -8,10 +8,11 @@ from fastapi import FastAPI
 
 from src.logger import setup_logger
 from src.storage.connection import initialize_database
+from src.storage.crud import retrieve_metadata
 
 logger = setup_logger("reddit_sentiment_tracker")
 
-# lifespan context manager
+# lifespan context manager for startup/shutdown
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """ handle startup, db initialization, shutdown """
@@ -38,13 +39,13 @@ app = FastAPI(
 )
 
 
-@app.get("/")
+@app.get("/")                                                     # root
 async def read_root():
     """ root """
     return {"message": "welcome to", "program": "reddit sentiment tracker"}
 
 
-@app.get("/health")                                               # get request to /health path
+@app.get("/health")                                               # get request to /health
 async def health_check():
     """ Health check endpoint for monitoring the API """
     return {
@@ -54,3 +55,22 @@ async def health_check():
         "message": "API is running correctly",
         "environment": "development"
     }
+
+
+@app.get("/subreddit_metadata/{subreddit_name}")                                   # get request to /subreddit_metadata with parameter
+async def get_subreddit_metadata(subreddit_name: str):
+    """ Get Subreddit Metadata (name, description, subscriber count, created at) endpoint """
+
+    try:
+        subreddit_metadata = retrieve_metadata(subreddit_name)
+
+        if subreddit_metadata is None:
+            logger.warning(f"No data for '{subreddit_name}' in DB found")
+            return {"error": f"Subreddit '{subreddit_name}' not found in Database"}
+
+        logger.info(f"Subreddit Metadata for '{subreddit_name}' successfully retrieved")
+        return subreddit_metadata
+
+    except Exception as e:
+        logger.error(f"Error retrieving Metadata of Subreddit '{subreddit_name}'", exc_info=True)
+        return {"error": f"Internal server error: {str(e)}"}
