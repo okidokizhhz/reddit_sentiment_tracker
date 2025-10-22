@@ -6,6 +6,15 @@ from sqlalchemy import (Column, ForeignKey, Table,
                         String, Integer, Float, DateTime, Text)
 from .connection import metadata
 
+users = Table(
+    'users', metadata,
+    Column('id', Integer, primary_key=True, autoincrement=True),
+    Column("username", String(100), unique=True, nullable=False, index=True),
+    Column("email", String(300), unique=True, nullable=False, index=True),
+    Column("hashed_password", String(255), nullable=False),
+    Column("created_at", DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
+)
+
 subreddits = Table(
     'subreddits', metadata,
     Column('id', String, primary_key=True),
