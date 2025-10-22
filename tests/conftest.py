@@ -5,6 +5,7 @@ import os
 import pytest
 from dotenv import load_dotenv
 from sqlalchemy import create_engine
+from src.storage import connection
 from src.storage.connection import metadata
 
 # Fixtures:
@@ -37,17 +38,21 @@ def test_engine():
     except Exception as e:
         raise pytest.fail(f"Error creating test Postgres Database: {e}")
 
-# fixture = 
+# fixture 
 # scope "function" = fresh instance created for EVERY test function - each test needs isolated database state (transaction rollback)
 @pytest.fixture(scope="function")
-def db_session(test_engine):   # reuses the same test_engine for every test performed - fast and efficient
-    """ Creating a fresh database session for each test with transaction rollback """
-    connection = test_engine.connect()      # connecting to engine
-    transaction = connection.begin()   # beginning transaction
+def db_session(test_engine, monkeypatch):   # reuses the same test_engine for every test performed - fast and efficient
+    """ 
+    Creating a fresh database session for each test with transaction rollback 
+    Monkeypatches the production engine with test engine for isolated testing
+    """
+    monkeypatch.setattr(connection, "engine", test_engine)  # replacing the production engine with test engine
+    conn = test_engine.connect()      # connecting to engine
+    transaction = conn.begin()   # beginning transaction
 
     try:
-        metadata.create_all(connection)     # creating all tables for this test session
-        yield connection
+        metadata.create_all(conn)     # creating all tables for this test session
+        yield conn 
     finally:
         transaction.rollback()  # rolling back the transaction
-        connection.close()      # closing the test db connection
+        conn.close()      # closing the test db connection
