@@ -207,7 +207,7 @@ async def login(request: LoginRequest):
                 )
 
             else:
-                logger.warning("Invalid password for user: '{request.username}'. Login failed")
+                logger.warning(f"Invalid password for user: '{request.username}'. Login failed")
                 raise HTTPException(status_code=400, detail="Invalid password")
     except HTTPException:
         raise

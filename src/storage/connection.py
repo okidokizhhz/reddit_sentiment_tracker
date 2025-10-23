@@ -1,7 +1,8 @@
 # ~/reddit_sentiment_tracker/src/storage/connection.py
 
 import os
-from sqlalchemy import create_engine, MetaData
+import subprocess
+from sqlalchemy import create_engine, MetaData, text
 from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
 import logging
@@ -46,15 +47,36 @@ except Exception as e:
 metadata = MetaData()
 
 
-# Create all tables (run once)
-def initialize_database():
-    """ Creates all defined tables in the database """
+def run_alembic_migrations():
+    """ running Alembic migrations using subprocess command line call """
     try:
-        metadata.create_all(engine)
-        logger.info("Tables created successfully")
-    except SQLAlchemyError as e:
-        logger.critical(f"Error creating Tables: {e}")
-        raise
+        result = subprocess.run(
+            ["alembic", "upgrade", "head"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        logger.info("Alembic migrations applied successfully")
+        logger.debug(f"Alembic output: {result.stdout}")
+        return True
+    except subprocess.CalledProcessError as e:
+        logger.critical(f"Alembic migrations failed: {e}")
+        logger.error(f"Error output: {e.stderr}")
+        return False
     except Exception as e:
-        logger.critical(f"Error creating Tables for Database: {e}", exc_info=True)
-        raise ValueError(f"Error creating Tables for Database")
+        logger.critical(f"Failed to run Alembic: {e}")
+        return False
+
+# run migrations automatically when this module is imported
+run_alembic_migrations()
+
+
+def initialize_database():
+    """ Test database connection - schema is managed by alembic """
+    try:
+        with engine.connect() as conn:
+            conn.execute(text('SELECT 1'))         # text() tells sqlalchemy that raw SQL text should be executed
+        logger.info("Database connection successful")
+    except Exception as e:
+        logger.critical(f"Error connecting to Database: {e}", exc_info=True)
+        raise

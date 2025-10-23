@@ -15,9 +15,9 @@ def init_db():
     """ Initialize DB """
     try:
         initialize_database()
-        logger.info("Database initialized successfully")
+        logger.info("Database connection successful")
     except Exception as e:
-        logger.critical(f"Failed to initialize DB: {e}. Exiting Program", exc_info=True)
+        logger.critical(f"Failed to connect to DB: {e}. Exiting Program", exc_info=True)
         sys.exit(1)
 
 
