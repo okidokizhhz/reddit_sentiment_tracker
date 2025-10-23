@@ -4,15 +4,32 @@ import sys
 from datetime import datetime, timezone
 from contextlib import asynccontextmanager
 from typing import Any, Dict, List
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from src.storage.schema_manager import users
 from src.api.models import (RegisterRequest, RegisterResponse, LoginRequest, LoginResponse)
+from src.api.auth_service import create_access_token, verify_token
 from src.api.bcrypt_hashing import hash_password, verify_password
+from src.api.password_validation import validate_password_strength
 from src.storage.connection import initialize_database
 from src.storage.crud import retrieve_metadata, retrieve_posts_data, retrieve_comments_data, db_session
 from src.logger import setup_logger
 
 logger = setup_logger("reddit_sentiment_tracker")
+
+
+# Endpoint Protection logic
+security = HTTPBearer() # creating a "bearer token" checker
+async def get_current_user(auth_data: HTTPAuthorizationCredentials = Depends(security)):
+    """ Checks if there is a valid JWT token 
+        credentials as an object containing 1.scheme "Bearer" and 2.JWT token
+    """
+    token = auth_data.credentials    # assigning the actual JWT string to token
+    payload = verify_token(token)     # decoding and verifying token
+    if not payload:
+        raise HTTPException(401, "Invalid token")
+    return payload["user_id"]
+
 
 # lifespan context manager for startup/shutdown
 @asynccontextmanager
@@ -132,6 +149,9 @@ async def register(request: RegisterRequest) -> RegisterResponse:
             if existing_email:
                 logger.warning(f"Registration failed: Email '{request.email}' already exists")
                 raise HTTPException(status_code=400, detail="Email already exists")
+
+            # password strength validation
+            validate_password_strength(request.password)
 
             # hashing request.password with bcrypt
             hashed_pw = hash_password(request.password)
