@@ -7,7 +7,11 @@ from typing import Any, Dict, List
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from src.storage.schema_manager import users
-from src.api.models import (RegisterRequest, RegisterResponse, LoginRequest, LoginResponse)
+from src.api.models import (RegisterRequest, RegisterResponse, 
+                            LoginRequest, LoginResponse,
+                            MetadataResponse,
+                            PostsResponse,
+                            CommentsResponse)
 from src.api.auth_service import create_access_token, verify_token
 from src.api.bcrypt_hashing import hash_password, verify_password
 from src.api.password_validation import validate_password_strength
@@ -76,7 +80,7 @@ async def health_check():
     }
 
 
-@app.get("/subreddit_metadata/{subreddit_name}")                                   # get request to /subreddit_metadata with parameter
+@app.get("/subreddit_metadata/{subreddit_name}", response_model=MetadataResponse)       # get request to /subreddit_metadata with parameter
 async def get_subreddit_metadata(subreddit_name: str):
     """ Get Subreddit Metadata (name, description, subscriber count, created at) endpoint """
     try:
@@ -94,7 +98,7 @@ async def get_subreddit_metadata(subreddit_name: str):
         return {"error": f"Internal server error: {str(e)}"}
 
 
-@app.get("/posts")
+@app.get("/posts", response_model=List[PostsResponse])
 async def get_posts(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]:
     """ Get Posts data with Sentiments endpoint """
     try:
@@ -112,7 +116,7 @@ async def get_posts(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]
         return []
 
 
-@app.get("/comments")
+@app.get("/comments", response_model=List[CommentsResponse])
 async def get_comments(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]:
     """ Get Comments with Sentiments endpoint """
     try:
@@ -129,7 +133,7 @@ async def get_comments(subreddit_name: str, limit: int = 5) -> List[Dict[str, An
         logger.error(f"Error retrieving Comments data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         return []
 
-@app.post("/register")
+@app.post("/register", response_model=RegisterResponse)
 async def register(request: RegisterRequest) -> RegisterResponse:
     """ Enduser can register using username, email, password """
     try:
