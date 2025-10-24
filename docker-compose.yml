@@ -5,13 +5,10 @@ services:
     build: .
     ports:
       - "8000:8000"
+    env_file:
+      - .env
     environment:
       - HOST_DB=db
-      - NAME_DB=reddit_sentiment_tracker
-      - USER_DB=app_user
-      - PASSWORD_DB=app_password
-      - PORT_DB=5432
-      - JWT_KEY=your_jwt_secret_here
     depends_on:
       - db
 
@@ -19,8 +16,8 @@ services:
     image: postgres:13
     environment:
       - POSTGRES_DB=reddit_sentiment_tracker
-      - POSTGRES_USER=app_user
-      - POSTGRES_PASSWORD=app_password
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=${PASSWORD_DB}  # reference from .env file
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
