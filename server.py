@@ -99,7 +99,7 @@ async def get_subreddit_metadata(subreddit_name: str):
 
 
 @app.get("/posts", response_model=List[PostsResponse])
-async def get_posts(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]:
+async def get_posts(subreddit_name: str, limit: int = 5, user_id: str= Depends(get_current_user)) -> List[Dict[str, Any]]:
     """ Get Posts data with Sentiments endpoint """
     try:
         posts_data = retrieve_posts_data(subreddit_name, limit)
@@ -117,7 +117,7 @@ async def get_posts(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]
 
 
 @app.get("/comments", response_model=List[CommentsResponse])
-async def get_comments(subreddit_name: str, limit: int = 5) -> List[Dict[str, Any]]:
+async def get_comments(subreddit_name: str, limit: int = 5, user_id: str= Depends(get_current_user)) -> List[Dict[str, Any]]:
     """ Get Comments with Sentiments endpoint """
     try:
         comments_data = retrieve_comments_data(subreddit_name, limit)
