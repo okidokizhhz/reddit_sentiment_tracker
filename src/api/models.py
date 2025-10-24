@@ -9,7 +9,7 @@ from datetime import datetime
 class RegisterRequest(BaseModel):
     username: str = Field(..., min_length=3, max_length=40)    # ... = ellipsis; equal to Field(required=True)
     email: str = Field(..., min_length=5, max_length=40)
-    password: str = Field(..., min_length=5, max_length=40)
+    password: str = Field(..., min_length=8, max_length=100)
 
 class RegisterResponse(BaseModel):
     status: str
@@ -26,6 +26,7 @@ class LoginResponse(BaseModel):
 
 # /subreddit_metadata/{subreddit_name}
 class MetadataResponse(BaseModel):
+    status: str
     name: str = Field(..., description="Subreddit display name")
     description: Optional[str] = Field(None, description="Subreddit description")    # can be a str or None
     subscriber_count: Optional[int] = Field(None, description="Subreddit subscriber count")

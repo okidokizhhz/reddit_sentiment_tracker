@@ -4,7 +4,7 @@ import sys
 from datetime import datetime, timezone
 from contextlib import asynccontextmanager
 from typing import Any, Dict, List
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Path
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from src.storage.schema_manager import users
 from src.api.models import (RegisterRequest, RegisterResponse, 
@@ -62,12 +62,6 @@ app = FastAPI(
 )
 
 
-@app.get("/")                                                     # root
-async def read_root():
-    """ root """
-    return {"message": "welcome to", "program": "reddit sentiment tracker"}
-
-
 @app.get("/health")                                               # get request to /health
 async def health_check():
     """ Health check endpoint for monitoring the API """
@@ -81,57 +75,83 @@ async def health_check():
 
 
 @app.get("/subreddit_metadata/{subreddit_name}", response_model=MetadataResponse)       # get request to /subreddit_metadata with parameter
-async def get_subreddit_metadata(subreddit_name: str):
+async def get_subreddit_metadata(
+    subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)")
+):
     """ Get Subreddit Metadata (name, description, subscriber count, created at) endpoint """
+    subreddit_name = subreddit_name.lower()
+
     try:
         subreddit_metadata = retrieve_metadata(subreddit_name)
 
         if subreddit_metadata is None:
             logger.warning(f"No data for '{subreddit_name}' in DB found")
-            return {"error": f"Subreddit '{subreddit_name}' not found in Database"}
+            raise HTTPException(status_code=404, detail=f"No database entry for Metadata of subreddit: '{subreddit_name}'")
 
         logger.info(f"Subreddit Metadata for '{subreddit_name}' successfully retrieved")
-        return subreddit_metadata
 
+        return MetadataResponse(
+            status="success",
+            **subreddit_metadata    # ** dictionary unpacking / kwargs unpacking
+        )
+
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error retrieving Metadata of Subreddit '{subreddit_name}'", exc_info=True)
-        return {"error": f"Internal server error: {str(e)}"}
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 
 @app.get("/posts", response_model=List[PostsResponse])
-async def get_posts(subreddit_name: str, limit: int = 5, user_id: str= Depends(get_current_user)) -> List[Dict[str, Any]]:
+async def get_posts(
+    subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
+    limit: int = 5, 
+    user_id: str= Depends(get_current_user)
+) -> List[Dict[str, Any]]:
     """ Get Posts data with Sentiments endpoint """
+    subreddit_name = subreddit_name.lower()
+
     try:
         posts_data = retrieve_posts_data(subreddit_name, limit)
 
         if posts_data is None:
             logger.warning(f"No Posts Data for '{subreddit_name}' in DB found")
-            return []
+            raise HTTPException(status_code=404, detail=f"No database entry for posts of subreddit: '{subreddit_name}' found")
 
         logger.info(f"Posts data for Subreddit '{subreddit_name}' successfully retrieved")
         return posts_data
 
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error retrieving Posts Data of Subreddit '{subreddit_name}': {e}", exc_info=True)
-        return []
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 
 @app.get("/comments", response_model=List[CommentsResponse])
-async def get_comments(subreddit_name: str, limit: int = 5, user_id: str= Depends(get_current_user)) -> List[Dict[str, Any]]:
+async def get_comments(
+    subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
+    limit: int = 5, 
+    user_id: str= Depends(get_current_user)
+) -> List[Dict[str, Any]]:
     """ Get Comments with Sentiments endpoint """
+    subreddit_name = subreddit_name.lower()
+
     try:
         comments_data = retrieve_comments_data(subreddit_name, limit)
 
         if comments_data is None:
             logger.warning(f"No Comments data for Subreddit '{subreddit_name}' found")
-            return []
+            raise HTTPException(status_code=404, detail=f"No database entry for comments of subreddit: '{subreddit_name}' found")
 
         logger.info(f"Comments data for Subreddit '{subreddit_name}' successfully retrieved")
         return comments_data
 
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error(f"Error retrieving Comments data of Subreddit '{subreddit_name}': {e}", exc_info=True)
-        return []
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 @app.post("/register", response_model=RegisterResponse)
 async def register(request: RegisterRequest) -> RegisterResponse:
