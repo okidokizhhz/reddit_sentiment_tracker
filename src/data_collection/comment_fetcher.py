@@ -7,7 +7,7 @@ import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def fetch_comments(reddit, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> list[dict[str, Any]]:
+def fetch_comments(reddit: Any, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> list[dict[str, Any]]:
     """ 
     Comment fetcher - gets top-level comments only
     Returns: List of comment dicts with basic info + sentiment

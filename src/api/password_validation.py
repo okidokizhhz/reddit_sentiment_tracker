@@ -2,7 +2,7 @@
 
 from zxcvbn import zxcvbn
 
-def validate_password_strength(password: str, min_score: int = 3):
+def validate_password_strength(password: str, min_score: int = 3) -> None:
     """ 
     evaluate password strength with zxcvbn and setting minimum score to 3
 
@@ -25,5 +25,3 @@ def validate_password_strength(password: str, min_score: int = 3):
         message = " ".join([warning] + suggestions).strip()
 
         raise ValueError(f"Weak password: {message or 'Try a longer or more complex password.'}")
-
-    return True

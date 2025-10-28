@@ -3,11 +3,12 @@
 import praw
 import praw.exceptions
 from datetime import datetime, timezone
+from typing import Any, Optional, Dict
 import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def fetch_subreddit_metadata(subreddit_name: str, reddit) -> dict:
+def fetch_subreddit_metadata(subreddit_name: str, reddit: Any) -> Optional[Dict[str, Any]]:
     """ Fetches metadata of a specific subreddit """
     try:
         subreddit = reddit.subreddit(subreddit_name)
@@ -27,7 +28,7 @@ def fetch_subreddit_metadata(subreddit_name: str, reddit) -> dict:
 
     except praw.exceptions.APIException as e:
         logger.error(f"Reddit API Exception while fetching metadata of subreddit '{subreddit_name}': {e}")
-        return {}
+        return None
     except Exception as e:
         logger.error(f"Error fetching metadata of subreddit '{subreddit_name}': {e}", exc_info=True)
-        return {}
+        return None

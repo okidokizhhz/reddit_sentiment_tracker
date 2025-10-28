@@ -47,7 +47,7 @@ except Exception as e:
 metadata = MetaData()
 
 
-def run_alembic_migrations():
+def run_alembic_migrations() -> bool:
     """ running Alembic migrations using subprocess command line call """
     try:
         result = subprocess.run(
@@ -71,7 +71,7 @@ def run_alembic_migrations():
 run_alembic_migrations()
 
 
-def initialize_database():
+def initialize_database() -> None:
     """ Test database connection - schema is managed by alembic """
     try:
         with engine.connect() as conn:

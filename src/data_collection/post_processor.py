@@ -7,7 +7,7 @@ import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def process_post(post) -> Optional[Dict[str, Any]]:
+def process_post(post: Any) -> Optional[Dict[str, Any]]:
     """ Process raw post data with sentiment analysis """
     try:
         logger.info(f"Processing post with the id: {post.id} and the tile: {post.title} successful")

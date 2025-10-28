@@ -3,7 +3,7 @@
 import sys
 from datetime import datetime, timezone
 from contextlib import asynccontextmanager
-from typing import Any, Dict, List
+from typing import Any, Dict, List, AsyncGenerator
 from fastapi import FastAPI, HTTPException, Depends, Path
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from src.storage.schema_manager import users
@@ -24,7 +24,7 @@ logger = setup_logger("reddit_sentiment_tracker")
 
 # Endpoint Protection logic
 security = HTTPBearer() # creating a "bearer token" checker
-async def get_current_user(auth_data: HTTPAuthorizationCredentials = Depends(security)):
+async def get_current_user(auth_data: HTTPAuthorizationCredentials = Depends(security)) -> str:
     """ Checks if there is a valid JWT token 
         credentials as an object containing 1.scheme "Bearer" and 2.JWT token
     """
@@ -37,7 +37,7 @@ async def get_current_user(auth_data: HTTPAuthorizationCredentials = Depends(sec
 
 # lifespan context manager for startup/shutdown
 @asynccontextmanager
-async def lifespan(app: FastAPI):
+async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     """ handle startup, db initialization, shutdown """
     logger.info("Reddit Sentiment Tracker API starting up...")     # startup
 
@@ -63,7 +63,7 @@ app = FastAPI(
 
 
 @app.get("/health")                                               # get request to /health
-async def health_check():
+async def health_check() -> dict[str, Any]:
     """ Health check endpoint for monitoring the API """
     return {
         "status": "healthy",
@@ -77,7 +77,7 @@ async def health_check():
 @app.get("/subreddit_metadata/{subreddit_name}", response_model=MetadataResponse)       # get request to /subreddit_metadata with parameter
 async def get_subreddit_metadata(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)")
-):
+) -> MetadataResponse:
     """ Get Subreddit Metadata (name, description, subscriber count, created at) endpoint """
     subreddit_name = subreddit_name.lower()
 
@@ -199,7 +199,7 @@ async def register(request: RegisterRequest) -> RegisterResponse:
 
 
 @app.post("/login", response_model=LoginResponse)
-async def login(request: LoginRequest):
+async def login(request: LoginRequest) -> LoginResponse:
     """ Login Endpoint for enduser """
     try:
         with db_session() as conn:

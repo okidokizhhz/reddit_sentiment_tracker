@@ -20,7 +20,7 @@ def db_session():
             raise   # error - let application entry point decide
 
 
-def insert_subreddit_metadata(subreddit_metadata: dict):
+def insert_subreddit_metadata(subreddit_metadata: dict) -> None:
     """ Inserting subreddit metadata into DB in a transaction """
     if not subreddit_metadata:
         logger.info("No subreddit metadata to insert")
@@ -34,7 +34,7 @@ def insert_subreddit_metadata(subreddit_metadata: dict):
             ).fetchone()
 
             if exists:
-                logger.info(f"The Subreddit '{subreddit_metadata["id"]}' already exists. Skipped inserting")
+                logger.info(f"The Subreddit '{subreddit_metadata['id']}' already exists. Skipped inserting")
                 return
 
             # otherwise insert
@@ -46,7 +46,7 @@ def insert_subreddit_metadata(subreddit_metadata: dict):
         logger.error(f"Failure inserting subreddit metadata into DB: {e}", exc_info=True)
         raise
 
-def insert_top_posts(top_posts_data, subreddit_id):
+def insert_top_posts(top_posts_data, subreddit_id) -> None:
     """ Inserting posts data into DB in a transaction """
     if not top_posts_data:
         logger.info("No posts data to insert")
@@ -89,7 +89,7 @@ def insert_top_posts(top_posts_data, subreddit_id):
         logger.error(f"Failure inserting posts data into DB: {e}", exc_info=True)
         raise
 
-def insert_rising_posts(rising_posts_data, subreddit_id):
+def insert_rising_posts(rising_posts_data, subreddit_id) -> None:
     """ Inserting rising posts data into DB in a transaction """
     if not rising_posts_data:
         logger.info("No posts data to insert")
@@ -130,7 +130,7 @@ def insert_rising_posts(rising_posts_data, subreddit_id):
         logger.error(f"Failure inserting rising posts data into DB: {e}", exc_info=True)
         raise
 
-def insert_comments(post_comments, post_id):
+def insert_comments(post_comments, post_id) -> None:
     """ Inserting comments of Posts into DB in a transaction """
     if not post_comments:
         logger.info("No commments data of Top Posts to insert")
@@ -177,7 +177,7 @@ def insert_comments(post_comments, post_id):
         raise
 
 
-def insert_post_sentiment(post_data):
+def insert_post_sentiment(post_data) -> None:
     """ Inserting the Sentiment of posts into DB in a transaction """
 
     if not post_data:
@@ -208,7 +208,7 @@ def insert_post_sentiment(post_data):
         logger.error(f"Failure inserting sentiment of post/s into DB: {e}", exc_info=True)
         raise
 
-def insert_comment_sentiment(post_comments):
+def insert_comment_sentiment(post_comments) -> None:
     """ Inserting the Sentiment of comments into DB in a transaction """
     if not post_comments:
         logger.info("No post comments to insert")
