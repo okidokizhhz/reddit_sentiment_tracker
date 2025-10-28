@@ -62,7 +62,12 @@ app = FastAPI(
 )
 
 
-@app.get("/health")                                               # get request to /health
+@app.get(
+    "/health",
+    tags=["monitoring"],
+    summary="API Health Check",
+    description="Check if the API service is running correctly and get basic service information"
+)                                               # get request to /health
 async def health_check() -> dict[str, Any]:
     """ Health check endpoint for monitoring the API """
     return {
@@ -74,7 +79,13 @@ async def health_check() -> dict[str, Any]:
     }
 
 
-@app.get("/subreddit_metadata/{subreddit_name}", response_model=MetadataResponse)       # get request to /subreddit_metadata with parameter
+@app.get(
+    "/subreddit_metadata/{subreddit_name}", 
+    response_model=MetadataResponse,
+    tags=["subreddits"],
+    summary="Get Subreddit Metadata",
+    description="Retrieve comprehensive Metadata for a specific Subreddit such as the description, subscriber count, date of creation"
+)
 async def get_subreddit_metadata(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)")
 ) -> MetadataResponse:
@@ -102,7 +113,13 @@ async def get_subreddit_metadata(
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 
-@app.get("/posts/{subreddit_name}", response_model=List[PostsResponse])
+@app.get(
+    "/posts/{subreddit_name}", 
+    response_model=List[PostsResponse],
+    tags=["posts"],
+    summary="Get Posts Data with corresponding Sentiments",
+    description="Retrieve comprehensive data for Posts of a specific Subreddit such as author, title, upvote ratio, number of comments, post sentiment, controversiality"
+)
 async def get_posts(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
     limit: int = Query(5, ge=1, le=100),
@@ -128,7 +145,13 @@ async def get_posts(
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 
-@app.get("/comments/{subreddit_name}", response_model=List[CommentsResponse])
+@app.get(
+    "/comments/{subreddit_name}", 
+    response_model=List[CommentsResponse],
+    tags=["comments"],
+    summary="Get Comments data with corresponding Sentiments",
+    description="Retrieve comprehensive data for Comments of a specific Post from a specific Subreddit such as author, comment sentiment, comment score, date of creation"
+)
 async def get_comments(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
     limit: int = Query(5, ge=1, le=100),
@@ -153,7 +176,12 @@ async def get_comments(
         logger.error(f"Error retrieving Comments data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
-@app.post("/register", response_model=RegisterResponse)
+@app.post(
+    "/register", 
+    response_model=RegisterResponse,
+    tags=["authentication"],
+    summary="Register new user"
+)
 async def register(request: RegisterRequest) -> RegisterResponse:
     """ Enduser can register using username, email, password """
     try:
@@ -198,7 +226,12 @@ async def register(request: RegisterRequest) -> RegisterResponse:
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@app.post("/login", response_model=LoginResponse)
+@app.post(
+    "/login", 
+    response_model=LoginResponse,
+    tags=["authentication"],
+    summary="User Login"
+)
 async def login(request: LoginRequest) -> LoginResponse:
     """ Login Endpoint for enduser """
     try:
