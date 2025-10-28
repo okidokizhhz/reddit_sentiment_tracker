@@ -5,10 +5,6 @@ from pathlib import Path
 # current location of config.py acts as root
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# top posts path
-TOP_POSTS_DATA_PATH = BASE_DIR / "fetched_posts" / "top_posts_data.json"
-# rising posts path
-RISING_POSTS_DATA_PATH = BASE_DIR / "fetched_posts" / "rising_posts_data.json"
 # log path
 LOG_DIR = BASE_DIR / "logs"
 
@@ -21,3 +17,8 @@ REPLY_DEPTH = 1
 
 # TIME FILTER
 TOP_POSTS_TIME_FILTER = "all"
+
+# Redis Rate Limiting
+REDIS_URL="redis://localhost:6379"
+RATE_LIMIT_Redis = 10           # max requests allowed
+WINDOW_SIZE_Redis = 60          # in seconds (time window duration)

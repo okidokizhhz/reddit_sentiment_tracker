@@ -18,6 +18,7 @@ from src.api.password_validation import validate_password_strength
 from src.storage.connection import initialize_database
 from src.storage.crud import retrieve_metadata, retrieve_posts_data, retrieve_comments_data, db_session
 from src.logger import setup_logger
+from src.config import REDIS_URL, RATE_LIMIT_Redis, WINDOW_SIZE_Redis
 
 logger = setup_logger("reddit_sentiment_tracker")
 

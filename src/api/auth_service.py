@@ -13,7 +13,7 @@ load_dotenv()
 
 # JWT Configuration
 SECRET_KEY = os.getenv("JWT_KEY")
-ALGORITHM = "HS256"                     # encryption algorithm
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM")      # encryption algorithm
 ACCESS_TOKEN_EXPIRE_MINUTES = 30        # token validity period
 
 
@@ -24,6 +24,15 @@ def check_secret_key_existence() -> str:
     else:
         logger.critical(f"No Secret Key found in environmental variables")
         raise ValueError("SECRET_KEY variable is required")
+
+
+def check_jwt_algorithm_existence() -> str:
+    """ Checks if SECRET_KEY is existent """
+    if JWT_ALGORITHM is not None:
+        return JWT_ALGORITHM
+    else:
+        logger.critical(f"No JWT_ALGORITHM Key found in environmental variables")
+        raise ValueError("JWT_ALGORITHM variable is required")
 
 
 def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:
@@ -48,7 +57,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -
         # - payload (to_encode): the data we want to store
         # - secret key (SECRET_KEY): used to sign the token
         # - algorithm (ALGORITHM): how to encrypt/sign the token
-        encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+        encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=JWT_ALGORITHM)
 
         logger.info(f"JWT token created successfully. Expires at: {expire}")
 
@@ -62,9 +71,10 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -
 def verify_token(token: str) -> Optional[dict]:
     """ Verifies JWT token and returns the payload if valid """
     SECRET_KEY = check_secret_key_existence()
+    JWT_ALGORITHM = check_jwt_algorithm_existence()
 
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[JWT_ALGORITHM])
 
         logger.info("JWT token verified")
 
