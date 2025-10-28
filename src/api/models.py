@@ -1,6 +1,6 @@
 # ~/reddit_sentiment_tracker/src/api/models.py
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, EmailStr
 from typing import Optional, Dict
 from datetime import datetime
 
@@ -8,7 +8,7 @@ from datetime import datetime
 # /register
 class RegisterRequest(BaseModel):
     username: str = Field(..., min_length=3, max_length=40)    # ... = ellipsis; equal to Field(required=True)
-    email: str = Field(..., min_length=5, max_length=40)
+    email: EmailStr = Field(..., min_length=5, max_length=40)
     password: str = Field(..., min_length=8, max_length=100)
 
 class RegisterResponse(BaseModel):
