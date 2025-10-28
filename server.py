@@ -4,7 +4,7 @@ import sys
 from datetime import datetime, timezone
 from contextlib import asynccontextmanager
 from typing import Any, Dict, List, AsyncGenerator
-from fastapi import FastAPI, HTTPException, Depends, Path
+from fastapi import FastAPI, HTTPException, Depends, Path, Query
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from src.storage.schema_manager import users
 from src.api.models import (RegisterRequest, RegisterResponse, 
@@ -105,7 +105,7 @@ async def get_subreddit_metadata(
 @app.get("/posts/{subreddit_name}", response_model=List[PostsResponse])
 async def get_posts(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
-    limit: int = 5, 
+    limit: int = Query(5, ge=1, le=100),
     user_id: str= Depends(get_current_user)
 ) -> List[Dict[str, Any]]:
     """ Get Posts data with Sentiments endpoint """
@@ -131,7 +131,7 @@ async def get_posts(
 @app.get("/comments/{subreddit_name}", response_model=List[CommentsResponse])
 async def get_comments(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
-    limit: int = 5, 
+    limit: int = Query(5, ge=1, le=100),
     user_id: str= Depends(get_current_user)
 ) -> List[Dict[str, Any]]:
     """ Get Comments with Sentiments endpoint """
