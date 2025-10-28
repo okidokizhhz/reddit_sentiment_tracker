@@ -68,7 +68,7 @@ def run_alembic_migrations() -> bool:
         return False
 
 # run migrations automatically when this module is imported
-run_alembic_migrations()
+# run_alembic_migrations()
 
 
 def initialize_database() -> None:

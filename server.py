@@ -102,7 +102,7 @@ async def get_subreddit_metadata(
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 
-@app.get("/posts", response_model=List[PostsResponse])
+@app.get("/posts/{subreddit_name}", response_model=List[PostsResponse])
 async def get_posts(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
     limit: int = 5, 
@@ -128,7 +128,7 @@ async def get_posts(
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
 
-@app.get("/comments", response_model=List[CommentsResponse])
+@app.get("/comments/{subreddit_name}", response_model=List[CommentsResponse])
 async def get_comments(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
     limit: int = 5, 
