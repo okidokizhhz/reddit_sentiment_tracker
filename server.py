@@ -5,35 +5,22 @@ from datetime import datetime, timezone
 from contextlib import asynccontextmanager
 from typing import Any, Dict, List, AsyncGenerator
 from fastapi import FastAPI, HTTPException, Depends, Path, Query
-from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from src.storage.schema_manager import users
 from src.api.models import (RegisterRequest, RegisterResponse, 
                             LoginRequest, LoginResponse,
                             MetadataResponse,
                             PostsResponse,
                             CommentsResponse)
-from src.api.auth_service import create_access_token, verify_token
+from src.api.auth_service import create_access_token
+from src.api.auth_dependencies import get_current_user
+from src.api.rate_limiting import rate_limit_check
 from src.api.bcrypt_hashing import hash_password, verify_password
 from src.api.password_validation import validate_password_strength
 from src.storage.connection import initialize_database
 from src.storage.crud import retrieve_metadata, retrieve_posts_data, retrieve_comments_data, db_session
 from src.logger import setup_logger
-from src.config import REDIS_URL, RATE_LIMIT_Redis, WINDOW_SIZE_Redis
 
 logger = setup_logger("reddit_sentiment_tracker")
-
-
-# Endpoint Protection logic
-security = HTTPBearer() # creating a "bearer token" checker
-async def get_current_user(auth_data: HTTPAuthorizationCredentials = Depends(security)) -> str:
-    """ Checks if there is a valid JWT token 
-        credentials as an object containing 1.scheme "Bearer" and 2.JWT token
-    """
-    token = auth_data.credentials    # assigning the actual JWT string to token
-    payload = verify_token(token)     # decoding and verifying token
-    if not payload:
-        raise HTTPException(401, "Invalid token")
-    return payload["user_id"]
 
 
 # lifespan context manager for startup/shutdown
@@ -82,6 +69,7 @@ async def health_check() -> dict[str, Any]:
 
 @app.get(
     "/subreddit_metadata/{subreddit_name}", 
+    dependencies=[Depends(rate_limit_check)],
     response_model=MetadataResponse,
     tags=["subreddits"],
     summary="Get Subreddit Metadata",
@@ -116,6 +104,7 @@ async def get_subreddit_metadata(
 
 @app.get(
     "/posts/{subreddit_name}", 
+    dependencies=[Depends(rate_limit_check)],
     response_model=List[PostsResponse],
     tags=["posts"],
     summary="Get Posts Data with corresponding Sentiments",
@@ -148,6 +137,7 @@ async def get_posts(
 
 @app.get(
     "/comments/{subreddit_name}", 
+    dependencies=[Depends(rate_limit_check)],
     response_model=List[CommentsResponse],
     tags=["comments"],
     summary="Get Comments data with corresponding Sentiments",
@@ -179,6 +169,7 @@ async def get_comments(
 
 @app.post(
     "/register", 
+    dependencies=[Depends(rate_limit_check)],
     response_model=RegisterResponse,
     tags=["authentication"],
     summary="Register new user"
@@ -229,6 +220,7 @@ async def register(request: RegisterRequest) -> RegisterResponse:
 
 @app.post(
     "/login", 
+    dependencies=[Depends(rate_limit_check)],
     response_model=LoginResponse,
     tags=["authentication"],
     summary="User Login"
