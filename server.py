@@ -76,7 +76,8 @@ async def health_check() -> dict[str, Any]:
     description="Retrieve comprehensive Metadata for a specific Subreddit such as the description, subscriber count, date of creation"
 )
 async def get_subreddit_metadata(
-    subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)")
+    subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
+    user_id: str = Depends(rate_limit_check)
 ) -> MetadataResponse:
     """ Get Subreddit Metadata (name, description, subscriber count, created at) endpoint """
     subreddit_name = subreddit_name.lower()
@@ -113,7 +114,7 @@ async def get_subreddit_metadata(
 async def get_posts(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
     limit: int = Query(5, ge=1, le=100),
-    user_id: str= Depends(get_current_user)
+    user_id: str = Depends(rate_limit_check)
 ) -> List[Dict[str, Any]]:
     """ Get Posts data with Sentiments endpoint """
     subreddit_name = subreddit_name.lower()
@@ -146,7 +147,7 @@ async def get_posts(
 async def get_comments(
     subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
     limit: int = Query(5, ge=1, le=100),
-    user_id: str= Depends(get_current_user)
+    user_id: str= Depends(rate_limit_check)
 ) -> List[Dict[str, Any]]:
     """ Get Comments with Sentiments endpoint """
     subreddit_name = subreddit_name.lower()
