@@ -170,7 +170,6 @@ async def get_comments(
 
 @app.post(
     "/register", 
-    dependencies=[Depends(rate_limit_check)],
     response_model=RegisterResponse,
     tags=["authentication"],
     summary="Register new user"
@@ -221,7 +220,6 @@ async def register(request: RegisterRequest) -> RegisterResponse:
 
 @app.post(
     "/login", 
-    dependencies=[Depends(rate_limit_check)],
     response_model=LoginResponse,
     tags=["authentication"],
     summary="User Login"

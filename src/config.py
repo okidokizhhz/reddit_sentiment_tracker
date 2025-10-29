@@ -1,5 +1,6 @@
 # reddit_sentiment_tracker/src.config.py
 
+import os
 from pathlib import Path
 
 # current location of config.py acts as root
@@ -19,6 +20,6 @@ REPLY_DEPTH = 1
 TOP_POSTS_TIME_FILTER = "all"
 
 # Redis Rate Limiting
-REDIS_URL="redis://redis:6379"
+REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
 RATE_LIMIT_Redis = 10           # max requests allowed
 WINDOW_SIZE_Redis = 60          # in seconds (time window duration)
