@@ -27,7 +27,7 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - redis_data:/redis
+      - redis_data:/data
 
 volumes:
   postgres_data:
