@@ -30,7 +30,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     logger.info("Reddit Sentiment Tracker API starting up...")     # startup
 
     try:
-        initialize_database()
+        await initialize_database()
         logger.info("Startup completed successfully")
     except Exception as e:
         logger.critical(f"Startup failed: {e}", exc_info=True)
@@ -83,7 +83,7 @@ async def get_subreddit_metadata(
     subreddit_name = subreddit_name.lower()
 
     try:
-        subreddit_metadata = retrieve_metadata(subreddit_name)
+        subreddit_metadata = await retrieve_metadata(subreddit_name)
 
         if subreddit_metadata is None:
             logger.warning(f"No data for '{subreddit_name}' in DB found")
@@ -120,7 +120,7 @@ async def get_posts(
     subreddit_name = subreddit_name.lower()
 
     try:
-        posts_data = retrieve_posts_data(subreddit_name, limit)
+        posts_data = await retrieve_posts_data(subreddit_name, limit)
 
         if posts_data is None:
             logger.warning(f"No Posts Data for '{subreddit_name}' in DB found")
@@ -153,7 +153,7 @@ async def get_comments(
     subreddit_name = subreddit_name.lower()
 
     try:
-        comments_data = retrieve_comments_data(subreddit_name, limit)
+        comments_data = await retrieve_comments_data(subreddit_name, limit)
 
         if comments_data is None:
             logger.warning(f"No Comments data for Subreddit '{subreddit_name}' found")
@@ -177,19 +177,19 @@ async def get_comments(
 async def register(request: RegisterRequest) -> RegisterResponse:
     """ Enduser can register using username, email, password """
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             # checking if username already exists
-            existing_user = conn.execute(
+            existing_user = (await conn.execute(
                 users.select().where(users.c.username == request.username)
-            ).first()
+            )).first()
             if existing_user:
                 logger.warning(f"Registration failed: Username '{request.username}' already exists")
                 raise HTTPException(status_code=400, detail="Username already exists")
 
             # checking if email already exists
-            existing_email = conn.execute(
+            existing_email = (await conn.execute(
                 users.select().where(users.c.email == request.email)
-            ).first()
+            )).first()
             if existing_email:
                 logger.warning(f"Registration failed: Email '{request.email}' already exists")
                 raise HTTPException(status_code=400, detail="Email already exists")
@@ -201,7 +201,7 @@ async def register(request: RegisterRequest) -> RegisterResponse:
             hashed_pw = hash_password(request.password)
 
             # User Creation (if there are no duplicates) + DB insertion
-            conn.execute(users.insert().values(
+            await conn.execute(users.insert().values(
                 username=request.username,
                 email=request.email,
                 hashed_password=hashed_pw
@@ -227,11 +227,11 @@ async def register(request: RegisterRequest) -> RegisterResponse:
 async def login(request: LoginRequest) -> LoginResponse:
     """ Login Endpoint for enduser """
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             # checking if username exists in Db
-            existing_user = conn.execute(
+            existing_user = (await conn.execute(
                 users.select().where(users.c.username == request.username)
-            ).first()
+            )).first()
 
             # throw Error if username does not exist
             if not existing_user:

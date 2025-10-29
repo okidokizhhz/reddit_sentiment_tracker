@@ -12,20 +12,20 @@ from .data_collection.comment_fetcher import fetch_comments
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def init_db() -> None:
+async def init_db() -> None:
     """ Initialize DB """
     try:
-        initialize_database()
+        await initialize_database()
         logger.info("Database connection successful")
     except Exception as e:
         logger.critical(f"Failed to connect to DB: {e}. Exiting Program", exc_info=True)
         sys.exit(1)
 
 
-def reddit_client() -> Optional[Any]:
+async def reddit_client() -> Optional[Any]:
     """ Retrieve Reddit Client """
     try:
-        reddit = get_reddit_client()
+        reddit = await get_reddit_client()
         logger.info("Reddit Client retrieved successfully")
         return reddit
     except Exception as e:
@@ -33,10 +33,10 @@ def reddit_client() -> Optional[Any]:
         sys.exit(1)         # Exit program on failure
 
 
-def get_subreddit_metadata(subreddit_name: str, reddit: Any) -> Tuple[Dict[str, Any], str]:
+async def get_subreddit_metadata(subreddit_name: str, reddit: Any) -> Tuple[Dict[str, Any], str]:
     """ Fetch Subreddit Metadata """
     try:
-        subreddit_metadata = fetch_subreddit_metadata(subreddit_name, reddit)
+        subreddit_metadata = await fetch_subreddit_metadata(subreddit_name, reddit)
         if not subreddit_metadata or "id" not in subreddit_metadata:
             raise ValueError(f"Failed to fetch data for subreddit: '{subreddit_name}'")
 
@@ -49,19 +49,19 @@ def get_subreddit_metadata(subreddit_name: str, reddit: Any) -> Tuple[Dict[str, 
         raise
 
 
-def subreddit_data_into_db(subreddit_name: str, subreddit_metadata: Dict[str, Any]) -> None:
+async def subreddit_data_into_db(subreddit_name: str, subreddit_metadata: Dict[str, Any]) -> None:
     """ Insert Subreddit Metadata into Db """
     try:
-        insert_subreddit_metadata(subreddit_metadata)
+        await insert_subreddit_metadata(subreddit_metadata)
         logger.info(f"Subreddit metadata of 'r/{subreddit_name}' inserted into DB successfully")
     except Exception as e:
         logger.error(f"Failed to insert subreddit metadata of 'r/{subreddit_name}' into DB: {e}", exc_info=True)
 
 
-def get_top_posts(subreddit_name: str, reddit: Any, RATE_LIMIT_TOP_POSTS: int, TOP_POSTS_TIME_FILTER: str) -> List[Dict[str, Any]]:
+async def get_top_posts(subreddit_name: str, reddit: Any, RATE_LIMIT_TOP_POSTS: int, TOP_POSTS_TIME_FILTER: str) -> List[Dict[str, Any]]:
     """ Fetch Top Posts """
     try:
-        top_posts_data = fetch_top_posts(subreddit_name,
+        top_posts_data = await fetch_top_posts(subreddit_name,
                                          reddit,
                                          RATE_LIMIT_TOP_POSTS,
                                          TOP_POSTS_TIME_FILTER)
@@ -73,23 +73,23 @@ def get_top_posts(subreddit_name: str, reddit: Any, RATE_LIMIT_TOP_POSTS: int, T
         logger.error(f"Failed to fetch top posts: {e}", exc_info=True)
         raise
 
-def top_posts_data_into_db(top_posts_data: List[Dict[str, Any]], subreddit_id: str) -> None:
+async def top_posts_data_into_db(top_posts_data: List[Dict[str, Any]], subreddit_id: str) -> None:
     """ Insert Top Posts Sentiment data into DB"""
     try:
-        insert_top_posts(top_posts_data, subreddit_id)
-        insert_post_sentiment(top_posts_data)
+        await insert_top_posts(top_posts_data, subreddit_id)
+        await insert_post_sentiment(top_posts_data)
 
         logger.info("Inserting top posts and sentiment data into DB successful")
     except Exception as e:
         logger.error(f"Failed to insert top posts and sentiment data into DB: {e}", exc_info=True)
 
 
-def comments_top_posts_into_db(top_posts_data: List[Dict[str, Any]], reddit: Any, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> None:
+async def comments_top_posts_into_db(top_posts_data: List[Dict[str, Any]], reddit: Any, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> None:
     """ Insert Comments of top posts and and Sentiment into DB """
     try:
         for post in top_posts_data:
             post_id = post["id"]
-            post["comments"] = fetch_comments(reddit,
+            post["comments"] = await fetch_comments(reddit,
                                               post_id,
                                               REPLY_DEPTH,
                                               COMMENT_LIMIT)
@@ -97,8 +97,8 @@ def comments_top_posts_into_db(top_posts_data: List[Dict[str, Any]], reddit: Any
 
             # DB: inserting comments of Top Posts
             try: 
-                insert_comments(post_comments, post_id)
-                insert_comment_sentiment(post_comments)
+                await insert_comments(post_comments, post_id)
+                await insert_comment_sentiment(post_comments)
 
                 logger.info(f"Post id {post_id}: Inserting comments and sentiments of Top Posts into DB successful")
 
@@ -108,10 +108,10 @@ def comments_top_posts_into_db(top_posts_data: List[Dict[str, Any]], reddit: Any
         logger.error(f"Failed to fetch comments for Top Posts", exc_info=True)
 
 
-def get_rising_posts(subreddit_name: str, reddit: Any, RATE_LIMIT_RISING_POSTS: int) -> List[Dict[str, Any]]:
+async def get_rising_posts(subreddit_name: str, reddit: Any, RATE_LIMIT_RISING_POSTS: int) -> List[Dict[str, Any]]:
     """ Fetch Rissing Posts """
     try:
-        rising_posts_data = fetch_rising_posts(subreddit_name,
+        rising_posts_data = await fetch_rising_posts(subreddit_name,
                                                reddit,
                                                RATE_LIMIT_RISING_POSTS)
         if not rising_posts_data:
@@ -123,23 +123,23 @@ def get_rising_posts(subreddit_name: str, reddit: Any, RATE_LIMIT_RISING_POSTS: 
         raise
 
 
-def rising_posts_data_into_db(rising_posts_data: List[Dict[str, Any]], subreddit_id: str) -> None:
+async def rising_posts_data_into_db(rising_posts_data: List[Dict[str, Any]], subreddit_id: str) -> None:
     """ Inserting Rising Posts and Sentiment Data into DB """
     try: 
-        insert_rising_posts(rising_posts_data, subreddit_id)
-        insert_post_sentiment(rising_posts_data)
+        await insert_rising_posts(rising_posts_data, subreddit_id)
+        await insert_post_sentiment(rising_posts_data)
 
         logger.info("Inserting rising posts and sentiment data into DB successful")
     except Exception as e:
         logger.error(f"Failed to insert rising posts and sentiment data into DB: {e}", exc_info=True)
 
 
-def comments_rising_posts_into_db(rising_posts_data: List[Dict[str, Any]], reddit: Any, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> None:
+async def comments_rising_posts_into_db(rising_posts_data: List[Dict[str, Any]], reddit: Any, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> None:
     """ Insert Comments of rising posts and and Sentiment into DB """
     try:
         for post in rising_posts_data:
             post_id = post["id"]
-            post["comments"] = fetch_comments(reddit,
+            post["comments"] = await fetch_comments(reddit,
                                               post["id"],
                                               REPLY_DEPTH,
                                               COMMENT_LIMIT)
@@ -147,8 +147,8 @@ def comments_rising_posts_into_db(rising_posts_data: List[Dict[str, Any]], reddi
 
             # DB: inserting comments of Rising Posts
             try: 
-                insert_comments(post_comments, post_id)
-                insert_comment_sentiment(post_comments)
+                await insert_comments(post_comments, post_id)
+                await insert_comment_sentiment(post_comments)
 
                 logger.info(f"Post id {post_id}: Inserting comments and sentiments of Rising Posts into DB successful")
 

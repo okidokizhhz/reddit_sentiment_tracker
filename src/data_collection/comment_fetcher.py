@@ -7,14 +7,14 @@ import logging
 
 logger = logging.getLogger("reddit_sentiment_tracker")
 
-def fetch_comments(reddit: Any, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> list[dict[str, Any]]:
+async def fetch_comments(reddit: Any, post_id: str, REPLY_DEPTH: int, COMMENT_LIMIT: int) -> list[dict[str, Any]]:
     """ 
     Comment fetcher - gets top-level comments only
     Returns: List of comment dicts with basic info + sentiment
     """
     try:
         # returns submission object that contains all the posts data (title, content, author etc)
-        submission = reddit.submission(id=post_id)
+        submission = await reddit.submission(id=post_id)
         # limit=0  -replace placeholder "load more comments" with actual comments - load all comments
         # limit=2  -open 2 placeholder "load more comments" 2 times
         submission.comments.replace_more(limit=REPLY_DEPTH)

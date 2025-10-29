@@ -1,5 +1,5 @@
 import logging
-from contextlib import contextmanager
+from contextlib import asynccontextmanager
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import select
 from typing import Optional, Dict, Any, List
@@ -9,10 +9,10 @@ from .schema_manager import subreddits, posts, comments, post_sentiment_history,
 logger = logging.getLogger("reddit_sentiment_tracker")
 
 
-@contextmanager
-def db_session():
+@asynccontextmanager
+async def db_session():
     """ Context manager for transactions - begin() handles rollbacks/transactions """
-    with engine.begin() as conn:
+    async with engine.begin() as conn:
         try:
             yield conn
         except SQLAlchemyError as e:
@@ -20,25 +20,25 @@ def db_session():
             raise   # error - let application entry point decide
 
 
-def insert_subreddit_metadata(subreddit_metadata: dict) -> None:
+async def insert_subreddit_metadata(subreddit_metadata: dict) -> None:
     """ Inserting subreddit metadata into DB in a transaction """
     if not subreddit_metadata:
         logger.info("No subreddit metadata to insert")
         return
 
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             # checking if subreddit already exists
-            exists = conn.execute(
+            exists = (await conn.execute(
                 select(subreddits.c.id).where(subreddits.c.id == subreddit_metadata["id"])
-            ).fetchone()
+            )).fetchone()
 
             if exists:
                 logger.info(f"The Subreddit '{subreddit_metadata['id']}' already exists. Skipped inserting")
                 return
 
             # otherwise insert
-            conn.execute(subreddits.insert(), subreddit_metadata)
+            await conn.execute(subreddits.insert(), subreddit_metadata)
 
             logger.info(f"Successfully inserted subreddit metadata into DB")
 
@@ -46,22 +46,22 @@ def insert_subreddit_metadata(subreddit_metadata: dict) -> None:
         logger.error(f"Failure inserting subreddit metadata into DB: {e}", exc_info=True)
         raise
 
-def insert_top_posts(top_posts_data, subreddit_id) -> None:
+async def insert_top_posts(top_posts_data, subreddit_id) -> None:
     """ Inserting posts data into DB in a transaction """
     if not top_posts_data:
         logger.info("No posts data to insert")
         return
 
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             # getting post_id for each iteration
             for post in top_posts_data:
                 post_id = post["id"]
 
                 # check if post already exists
-                exists = conn.execute(
+                exists = (await conn.execute(
                     select(posts.c.id).where(posts.c.id == post_id)
-                ).fetchone()
+                )).fetchone()
 
                 # return if duplicate
                 if exists:
@@ -81,7 +81,7 @@ def insert_top_posts(top_posts_data, subreddit_id) -> None:
                 }
 
                 # otherwise insert
-                conn.execute(posts.insert(), post_db_data)
+                await conn.execute(posts.insert(), post_db_data)
 
             logger.info(f"Successfully inserted new top posts into DB (duplicates skipped)")
 
@@ -89,21 +89,21 @@ def insert_top_posts(top_posts_data, subreddit_id) -> None:
         logger.error(f"Failure inserting posts data into DB: {e}", exc_info=True)
         raise
 
-def insert_rising_posts(rising_posts_data, subreddit_id) -> None:
+async def insert_rising_posts(rising_posts_data, subreddit_id) -> None:
     """ Inserting rising posts data into DB in a transaction """
     if not rising_posts_data:
         logger.info("No posts data to insert")
         return
 
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             for post in rising_posts_data:
                 post_id = post["id"]
 
                 # check if post already exists
-                exists = conn.execute(
+                exists = (await conn.execute(
                     select(posts.c.id).where(posts.c.id == post_id)
-                ).fetchone()
+                )).fetchone()
 
                 # continue iterations if duplicate
                 if exists:
@@ -122,7 +122,7 @@ def insert_rising_posts(rising_posts_data, subreddit_id) -> None:
                     "created_utc": post["created_utc"]
                 }
 
-                conn.execute(posts.insert(), post_db_data)
+                await conn.execute(posts.insert(), post_db_data)
 
             logger.info(f"Successfully inserted new rising posts into DB (skipped duplicates)")
 
@@ -130,20 +130,20 @@ def insert_rising_posts(rising_posts_data, subreddit_id) -> None:
         logger.error(f"Failure inserting rising posts data into DB: {e}", exc_info=True)
         raise
 
-def insert_comments(post_comments, post_id) -> None:
+async def insert_comments(post_comments, post_id) -> None:
     """ Inserting comments of Posts into DB in a transaction """
     if not post_comments:
         logger.info("No commments data of Top Posts to insert")
         return
 
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             for comment in post_comments:
                 comment_id = comment["id"]
 
-                exists = conn.execute(
+                exists = (await conn.execute(
                     select(comments.c.id).where(comments.c.id == comment_id)
-                ).fetchone()
+                )).fetchone()
 
                 # continue iterations if duplicate
                 if exists:
@@ -168,7 +168,7 @@ def insert_comments(post_comments, post_id) -> None:
                     "created_utc": comment["created_utc"],
                 }
 
-                conn.execute(comments.insert(), comments_db_data)
+                await conn.execute(comments.insert(), comments_db_data)
 
             logger.info(f"Successfully inserted comments of Post '{post_id}' into DB (skipped duplicates)")
 
@@ -177,7 +177,7 @@ def insert_comments(post_comments, post_id) -> None:
         raise
 
 
-def insert_post_sentiment(post_data) -> None:
+async def insert_post_sentiment(post_data) -> None:
     """ Inserting the Sentiment of posts into DB in a transaction """
 
     if not post_data:
@@ -199,8 +199,8 @@ def insert_post_sentiment(post_data) -> None:
         post_sentiment_to_insert.append(post_sentiment_db_data)
 
     try:
-        with db_session() as conn:
-            conn.execute(post_sentiment_history.insert(), post_sentiment_to_insert)
+        async with db_session() as conn:
+            await conn.execute(post_sentiment_history.insert(), post_sentiment_to_insert)
 
         logger.info(f"Successfully inserted sentiment of post/s into DB")
 
@@ -208,7 +208,7 @@ def insert_post_sentiment(post_data) -> None:
         logger.error(f"Failure inserting sentiment of post/s into DB: {e}", exc_info=True)
         raise
 
-def insert_comment_sentiment(post_comments) -> None:
+async def insert_comment_sentiment(post_comments) -> None:
     """ Inserting the Sentiment of comments into DB in a transaction """
     if not post_comments:
         logger.info("No post comments to insert")
@@ -225,8 +225,8 @@ def insert_comment_sentiment(post_comments) -> None:
         comment_sentiment_to_insert.append(comment_sentiment_db_data)
 
     try:
-        with db_session() as conn:
-            conn.execute(comment_sentiment_history.insert(), comment_sentiment_to_insert)
+        async with db_session() as conn:
+            await conn.execute(comment_sentiment_history.insert(), comment_sentiment_to_insert)
 
         logger.info("Successfully inserted sentiment of comment/s into DB")
 
@@ -235,17 +235,17 @@ def insert_comment_sentiment(post_comments) -> None:
         raise
 
 
-def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
+async def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
     """ Read basic subreddit metadata (name, description, subscriber count, created at) from DB by name """
     try:
-        with db_session() as conn:
-            result = conn.execute(
+        async with db_session() as conn:
+            result = (await conn.execute(
                 select(
                     subreddits.c.description,
                     subreddits.c.subscriber_count,
                     subreddits.c.created_utc
                 ).where(subreddits.c.name == subreddit_name)
-            ).fetchone()
+            )).fetchone()
 
             if not result:
                 logger.warning(f"Subreddit '{subreddit_name}' not found in Database")
@@ -263,10 +263,10 @@ def retrieve_metadata(subreddit_name: str) -> Optional[Dict[str, Any]]:
         raise
 
 
-def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
+async def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
     """ Read Posts Data (title, author, score, sentiment score etc.) from a Subreddit from DB """
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             query = (
                 select(                                                                         # selecting desired data
                     posts.c.id,
@@ -292,7 +292,7 @@ def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]
                 .limit(limit)                                        # Limit: of posts retrieved (default = 5)
             )
 
-            results = conn.execute(query).fetchall()
+            results = (await conn.execute(query)).fetchall()
 
             if not results:
                 logger.warning(f"No Posts found for Subreddit '{subreddit_name}' in Database")
@@ -325,10 +325,10 @@ def retrieve_posts_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]
         logger.error(f"Failed to retrieve Posts data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         raise
 
-def retrieve_comments_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
+async def retrieve_comments_data(subreddit_name: str, limit: int) -> List[Dict[str, Any]]:
     """ Read Comments Data () from a Subreddit from DB """
     try:
-        with db_session() as conn:
+        async with db_session() as conn:
             query = (
                 select(
                     comments.c.id,
@@ -352,7 +352,7 @@ def retrieve_comments_data(subreddit_name: str, limit: int) -> List[Dict[str, An
                 .limit(limit)
             )
 
-            results = conn.execute(query).fetchall()
+            results = (await conn.execute(query)).fetchall()
 
             if not results:
                 logger.warning(f"No Comments found for Subreddit '{subreddit_name}' in Database")

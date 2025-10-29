@@ -12,8 +12,8 @@ logger = logging.getLogger("reddit_sentiment_tracker")
 async def get_redis_client(REDIS_URL: str) -> Any:
     """ Getting Redis Client """
     try:
-        redis_client = redis.from_url(REDIS_URL, decode_responses=True)
-        await redis_client.ping()
+        redis_client = await redis.from_url(REDIS_URL, decode_responses=True)
+        redis_client.ping()
 
         logger.info("Redis Client successfully retrieved")
 
@@ -32,7 +32,7 @@ async def rate_limit_check(user_id: str = Depends(get_current_user)) -> str:
     try:
         key = f"rate_limit:{user_id}"
 
-        current = await redis_client(key)   # get current count - returns None if key doens't exist
+        current = await redis_client.get(key)   # get current count - returns None if key doens't exist
 
         if current is None:
             current_count = 0

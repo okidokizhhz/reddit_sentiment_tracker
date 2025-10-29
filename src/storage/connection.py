@@ -2,8 +2,8 @@
 
 import os
 import subprocess
-from sqlalchemy import create_engine, MetaData, text
-from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.ext.asyncio import create_async_engine
+from sqlalchemy import MetaData, text
 from dotenv import load_dotenv
 import logging
 
@@ -28,10 +28,9 @@ if missing_vars:
     logger.critical(f"DB: missing required variables: {', '.join(missing_vars)}")
     raise ValueError(f"DB: missing required variables: {', '.join(missing_vars)}")
 
-
 # Setup, Connection to postgresql
 try:
-    engine = create_engine(f"postgresql://{USER_DB}:{PASSWORD_DB}@{HOST_DB}:{PORT_DB}/{NAME_DB}",
+    engine = create_async_engine(f"postgresql+asyncpg://{USER_DB}:{PASSWORD_DB}@{HOST_DB}:{PORT_DB}/{NAME_DB}",
                            pool_size=5, 
                            max_overflow=10, 
                            pool_pre_ping=True)
@@ -71,11 +70,11 @@ def run_alembic_migrations() -> bool:
 # run_alembic_migrations()
 
 
-def initialize_database() -> None:
+async def initialize_database() -> None:
     """ Test database connection - schema is managed by alembic """
     try:
-        with engine.connect() as conn:
-            conn.execute(text('SELECT 1'))         # text() tells sqlalchemy that raw SQL text should be executed
+        async with engine.begin() as conn:
+            await conn.execute(text('SELECT 1'))         # text() tells sqlalchemy that raw SQL text should be executed
         logger.info("Database connection successful")
     except Exception as e:
         logger.critical(f"Error connecting to Database: {e}", exc_info=True)
