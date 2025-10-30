@@ -58,4 +58,4 @@ async def rate_limit_check(user_id: str = Depends(get_current_user)) -> str:
         logger.error(f"Rate Limit check failed: {e}", exc_info=True)
         return user_id
     finally:
-        await redis_client.aclose()     # close redis connection
+        await redis_client.close()     # close redis connection

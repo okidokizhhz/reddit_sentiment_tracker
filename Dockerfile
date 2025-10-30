@@ -28,4 +28,4 @@ EXPOSE 8000
 # Command to run the application / FastAPI Server
 # --host 0.0.0.0 makes the server accessible from outside the container
 # --port 8000 specifies the port to listen on
-CMD ["uvicorn", "server:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD alembic upgrade head && uvicorn server:app --host 0.0.0.0 --port 8000

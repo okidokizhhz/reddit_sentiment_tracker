@@ -7,10 +7,11 @@ services:
       - .env
     environment:
       - HOST_DB=db
+      - REDIS_URL=redis://redis:6379
     depends_on:
       - db
       - redis
-    restart: "on-failure"
+    restart: on-failure
 
   db:
     image: postgres:13
