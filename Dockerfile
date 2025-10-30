@@ -23,14 +23,14 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # exposing port 8000 for FastAPI application
-EXPOSE 7860
+EXPOSE 8000
 
 # Command to run the application / FastAPI Server
 # --host 0.0.0.0 makes the server accessible from outside the container
 # --port 8000 specifies the port to listen on
-#CMD sh -c "alembic upgrade head && uvicorn server:app --host 0.0.0.0 --port 8000"
+CMD sh -c "alembic upgrade head && uvicorn server:app --host 0.0.0.0 --port 8000"
 
 # port for hugging face
 #CMD sh -c "alembic upgrade head && uvicorn server:app --host 0.0.0.0 --port 7860"
-CMD sleep 10 && alembic upgrade head && uvicorn server:app --host 0.0.0.0 --port 7860
+#CMD sleep 10 && alembic upgrade head && uvicorn server:app --host 0.0.0.0 --port 7860
 
