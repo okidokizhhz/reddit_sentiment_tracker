@@ -43,14 +43,11 @@ htmlcov/
 .env.local
 .secrets
 
-# ========== ADD THESE FOR YOUR PROJECT ==========
 
-# Log files (you asked about this - YES, exclude them!)
+# Log files
 logs/
 *.log
 
-# NLTK data (can be large, users should download separately)
-nltk_data/
 
 # Uploaded files/documents (user data)
 uploads/
@@ -59,12 +56,12 @@ documents/
 *.docx
 file_test_document_processor.txt
 
-# Machine learning models (can be very large)
+# Machine learning models 
 models/
 *.bin
 *.pkl
 
-# Jupyter notebooks (if you use them)
+# Jupyter notebooks 
 *.ipynb
 .ipynb_checkpoints/
 
@@ -72,7 +69,7 @@ models/
 .DS_Store
 Thumbs.db
 
-# Docker (if you use it)
+# Docker 
 .dockerignore
 Dockerfile.dev
 

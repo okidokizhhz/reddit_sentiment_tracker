@@ -20,6 +20,6 @@ REPLY_DEPTH = 1
 TOP_POSTS_TIME_FILTER = "all"
 
 # Redis Rate Limiting
-REDIS_URL = os.getenv("REDIS_URL", "redis://localhost:6379")
+REDIS_URL = os.getenv("REDIS_URL")
 RATE_LIMIT_Redis = 10           # max requests allowed
 WINDOW_SIZE_Redis = 60          # in seconds (time window duration)
