@@ -31,7 +31,7 @@ def get_database_url():
     password = os.getenv("PASSWORD_DB", "postgres")
     port = os.getenv("PORT_DB", "5432")
     
-    return f"postgresql:psycopg2//{user}:{password}@{host}:{port}/{name}"
+    return f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{name}"
 
 def run_migrations_offline():
     """Run migrations without database connection"""
