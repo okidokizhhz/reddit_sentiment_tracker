@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # exposing port 8000 for FastAPI application
-EXPOSE 8000
+EXPOSE 7860
 
 # Command to run the application / FastAPI Server
 # --host 0.0.0.0 makes the server accessible from outside the container
