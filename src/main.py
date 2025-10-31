@@ -1,8 +1,5 @@
 # ~/reddit_sentiment_tracker/src/main.py
 
-from alembic import command
-from alembic.config import Config
-import os
 import asyncio
 from .config import RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
 from .data_pipeline_orchestrator import (init_db, reddit_client, get_subreddit_metadata,
@@ -13,17 +10,8 @@ from .logger import setup_logger
 
 logger = setup_logger("reddit_sentiment_tracker")
 
-def run_migrations():
-    """
-    Run Alembic migrations using alembic.ini.
-    Safe to call once on app startup.
-    """
-    alembic_cfg = Config(os.path.join(os.path.dirname(__file__), "../alembic.ini"))
-    command.upgrade(alembic_cfg, "head")
-
 
 async def main() -> None:
-    run_migrations()
     # Subreddit Name
     subreddit_name = "wien"
 
