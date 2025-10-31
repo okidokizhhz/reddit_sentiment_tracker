@@ -19,11 +19,11 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-# Use our metadata
+# Use metadata
 target_metadata = metadata
 
 def get_database_url():
-    """Simple database URL for Docker"""
+    """ Simple database URL for Docker """
     # Use environment variables with Docker defaults
     host = os.getenv("HOST_DB", "db")
     name = os.getenv("NAME_DB", "reddit_sentiment_tracker") 
@@ -34,7 +34,7 @@ def get_database_url():
     return f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{name}"
 
 def run_migrations_offline():
-    """Run migrations without database connection"""
+    """ Run migrations without database connection """
     url = get_database_url()
     context.configure(
         url=url,
@@ -46,7 +46,7 @@ def run_migrations_offline():
         context.run_migrations()
 
 def run_migrations_online():
-    """Run migrations with database connection"""
+    """ Run migrations with database connection """
     engine = create_engine(get_database_url())
     
     with engine.connect() as connection:

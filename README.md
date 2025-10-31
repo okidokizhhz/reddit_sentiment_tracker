@@ -116,5 +116,3 @@ This project showcases:
 
 MIT License
 ```
-
-This README is professional, clean, and highlights the technical skills that would be relevant for a junior Python backend developer position in Vienna. It focuses on the technologies used, architecture decisions, and demonstrates your understanding of modern backend development practices.
