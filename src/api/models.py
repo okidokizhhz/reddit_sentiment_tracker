@@ -24,6 +24,12 @@ class LoginResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
 
+# /collect
+class CollectionResponse(BaseModel):
+    status: str
+    message: str
+    subreddit_name: str
+
 # /subreddit_metadata/{subreddit_name}
 class MetadataResponse(BaseModel):
     status: str

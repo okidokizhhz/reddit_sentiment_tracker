@@ -8,17 +8,20 @@ from fastapi import FastAPI, HTTPException, Depends, Path, Query
 from src.storage.schema_manager import users
 from src.api.models import (RegisterRequest, RegisterResponse, 
                             LoginRequest, LoginResponse,
-                            MetadataResponse,
-                            PostsResponse,
-                            CommentsResponse)
+                            MetadataResponse, PostsResponse, CommentsResponse,
+                            CollectionResponse)
 from src.api.auth_service import create_access_token
-from src.api.auth_dependencies import get_current_user
 from src.api.rate_limiting import rate_limit_check
 from src.api.bcrypt_hashing import hash_password, verify_password
 from src.api.password_validation import validate_password_strength
 from src.storage.connection import initialize_database
 from src.storage.crud import retrieve_metadata, retrieve_posts_data, retrieve_comments_data, db_session
 from src.logger import setup_logger
+from src.config import RATE_LIMIT_RISING_POSTS, RATE_LIMIT_TOP_POSTS, COMMENT_LIMIT, TOP_POSTS_TIME_FILTER, REPLY_DEPTH
+from src.data_pipeline_orchestrator import (reddit_client, get_subreddit_metadata,
+                                         subreddit_data_into_db, get_top_posts, top_posts_data_into_db,
+                                         comments_top_posts_into_db, get_rising_posts, rising_posts_data_into_db,
+                                         comments_rising_posts_into_db)
 
 logger = setup_logger("reddit_sentiment_tracker")
 
@@ -65,6 +68,92 @@ async def health_check() -> dict[str, Any]:
         "message": "API is running correctly",
         "environment": "development"
     }
+
+
+@app.post(
+    "/collect/{subreddit_name}",
+    dependencies=[Depends(rate_limit_check)],
+    response_model=CollectionResponse,
+    tags=["collection"],
+    summary="Subreddit Data Collection",
+    description="Collect datasets about a subreddit: metadata, posts, comments, sentiments that can be retrieved through get endpoints"
+)
+async def collect_data(
+    subreddit_name: str = Path(..., min_length=2, max_length=21, description="Subreddit name (2-21 characters)"),
+    user_id: str = Depends(rate_limit_check)
+) -> CollectionResponse:
+    """ Enduser can type in a subreddit name to fetch various datasets which then get stored in the database """
+    subreddit_name = subreddit_name.lower()
+
+    try:
+        # Getting Reddit Client
+        reddit = await reddit_client()
+        if not reddit:
+            logger.error(f"Failed to retrieve reddit client")
+            raise ValueError(f"Failed to retrieve reddit client")
+
+        # Metadata subreddit fetching
+        subreddit_metadata, subreddit_id = await get_subreddit_metadata(subreddit_name, reddit)
+        if not subreddit_metadata or "id" not in subreddit_metadata:
+            logger.error(f"Failed to fetch data for subreddit: '{subreddit_name}'")
+            raise ValueError(f"Failed to fetch data for subreddit: '{subreddit_name}'")
+
+        # DB: inserting Metadata
+        await subreddit_data_into_db(subreddit_name, subreddit_metadata)
+
+        # Top Posts fetching
+        top_posts_data = await get_top_posts(
+            subreddit_name,
+            reddit,
+            RATE_LIMIT_TOP_POSTS,
+            TOP_POSTS_TIME_FILTER
+        )
+        if not top_posts_data:
+            logger.error(f"Failed to fetch top posts - skipping insertion of top posts data and top posts sentiment into DB")
+        else:
+            # Inserting Top Posts into DB (with Sentiment)
+            await top_posts_data_into_db(top_posts_data, subreddit_id)
+            # Commments (top posts) fetching + Inserting into DB
+            await comments_top_posts_into_db(
+                top_posts_data,
+                reddit,
+                REPLY_DEPTH,
+                COMMENT_LIMIT
+            )
+
+        # Rising Posts fetching
+        rising_posts_data = await get_rising_posts(
+            subreddit_name,
+            reddit,
+            RATE_LIMIT_RISING_POSTS
+        )
+        if not rising_posts_data:
+            logger.error(f"Failed to fetch rising posts skipping insertion of rising posts data and rising posts sentiment into DB")
+        else:
+            # Inserting Rising Posts into DB (with Sentiment)
+            await rising_posts_data_into_db(rising_posts_data, subreddit_id)
+            # Rising Posts Comments fetching + Inserting into Db (with Sentiment)
+            await comments_rising_posts_into_db(
+                rising_posts_data,
+                reddit,
+                REPLY_DEPTH,
+                COMMENT_LIMIT
+            )
+
+        return CollectionResponse(
+            status="success",
+            message=f"Data collection finished fully/partially for subreddit /{subreddit_name}",
+            subreddit_name=f"{subreddit_name}"
+        )
+
+    except HTTPException:
+        raise
+    except (ValueError, Exception) as e:
+        logger.error(f"Data Collection: Pipeline failed for subreddit '{subreddit_name}': {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Internal server error during Collection of Data")
+    finally:
+        if reddit:
+            await reddit.close()
 
 
 @app.get(
@@ -168,6 +257,7 @@ async def get_comments(
         logger.error(f"Error retrieving Comments data of Subreddit '{subreddit_name}': {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
+
 @app.post(
     "/register", 
     response_model=RegisterResponse,
@@ -216,6 +306,7 @@ async def register(request: RegisterRequest) -> RegisterResponse:
     except Exception as e:
         logger.error(f"Registration failed: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
+
 
 
 @app.post(
