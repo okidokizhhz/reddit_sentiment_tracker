@@ -12,7 +12,7 @@ users = Table(
     Column("username", String(100), unique=True, nullable=False, index=True),
     Column("email", String(300), unique=True, nullable=False, index=True),
     Column("hashed_password", String(255), nullable=False),
-    Column("created_at", DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
+    Column("created_at", DateTime, default=lambda: datetime.now(), nullable=False)
 )
 
 subreddits = Table(
@@ -22,7 +22,7 @@ subreddits = Table(
     Column('description', Text, nullable=True),
     Column('subscriber_count', Integer, nullable=True),
     Column('created_utc', DateTime,  nullable=False),
-    Column('fetched_at', DateTime, default=datetime.now(timezone.utc), nullable=False, index=True)   # index for time based queries
+    Column('fetched_at', DateTime, default=datetime.now(), nullable=False, index=True)   # index for time based queries
 
 )
 
@@ -37,7 +37,7 @@ posts = Table(
     Column('url', String),
     Column('flair', String),
     Column('created_utc', DateTime, nullable=False),
-    Column('fetched_at', DateTime, default=datetime.now(timezone.utc), nullable=False),
+    Column('fetched_at', DateTime, default=datetime.now(), nullable=False),
 )
 
 post_sentiment_history = Table(
@@ -50,7 +50,7 @@ post_sentiment_history = Table(
     Column('upvote_ratio', Float),
     Column('controversiality', Float),
     Column('num_comments', Integer),
-    Column('measured_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
+    Column('measured_at', DateTime, default=datetime.now(), nullable=False)
 )
 
 comments = Table(
@@ -63,7 +63,7 @@ comments = Table(
     Column('text', Text),
     Column('score', Integer),
     Column('created_utc', DateTime, nullable=False, index=True),     # index for time based queries
-    Column('fetched_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
+    Column('fetched_at', DateTime, default=datetime.now(), nullable=False)
 )    
 
 comment_sentiment_history = Table(
@@ -72,7 +72,7 @@ comment_sentiment_history = Table(
     Column('comment_id', String, ForeignKey('comments.id'), nullable=False, index=True),  # index for comment id
     Column('comment_sentiment', JSONB),
     Column('score', Integer),
-    Column('measured_at', DateTime, default=datetime.now(timezone.utc), nullable=False)
+    Column('measured_at', DateTime, default=datetime.now(), nullable=False)
 )
 
 average_daily_sentiment = Table(
@@ -85,5 +85,5 @@ average_daily_sentiment = Table(
     Column('overall_sentiment', Float),
     Column('post_count', Integer),
     Column('comment_count', Integer),
-    Column('calculated_at', DateTime, default=datetime.now(timezone.utc), nullable=False, index=True)
+    Column('calculated_at', DateTime, default=datetime.now(), nullable=False, index=True)
 )
