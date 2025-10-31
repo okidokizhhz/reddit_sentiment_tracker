@@ -22,9 +22,17 @@ if config.config_file_name is not None:
 # Use metadata
 target_metadata = metadata
 
-def get_database_url():
-    """ Simple database URL for Docker """
-    # Use environment variables with Docker defaults
+def get_database_url() -> str:
+    """ 
+    Simple database URL for Docker 
+    Prefer DATABASE_URL from .env (in this case Supabase Db Service URL)
+    Fallback to Docker/local configuration
+    """
+    db_url = os.getenv("DATABASE_URL")
+    if db_url:
+        return db_url.replace("+asyncpg", "+psycopg2")    # alembic is synchronous so the driver change to psycopg2 is needed
+
+    # fallback to local/Docker
     host = os.getenv("HOST_DB", "db")
     name = os.getenv("NAME_DB", "reddit_sentiment_tracker") 
     user = os.getenv("USER_DB", "postgres")
@@ -33,7 +41,7 @@ def get_database_url():
     
     return f"postgresql+psycopg2://{user}:{password}@{host}:{port}/{name}"
 
-def run_migrations_offline():
+def run_migrations_offline() -> None:
     """ Run migrations without database connection """
     url = get_database_url()
     context.configure(
@@ -45,7 +53,7 @@ def run_migrations_offline():
     with context.begin_transaction():
         context.run_migrations()
 
-def run_migrations_online():
+def run_migrations_online() -> None:
     """ Run migrations with database connection """
     engine = create_engine(get_database_url())
     
